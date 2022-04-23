@@ -30,12 +30,27 @@ std::ostream& operator<<(std::ostream& os, const Solution<BP>& sol)
 /*****************************************************************************************/
 /** Multi-Level Bin Packing Problem ******************************************************/
 /*****************************************************************************************/
-Solution<MLBP>::Solution(const Instance<MLBP>& inst) : db(-1)
+//Solution<MLBP>::Solution(const Instance<MLBP>& inst) : db(-1)
+//{
+//}
+
+Solution<MLBP>::Solution(const Instance<MLBP>& inst) : item_to_bins(inst.s.size())
 {
+	total_bin_cost = 0;
+	for (int i : inst.M) {
+		std::iota(item_to_bins[i].begin(), item_to_bins[i].end(), 0);
+		for (int j = 0; j < inst.n[i]; j++) {
+			int a = inst.c[i][j];
+			total_bin_cost += a;
+		}
+	}
 }
 
 std::ostream& operator<<(std::ostream& os, const Solution<MLBP>& sol) {
 	// TODO
+	for (int i = 0; i < sol.item_to_bins.size(); i++) {
+		os << sol.item_to_bins[i];
+	}
 	return os;
 }
 

@@ -16,7 +16,11 @@ public:
 	virtual void addObjectiveFunction(IloEnv env, IloModel model, const Instance<MLBP>& inst);
 	virtual void extractSolution(IloCplex cplex, const Instance<MLBP>& inst, Solution<MLBP>& sol);
 private:
-	//TODO: add decision variables
+	// binary decision variables x_{ijk}: item k is inserted into bin j of level i (=1) or not (=0)
+	IloArray<IloArray<IloNumVarArray>> x;
+
+	// binary decision variables y_{ij}: bin j of level i is used (=1) or not (=0)
+	IloArray<IloNumVarArray> y;
 };
 
 

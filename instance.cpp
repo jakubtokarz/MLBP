@@ -102,9 +102,7 @@ void Instance<MLBP>::read_instance(std::ifstream& file)
 
 int Instance<MLBP>::objective(const Solution<MLBP>& sol) const
 {
-	int obj = 0;
-	// TODO
-	return obj;
+	return sol.total_bin_cost;
 }
 
 std::ostream& operator<<(std::ostream& os, const Instance<MLBP> &inst)
