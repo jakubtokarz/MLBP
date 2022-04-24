@@ -38,7 +38,6 @@ Solution<MLBP>::Solution(const Instance<MLBP>& inst) : item_to_bins(inst.m)
 {
 	total_bin_cost = 0;
 	for (int i = 0; i < inst.m; i++) {
-		SOUT() << "111" << std::endl;
 		std::iota(item_to_bins[i].begin(), item_to_bins[i].end(), 0);
 		for (int j = 0; j < inst.n[i+1]; j++) {
 			total_bin_cost += inst.c[i+1][j];
@@ -47,7 +46,6 @@ Solution<MLBP>::Solution(const Instance<MLBP>& inst) : item_to_bins(inst.m)
 }
 
 std::ostream& operator<<(std::ostream& os, const Solution<MLBP>& sol) {
-	// TODO
 	for (int i = 0; i < sol.item_to_bins.size(); i++) {
 		os << sol.item_to_bins[i];
 	}

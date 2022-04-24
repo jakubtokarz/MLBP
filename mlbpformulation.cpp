@@ -50,14 +50,47 @@ void MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instance<
 				item_i_in_levels += x[i][k][j];
 			}
 			bin_num += inst.n[k + 1];
+			// each item has to be exacly 1 bin in every level
 			model.add(bins_have_item_i == 1);
 			bins_have_item_i.end();
 		}	
+		// each item has to be in all the levels
 		model.add(item_i_in_levels == inst.m);
 		item_i_in_levels.end();
 	}
-
 	SOUT() << "added " << bin_num + inst.m << " constraints to enforce the packing of each item to every level" << std::endl;
+
+
+
+
+	// if items have been put into the same bin, they have to stay together from now on
+	
+	
+	//for (int k = 0; k < inst.m; k++) {
+	//	std::vector<std::vector<int>> same_bins_set;
+	//	for (int j = 0; j < inst.n[k + 1]; j++) {
+	//		std::vector<int> items_idx_in_the_same_bin;
+	//		for (int i = 0; i < inst.n[0]; i++) {
+	//			//need to somehwo evaulte x[i][k][j]
+	//			if (x[i][k][j]) {
+	//				items_idx_in_the_same_bin.push_back(i);
+	//			}	
+	//		}
+	//		same_bins_set.push_back(items_idx_in_the_same_bin);
+
+	//	}
+
+	//	for (int i = 0; i < same_bins_set.size(); i++) {
+	//		for (int j = 1; j < same_bins_set[i].size(); j++) {
+	//			//no equals for IloArray<IloNumVarArray>
+	//			model.add(x[same_bins_set[i][0]] == x[same_bins_set[i][j]]);
+	//		}
+	//	}
+	//}
+
+
+
+
 
 	// the size of the content of a bin must not exceed the bin's capacity
 	for (int k = 0; k < inst.m; k++) {
@@ -80,7 +113,7 @@ void MLBPFormulation::addObjectiveFunction(IloEnv env, IloModel model, const Ins
 	IloExpr sum(env);
 	for (int k = 0; k < inst.m; k++) {
 		for (int j = 0; j < inst.n[k+1]; j++) {
-			sum += y[k][j] * inst.c[k+1][j];
+			sum += y[k][j] * inst.c[k + 1][j];
 		}
 	}
 	model.add(IloMinimize(env, sum));
@@ -96,12 +129,20 @@ void MLBPFormulation::extractSolution(IloCplex cplex, const Instance<MLBP>& inst
 	}
 	sol.total_bin_cost = 0;
 
+	// add cost of each bin that has been used
+	for (int k = 0; k < inst.m; k++) {
+		for (int j = 0; j < inst.n[k + 1]; j++) {
+			if (cplex.getValue(y[k][j]) > 0.5) {
+				sol.total_bin_cost += inst.c[k + 1][j];
+			}
+		}
+	}
+
 	// item_to_bins[level][item] = bin
 	for (int k = 0; k < inst.m; k++) {
 		for (int i = 0; i < inst.n[0]; i++) {
 			for (int j = 0; j < inst.n[k + 1]; j++) {
 				if (cplex.getValue(x[i][k][j]) > 0.5) {
-					sol.total_bin_cost += inst.c[k+1][j];
 					sol.item_to_bins[k][i] = j;
 				}
 			}
