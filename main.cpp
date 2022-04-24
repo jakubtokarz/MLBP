@@ -118,6 +118,7 @@ int main(int argc, char* argv[])
 			SOUT() << "best objective value:\t" << inst.objective(sol) << std::endl;
 			SOUT() << "best dual bound value:\t" << sol.db << std::endl;
 			SOUT() << "optimality gap:\t" << (double)(inst.objective(sol) - sol.db) / (double)inst.objective(sol) * 100.0 << "%" << std::endl;
+			SOUT() << "solution:\n\t" << sol.item_to_bins << std::endl;
 		}
 
 		// check if solution is feasible
