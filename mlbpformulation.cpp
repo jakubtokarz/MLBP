@@ -48,6 +48,7 @@ void MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instance<
 			for (int j = 0; j < inst.n[k+1]; j++) {
 				bins_have_item_i += x[i][k][j];
 				item_i_in_levels += x[i][k][j];
+				SOUT() << "x: " << x << std::endl;
 			}
 			bin_num += inst.n[k + 1];
 			// each item has to be exacly 1 bin in every level
@@ -77,8 +78,7 @@ void MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instance<
 	//			}	
 	//		}
 	//		same_bins_set.push_back(items_idx_in_the_same_bin);
-
-	//	}
+	//}
 
 	//	for (int i = 0; i < same_bins_set.size(); i++) {
 	//		for (int j = 1; j < same_bins_set[i].size(); j++) {
@@ -103,8 +103,6 @@ void MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instance<
 		}
 	}
 	SOUT() << "added " << bin_num << " capacity constraints" << std::endl;
-
-	//sort and use BP symmetry breaking constraint?
 
 }
 
@@ -143,6 +141,7 @@ void MLBPFormulation::extractSolution(IloCplex cplex, const Instance<MLBP>& inst
 		for (int i = 0; i < inst.n[0]; i++) {
 			for (int j = 0; j < inst.n[k + 1]; j++) {
 				if (cplex.getValue(x[i][k][j]) > 0.5) {
+					//swapped idx for readability
 					sol.item_to_bins[k][i] = j;
 				}
 			}
