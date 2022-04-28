@@ -130,16 +130,16 @@ void MLBPFormulation::extractSolution(IloCplex cplex, const Instance<MLBP>& inst
 		for (int k = 1; k < inst.m + 1; k++) {
 			int res = -1;
 			for (int h = 0; h < inst.n[k]; h++) {
-				SOUT() << "x of: " << k - 1 << i << h << " = " << cplex.getValue(x[k - 1][i][h]) << std::endl;
+				//SOUT() << "x of: " << k - 1 << i << h << " = " << cplex.getValue(x[k - 1][i][h]) << std::endl;
 				if (cplex.getValue(x[k - 1][i][h]) > 0.5) {
 					res = h;
 					break;
 				}
 				
 			}
-			if (res == -1) {
-				SOUT() << "didn't find x of: " << k - 1 << i << std::endl;
-			}
+			//if (res == -1) {
+			//	SOUT() << "didn't find x of: " << k - 1 << i << std::endl;
+			//}
 			sol.item_to_bins[k - 1][j] = res;
 			i = res;
 		}
