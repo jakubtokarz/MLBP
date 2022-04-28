@@ -7,7 +7,7 @@
 
 void MLBPFormulation::createDecisionVariables(IloEnv env, const Instance<MLBP>& inst)
 {
-	// decision variables x_{ijk}
+	// decision variables x_{kij}
 	x = IloArray<IloArray<IloNumVarArray>>(env, inst.m);
 	int var_x_count = 0;
 
@@ -36,51 +36,38 @@ void MLBPFormulation::createDecisionVariables(IloEnv env, const Instance<MLBP>& 
 
 void MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instance<MLBP>& inst)
 {
+	//1. All items must be put into level 1
+	int num = 0;
+	for (int i = 0; i < inst.n[0]; i++) {
+		IloExpr sum(env);
+		for (int j = 0; j < inst.n[1]; j++) {
+			sum += x[0][i][j];
+		}
+		model.add(sum == 1);
+		sum.end();
+		num++;
+	}
+	SOUT() << "added " << num << " constraints to enforce the packing of each item" << std::endl;
 
-	//int amount_of_bins = 0;
-	//each used item/bin needs to be placed 1 bin of the next level
-	for (int k : inst.M) {
-		//amount_of_bins += inst.n[k];
+	//2. All used bins (level 1+) must be put into the next level
+	num = 0;
+	for (int k = 2; k <= inst.m; k++) {
 		for (int i = 0; i < inst.n[k - 1]; i++) {
-			IloExpr item_in_x_bins(env);
+			IloExpr sum(env); 
 			for (int j = 0; j < inst.n[k]; j++) {
-				item_in_x_bins += x[k-1][i][j]; //(x[k-1][i][j] * y[k - 1][j])
+				sum += x[k-1][i][j];
 			}
-			//wrong, forces all bins to be used no matter if they are empty or not
-			model.add(item_in_x_bins == 1); 
-			item_in_x_bins.end();
+			model.add(sum == y[k - 2][i]);
+			sum.end(); 
+			num++; 
 		}
 	}
+	SOUT() << "added " << num << " constraints to enforce the packing of each used bin to the next level" << std::endl;
 
-
-	//the amount of used bins of level k should be equal to the amount of edges between k-1 and k
-	IloExpr num_needed_edges(env);
-	num_needed_edges += inst.n[0];
-	
+	//3. All bins' capacity must be greater than the size of its contents
+	num = 0;
 	for (int k : inst.M) {
-		IloExpr num_edges_between_i_and_j(env);
-		IloExpr num_used_bins_at_level_k(env);
-
-		for (int j = 0; j < inst.n[k]; j++) {
-			num_used_bins_at_level_k += y[k - 1][j];
-			for (int i = 0; i < inst.n[k-1]; i++) {			
-				num_edges_between_i_and_j += x[k-1][i][j];
-			}
-		}
-		model.add(num_edges_between_i_and_j == num_needed_edges);
-
-		num_needed_edges *= 0; //reset
-		num_needed_edges += num_used_bins_at_level_k;
-		num_edges_between_i_and_j.end();
-		num_used_bins_at_level_k.end();
-	}
-	num_needed_edges.end();
-
-
-	//capacity constraint
-	int bin_num = 0;
-	for (int k : inst.M) {
-		bin_num += inst.n[k];
+		num += inst.n[k];
 		for (int j = 0; j < inst.n[k]; j++) {
 			IloExpr sum(env);
 			for (int i = 0; i < inst.n[k - 1]; i++) {
@@ -90,8 +77,7 @@ void MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instance<
 			sum.end();
 		}
 	}
-	SOUT() << "added " << bin_num << " capacity constraints" << std::endl;
-
+	SOUT() << "added " << num << " capacity constraints" << std::endl;
 }
 
 void MLBPFormulation::addObjectiveFunction(IloEnv env, IloModel model, const Instance<MLBP>& inst)
@@ -108,14 +94,8 @@ void MLBPFormulation::addObjectiveFunction(IloEnv env, IloModel model, const Ins
 
 void MLBPFormulation::extractSolution(IloCplex cplex, const Instance<MLBP>& inst, Solution<MLBP>& sol)
 {
-	//sol.item_to_bins.size() should equal to m
-	for (int i = 0; i < sol.item_to_bins.size(); i++) {
-		//sol.item_to_bins[i].size() should equal to amount of items (n[0])
-		sol.item_to_bins[i].assign(inst.n[0], -1);
-	}
-	sol.total_bin_cost = 0;
-
 	// add cost of each bin that has been used
+	sol.total_bin_cost = 0;
 	for (int k = 0; k < inst.m; k++) {
 		for (int j = 0; j < inst.n[k + 1]; j++) {
 			if (cplex.getValue(y[k][j]) > 0.5) {
@@ -123,6 +103,15 @@ void MLBPFormulation::extractSolution(IloCplex cplex, const Instance<MLBP>& inst
 			}
 		}
 	}
+
+	//initalize sol.item_to_bins (size = m x n[0])
+	// item_to_bins[level][item] = bin
+	for (int i = 0; i < inst.m; i++) {
+		sol.item_to_bins[i].assign(inst.n[0], -1);
+	}
+	
+
+
 
 	//for (int k = 0; k < inst.m; k++) {
 	//	for (int i = 0; i < inst.n[0]; i++) {
@@ -135,7 +124,7 @@ void MLBPFormulation::extractSolution(IloCplex cplex, const Instance<MLBP>& inst
 	//	}
 	//}
 
-	// item_to_bins[level][item] = bin
+	
 	for (int j = 0; j < inst.n[0]; j++) {
 		int i = j;
 		for (int k = 1; k < inst.m + 1; k++) {
