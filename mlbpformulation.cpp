@@ -19,8 +19,8 @@ void MLBPFormulation::createDecisionVariables(IloEnv env, const Instance<MLBP>& 
 		}
 	}
 
-	//SOUT() << "created " << bin_and_item_num << " x_{ikj} variables" << std::endl;
-	SOUT() << "created " << var_x_count << " x_{ikj} variables" << std::endl;
+	//SOUT() << "created " << bin_and_item_num << " x_{kij} variables" << std::endl;
+	SOUT() << "created " << var_x_count << " x_{kij} variables" << std::endl;
 
 	// decision variables y_{kj}
 	y = IloArray<IloNumVarArray>(env, inst.m); 
@@ -110,55 +110,32 @@ void MLBPFormulation::extractSolution(IloCplex cplex, const Instance<MLBP>& inst
 		sol.item_to_bins[i].assign(inst.n[0], -1);
 	}
 	
-
-
-
-	//for (int k = 0; k < inst.m; k++) {
-	//	for (int i = 0; i < inst.n[0]; i++) {
-	//		for (int j = 0; j < inst.n[k + 1]; j++) {
-	//			if (cplex.getValue(x[k][i][j]) > 0.5) {
-	//				//swapped idx for readability
-	//				sol.item_to_bins[k][i] = j;
-	//			}
-	//		}
-	//	}
-	//}
-
-	
 	for (int j = 0; j < inst.n[0]; j++) {
 		int i = j;
 		for (int k = 1; k < inst.m + 1; k++) {
 			int res = -1;
 			for (int h = 0; h < inst.n[k]; h++) {
-				//SOUT() << "x of: " << k - 1 << i << h << " = " << cplex.getValue(x[k - 1][i][h]) << std::endl;
 				if (cplex.getValue(x[k - 1][i][h]) > 0.5) {
 					res = h;
 					break;
 				}
-				
 			}
-			//if (res == -1) {
-			//	SOUT() << "didn't find x of: " << k - 1 << i << std::endl;
-			//}
 			sol.item_to_bins[k - 1][j] = res;
 			i = res;
 		}
 	}
 
-	SOUT() << y.getSize() << std::endl;
-	SOUT() << y[0].getSize() << std::endl;
-	for (int k = 0; k < inst.m; k++) {
-		SOUT() << "[";
-		for (int j = 0; j < inst.n[k+1]; j++) {
-			if (j > 0) {
-				SOUT() << ", ";
-			}
-			SOUT() << cplex.getValue(y[k][j]);
-		}
-		SOUT() << "]" << std::endl;
-	}
-
-
+	////printing y
+	//for (int k = 0; k < inst.m; k++) {
+	//	SOUT() << "[";
+	//	for (int j = 0; j < inst.n[k+1]; j++) {
+	//		if (j > 0) {
+	//			SOUT() << ", ";
+	//		}
+	//		SOUT() << cplex.getValue(y[k][j]);
+	//	}
+	//	SOUT() << "]" << std::endl;
+	//}
 }
 
 //int reconstruct(IloArray<IloArray<IloNumVarArray>> x, IloCplex cplex, const Instance<MLBP>& inst, int level, int item) {
