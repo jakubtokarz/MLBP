@@ -17,8 +17,8 @@ for inst in all_MLBP_instances:
         res = subprocess.run(input_str, shell=True, capture_output=True, text=True) #, timeout=1
         output = res.stdout
         err = res.stderr
-        # if err:
-        #     print("Error in " + inst + " -> " + err)
+        if err:
+            print("Error in " + inst + " -> " + err)
         #     # break
 
         try:

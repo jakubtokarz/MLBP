@@ -150,6 +150,7 @@
     <ClCompile Include="lib\lutze.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mipsolver.cpp" />
+    <ClCompile Include="mlbpccformulation.cpp" />
     <ClCompile Include="mlbpformulation.cpp" />
     <ClCompile Include="solution.cpp" />
     <ClCompile Include="solution_verifier.cpp" />
@@ -162,6 +163,7 @@
     <ClInclude Include="lib\lutze.h" />
     <ClInclude Include="lib\util.h" />
     <ClInclude Include="mipsolver.h" />
+    <ClInclude Include="mlbpccformulation.h" />
     <ClInclude Include="mlbpformulation.h" />
     <ClInclude Include="private.h" />
     <ClInclude Include="problems.h" />

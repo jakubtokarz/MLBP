@@ -28,7 +28,6 @@ template<>
 struct Solution<BP>
 {
 	Solution(const Instance<BP>& inst);
-	//std::vector<std::vector<int>> item_to_bins;
 	std::vector<int> item_to_bins;
 	int total_bins;
 	double db;  // dual bound
