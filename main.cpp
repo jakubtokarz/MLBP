@@ -179,33 +179,32 @@ int main(int argc, char* argv[])
 			SOUT() << "best objective value:\t" << inst.objective(sol) << std::endl;
 			SOUT() << "best dual bound value:\t" << sol.db << std::endl;
 			SOUT() << "optimality gap:\t" << (double)(inst.objective(sol) - sol.db) / (double)inst.objective(sol) * 100.0 << "%" << std::endl;
-			//	SOUT() << "solution item to bin:\n\t" << sol.item_to_bins << std::endl;
+			SOUT() << "solution item to bin:\n\t" << sol.item_to_bins << std::endl;
 
-			//	std::vector<std::vector<int>> bins;
-			//	for (int k : inst.M) {
-			//		bins.push_back(std::vector<int>(inst.n[k - 1], -1));
-			//	}
-			//	bins[0] = sol.item_to_bins[0];
-			//	for (int k = 1; k < inst.m; k++) {
-			//		for (int i = 0; i < inst.n[k]; i++) {
-			//			for (int j = 0; j < inst.n[k - 1]; j++) {
-			//				if (sol.item_to_bins[k - 1][j] == i) {
-			//					bins[k][i] = sol.item_to_bins[k][j];
-			//				}
-			//			}
-			//		}
-			//	}
-			//	SOUT() << "solution k-1 to k:\n\t" << bins << std::endl;
-			//}
-
-			// check if solution is feasible
-			std::vector<std::string> msg;
-			if (!SolutionVerifier<MLBPCC>::verify(inst, sol, &msg)) {
-				std::cerr << "ERROR:" << std::endl;
-				for (auto it = msg.begin(); it != msg.end(); ++it)
-					std::cerr << *it << std::endl;
-				return EXIT_FAILURE;
+				std::vector<std::vector<int>> bins;
+				for (int k : inst.M) {
+					bins.push_back(std::vector<int>(inst.n[k - 1], -1));
+				}
+				bins[0] = sol.item_to_bins[0];
+				for (int k = 1; k < inst.m; k++) {
+					for (int i = 0; i < inst.n[k]; i++) {
+						for (int j = 0; j < inst.n[k - 1]; j++) {
+							if (sol.item_to_bins[k - 1][j] == i) {
+								bins[k][i] = sol.item_to_bins[k][j];
+							}
+						}
+					}
+				}
+				SOUT() << "solution k-1 to k:\n\t" << bins << std::endl;
 			}
+
+		// check if solution is feasible
+		std::vector<std::string> msg;
+		if (!SolutionVerifier<MLBPCC>::verify(inst, sol, &msg)) {
+			std::cerr << "ERROR:" << std::endl;
+			for (auto it = msg.begin(); it != msg.end(); ++it)
+				std::cerr << *it << std::endl;
+			return EXIT_FAILURE;
 		}
 	}
 

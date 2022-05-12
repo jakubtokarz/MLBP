@@ -46,7 +46,7 @@ struct Solution<MLBP>
 {
 	Solution(const Instance<MLBP>& inst);
 	int total_bin_cost;
-	std::vector<std::vector<int>> item_to_bins;
+	std::vector<std::vector<int>> item_to_bins; // item_to_bins[level][item] = bin
 	int db;   // dual bound, set by mip solver
 };
 

@@ -78,7 +78,9 @@ Solution<MLBPCC>::Solution(const Instance<MLBPCC>& inst) : Solution<MLBP>(inst)
 }
 
 std::ostream& operator<<(std::ostream& os, const Solution<MLBPCC>& sol) {
-	// TODO
+	for (int i = 0; i < sol.item_to_bins.size(); i++) {
+		os << sol.item_to_bins[i];
+	}
 	return os;
 }
 
