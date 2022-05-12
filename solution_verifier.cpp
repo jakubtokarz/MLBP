@@ -203,13 +203,14 @@ bool SolutionVerifier<MLBPCC>::verify(const Instance<MLBPCC>& inst, const Soluti
 	}
 
 	for (int k : inst.M) {
+		int min = std::min(inst.n[0], inst.n[k]);
 		std::vector<std::vector<int>> same_bins_set;
 
 		for (int i = 0; i < inst.n[k]; i++) {
 			same_bins_set.push_back(std::vector<int>());
 		}
 
-		for (int i = 0; i < inst.n[0]; i++) {
+		for (int i = 0; i < min; i++) {
 			for (int j = 1; j < same_bins_set[i].size(); j++) {
 				//3.
 				if (sol.item_to_bins[k - 1][same_bins_set[i][0]] != sol.item_to_bins[k - 1][same_bins_set[i][j]]) {
@@ -224,7 +225,8 @@ bool SolutionVerifier<MLBPCC>::verify(const Instance<MLBPCC>& inst, const Soluti
 			}
 		}
 
-		for (int i = 0; i < inst.n[0]; i++) {
+		
+		for (int i = 0; i < min; i++) {
 			int item_or_bin_idx = sol.item_to_bins[k - 1][i];
 			same_bins_set[item_or_bin_idx].push_back(i);
 		}
