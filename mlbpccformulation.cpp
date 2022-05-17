@@ -78,6 +78,48 @@ void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instanc
 		}
 	}
 	SOUT() << "added " << num << " capacity constraints" << std::endl;
+
+	//4. conflicting items can't share a bin
+
+	//conflicting items can't share the same bin in level 1
+	for (int j = 0; j < inst.n[1]; j++) {
+		for (int a = 0; a < inst.n[0] - 1; a++) {
+			for (int b = a + 1; b < inst.n[0]; b++) {
+				if (inst.conflict[a][b] == 1) {
+					model.add(!(x[0][a][j] == 1 && x[0][b][j] == 1));
+				}
+			}
+		}
+	}
+
+	//additional data strucutre of conliciting bins?? - nah
+
+	////conflicting bins can't share the same bin in levels 2+
+	//for (int k = 2; k <= inst.m; k++) {
+	//	for (int j = 0; j < inst.n[k]; j++) {
+	//		for (int a = 0; a < inst.n[k-1] - 1; a++) {
+	//			for (int b = a + 1; b < inst.n[k-1]; b++) {
+	//				int item_in_a_idx = -1; //idx of item that goes to bin a
+	//				int item_in_b_idx = -1; //idx of item that goes to bin b
+	//				if (inst.conflict[item_in_a_idx][item_in_b_idx] == 1) {
+	//					model.add(x[k-1][a][j] != 1 || x[k-1][b][j] != 1);
+	//				}
+	//			}
+	//		}
+	//	}
+	//}
+
+
+		//IloExpr sum(env);
+		//for (int a = 0; a < inst.n[0]; a++) {
+		//	sum += x[1][a][j];
+		//}
+		//model.add(sum == ())
+
+	//if a and b are conflicting
+	//inst.conflict[a][b] == 1
+	//then they cannot be put into the same bin
+	//x[k][a][j] != x[k][b][j]
 }
 
 void MLBPCCFormulation::addObjectiveFunction(IloEnv env, IloModel model, const Instance<MLBPCC>& inst)
