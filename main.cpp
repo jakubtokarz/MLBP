@@ -15,10 +15,17 @@
 #include "solution_verifier.h"  // verifies if a solution is feasible with respect to a given instance object
 
 // MIP stuff
+<<<<<<< HEAD
 #include "mipsolver.h"			// generic mip solver, uses CPLEX to solve mips
 #include "bpformulation.h"		// mip formulation for the bin packing problem
 #include "mlbpformulation.h"	// mip formulation for the multi-level bin packing problem
 #include "mlbpccformulation.h"  // mip formulation for the multi-level bin packing problem with conflict constraints
+=======
+#include "mipsolver.h"			 // generic mip solver, uses CPLEX to solve mips
+#include "bpformulation.h"		 // mip formulation for the bin packing problem
+#include "mlbpformulation.h"	 // mip formulation 1 for the multi-level bin packing problem
+#include "nf_mlbpformulation.h"  // mip formulation 2 for the multi-level bin packing problem
+>>>>>>> b6fd7b14d2bbf0d7b508ac34b4ba934d93568629
 
 
 int main(int argc, char* argv[])
@@ -110,6 +117,7 @@ int main(int argc, char* argv[])
 		mip_solver.setThreads(arg_parser.get<int>("threads"));  // number of used threads, should always be one for our experiments
 
 		mip_solver.setFormulation<MLBPFormulation>();  // set MIP formulation
+		//mip_solver.setFormulation<NF_MLBPFormulation>();  // set MIP formulation
 
 		/**************************************************************/
 		auto status = mip_solver.run(inst, sol);  /** run MIP solver **/

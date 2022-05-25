@@ -56,15 +56,16 @@ bool SolutionVerifier<MLBP>::verify(const Instance<MLBP>& inst, const Solution<M
 {
 	bool ret = true;
 
-	//1. All items are in the top bins
+	//1. All items are in the bins of every level
 	//2. No bin contents exceed its capacity
 	//3. Once items/bins have been put into the same bin, they have to stay together in all the upcoming bins
 
+
 	std::vector<std::vector<int>> bins;  // size of each bin
-	std::vector<std::vector<bool>> used_bins;
+	std::vector<std::vector<bool>> used_binsItems;
 	for (int k : inst.M) {
 		bins.push_back(std::vector<int> (inst.n[k], 0));
-		used_bins.push_back(std::vector<bool>(inst.n[k-1], false));
+		used_binsItems.push_back(std::vector<bool>(inst.n[k-1], false)); //correct
 		for (int i = 0; i < inst.n[0]; i++) {
 			int curr = i;
 			if (k > 1) {
@@ -72,16 +73,17 @@ bool SolutionVerifier<MLBP>::verify(const Instance<MLBP>& inst, const Solution<M
 			}
 			int bin_idx = sol.item_to_bins[k-1][i];
 			//1.
-			if (k == inst.m && bin_idx < 0) {
+			if (bin_idx < 0) {
 				if (error_msg) {
 					std::stringstream ss;
-					ss << "Item " << i << " is not assigned to any bin in the top level.";
+					ss << "Item " << i << " has not been assigned to any bin at level " << k;
 					error_msg->push_back(ss.str());
 				}
 				ret = false;
+				return ret;
 			}
-			if (!used_bins[k - 1][curr]) {
-				used_bins[k - 1][curr] = true;
+			if (!used_binsItems[k - 1][curr]) {
+				used_binsItems[k - 1][curr] = true;
 				bins[k - 1][bin_idx] += inst.s[k - 1][curr];
 			}
 			
@@ -113,7 +115,7 @@ bool SolutionVerifier<MLBP>::verify(const Instance<MLBP>& inst, const Solution<M
 					if (error_msg) {
 						std::stringstream ss;
 						ss << "Items [" << same_bins_set[i][0] << ", " << same_bins_set[i][j] << "]" <<
-							" where put together in level " << k-1 << ", but are in seperate bins in level " << k;
+							" were put together in level " << k-1 << ", but are in seperate bins in level " << k;
 						error_msg->push_back(ss.str());
 					}
 					ret = false;
@@ -127,6 +129,46 @@ bool SolutionVerifier<MLBP>::verify(const Instance<MLBP>& inst, const Solution<M
 		}
 	}
 
+	/*{
+	std::vector<std::vector<int>> bins;
+	std::vector<std::vector<bool>> used_bins;
+	for (int k : inst.M) {
+		bins.push_back(std::vector<int>(inst.n[k], 0));
+		used_bins.push_back(std::vector<bool>(inst.n[k], false));
+	}
+	for (int i = 0; i < inst.n[0]; i++) {
+		int next_level_idx = i;
+		
+		for (int k = 1; k <= inst.m; k++) {
+			int prev = next_level_idx;
+			next_level_idx = sol.item_to_bins[k-1][next_level_idx];
+			//1. //needs to be fixed TODO
+			if (next_level_idx == -1) {
+				if (error_msg) {
+					std::stringstream ss;
+					ss << "Item " << i << " is not assigned to any bin in the top level.";
+					error_msg->push_back(ss.str());
+				}
+				ret = false;
+				break;
+			}
+			if (!used_bins[k - 1][next_level_idx]) {
+				used_bins[k - 1][next_level_idx] = true;
+				bins[k - 1][next_level_idx] += inst.s[k - 1][prev];
+			}	
+			//2.
+			if (bins[k - 1][next_level_idx] > inst.w[k][next_level_idx]) {
+				if (error_msg) {
+					std::stringstream ss;
+					ss << "Bin " << next_level_idx << " at level " << k << " with contents of size " << bins[k - 1][next_level_idx] << " exceeds maximum capaicty (" << inst.w[k][next_level_idx] << ").";
+					error_msg->push_back(ss.str());
+				}
+				ret = false;
+			}
+
+		}
+	}
+	*/
 	return ret;
 }
 

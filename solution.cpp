@@ -34,12 +34,13 @@ std::ostream& operator<<(std::ostream& os, const Solution<BP>& sol)
 //{
 //}
 
-Solution<MLBP>::Solution(const Instance<MLBP>& inst) : item_to_bins(inst.m)
+Solution<MLBP>::Solution(const Instance<MLBP>& inst)
 {
 	total_bin_cost = 0;
 	for (int k = 0; k < inst.m; k++) {
-		std::iota(item_to_bins[k].begin(), item_to_bins[k].end(), 0);
+		item_to_bins.push_back(std::vector<int>(inst.n[0], -1));
 		for (int j = 0; j < inst.n[k+1]; j++) {
+
 			total_bin_cost += inst.c[k+1][j];
 		}
 	}

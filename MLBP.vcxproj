@@ -152,11 +152,13 @@
     <ClCompile Include="mipsolver.cpp" />
     <ClCompile Include="mlbpccformulation.cpp" />
     <ClCompile Include="mlbpformulation.cpp" />
+    <ClCompile Include="nf_mlbpformulation.cpp" />
     <ClCompile Include="solution.cpp" />
     <ClCompile Include="solution_verifier.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bpformulation.h" />
+    <ClInclude Include="nf_mlbpformulation.h" />
     <ClInclude Include="instance.h" />
     <ClInclude Include="lib\argparser.h" />
     <ClInclude Include="lib\log.h" />
