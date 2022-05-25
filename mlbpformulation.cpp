@@ -82,18 +82,37 @@ void MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instance<
 	//----------------------------------------------------------------------
 	// implicated LP-Relaxation constraint that can improve the performance
 
-	// Every connection between i and j should be less than or equal to whether bin j is used for all k
-	num = 0;
-	for (int k = 2; k <= inst.m; k++) {
-		
-			for (int i = 0; i < inst.n[k - 1]; i++) {
-				for (int j = 0; j < inst.n[k]; j++) {
-				model.add(x[k][i][j] <= y[k - 1][i]);
-				num++;
-			}
-		}
-	}
-	MIP_OUT(TRACE) << "added " << num << " constraints to enforce LP x-y relaxation" << std::endl;
+	//Every connection between i and j should be less than or equal to whether bin j is used for all k
+	//num = 0;
+	//for (int k = 2; k <= inst.m; k++) {
+	//	
+	//		for (int i = 0; i < inst.n[k - 1]; i++) {
+	//			for (int j = 0; j < inst.n[k]; j++) {
+	//			model.add(x[k][i][j] <= y[k - 1][i]);
+	//			num++;
+	//		}
+	//	}
+	//}
+	//MIP_OUT(TRACE) << "added " << num << " constraints to enforce LP x-y relaxation" << std::endl;
+
+	////----------------------------------------------------------------------
+	////Symmetry breaking constraints
+
+	////1. If bin j is better than or as good as bin j+1, use bin j first
+	//num = 0;
+	//for (int k = 1; k <= inst.m; k++) {
+	//	for (int j = 0; j < inst.n[k]; j++) {
+	//		for (int q = 0; j < inst.n[k]; j++) {
+	//			if (j == q)continue;
+	//			if (inst.s[k][j] >= inst.s[k][q] && inst.w[k][j] >= inst.w[k][q] && inst.c[k][j] <= inst.c[k][q]) {
+	//				model.add(y[k][j] >= y[k][q]);
+	//			}
+	//			num++;
+	//		}
+	//	}
+	//}
+	//		
+	//MIP_OUT(TRACE) << "added " << num << " better bin symmetry breaking constraints" << std::endl;
 }
 
 void MLBPFormulation::addObjectiveFunction(IloEnv env, IloModel model, const Instance<MLBP>& inst)
