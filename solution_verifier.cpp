@@ -59,8 +59,6 @@ bool SolutionVerifier<MLBP>::verify(const Instance<MLBP>& inst, const Solution<M
 	//1. All items are in the bins of every level
 	//2. No bin contents exceed its capacity
 	//3. Once items/bins have been put into the same bin, they have to stay together in all the upcoming bins
-
-
 	std::vector<std::vector<int>> bins;  // size of each bin
 	std::vector<std::vector<bool>> used_binsItems;
 	for (int k : inst.M) {
@@ -194,6 +192,7 @@ bool SolutionVerifier<CCMLBP>::verify(const Instance<CCMLBP>& inst, const Soluti
 /*************************************************************************************************/
 bool SolutionVerifier<MLBPCC>::verify(const Instance<MLBPCC>& inst, const Solution<MLBPCC>& sol, std::vector<std::string>* error_msg)
 {
+		//TODO fix this (from fixed MLBP)
 	bool ret = true;
 
 	//1. All items are in the top bins
@@ -273,15 +272,15 @@ bool SolutionVerifier<MLBPCC>::verify(const Instance<MLBPCC>& inst, const Soluti
 		}
 	}
 
-	for (int j = 0; j < inst.conflict.size()-1; j++) {
-		for (int q = j+1; q < inst.conflict[0].size(); q++) {
+	for (int j = 0; j < inst.conflict.size() - 1; j++) {
+		for (int q = j + 1; q < inst.conflict[0].size(); q++) {
 			if (inst.conflict[j][q] == 1) {
 				//4.
-				if (sol.item_to_bins[inst.m-1][j] == sol.item_to_bins[inst.m-1][q]) {
+				if (sol.item_to_bins[inst.m - 1][j] == sol.item_to_bins[inst.m - 1][q]) {
 					if (error_msg) {
 						std::stringstream ss;
 						ss << "Items [" << j << " and " << q << "]" <<
-							" are conflicting and were put in the same bin (" << sol.item_to_bins[inst.m-1][j] << ") of the last level";
+							" are conflicting and were put in the same bin (" << sol.item_to_bins[inst.m - 1][j] << ") of the last level";
 						error_msg->push_back(ss.str());
 					}
 					ret = false;

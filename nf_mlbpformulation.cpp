@@ -157,7 +157,7 @@ void NF_MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instan
 		for (int i = 0; i < inst.n[k - 1]; i++) {
 			for (int j = 0; j < inst.n[k]; j++) {
 				model.add(x[k][i][j] <= y[k - 1][i]);
-				model.add(f[k][i][j] <= y[k - 1][i] * inst.n[0]);
+				//model.add(f[k][i][j] <= y[k - 1][i] * inst.n[0]);
 				
 				num+=2;
 			}
@@ -170,7 +170,8 @@ void NF_MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instan
 	for (int k = 1; k <= inst.m; k++) {
 		for (int i = 0; i < inst.n[k - 1]; i++) {
 			for (int j = 0; j < inst.n[k]; j++) {
-				model.add((x[k][i][j] == 0 && f[k][i][j] == 0) || (x[k][i][j] == 1 && f[k][i][j] > 0));
+				model.add(f[k][i][j] <= x[k][i][j] * inst.n[0]);
+				//model.add((x[k][i][j] == 0 && f[k][i][j] == 0) || (x[k][i][j] == 1 && f[k][i][j] > 0));
 				num++;
 			}
 		}

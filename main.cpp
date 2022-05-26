@@ -110,8 +110,8 @@ int main(int argc, char* argv[])
 		mip_solver.setTimeLimit(arg_parser.get<int>("ttime"));  // set time limit; 0 -> no time limit
 		mip_solver.setThreads(arg_parser.get<int>("threads"));  // number of used threads, should always be one for our experiments
 
-		mip_solver.setFormulation<MLBPFormulation>();  // set MIP formulation
-		//mip_solver.setFormulation<NF_MLBPFormulation>();  // set MIP formulation
+		//mip_solver.setFormulation<MLBPFormulation>();  // set MIP formulation
+		mip_solver.setFormulation<NF_MLBPFormulation>();  // set MIP formulation
 
 		/**************************************************************/
 		auto status = mip_solver.run(inst, sol);  /** run MIP solver **/
@@ -155,7 +155,6 @@ int main(int argc, char* argv[])
 		/*****************************************************************************************/
 		/** Multi-Level Bin Packing Problem with Conflict Constraints ****************************/
 		/*****************************************************************************************/
-		SOUT() << "Hiiii-1" << std::endl;
 
 		Instance<MLBPCC> inst(instance_filename);  // read MLBPCC instance
 

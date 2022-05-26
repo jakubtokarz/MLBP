@@ -8,13 +8,13 @@
 void MLBPCCFormulation::createDecisionVariables(IloEnv env, const Instance<MLBPCC>& inst)
 {
 	// decision variables x_{kij}
-	x = IloArray<IloArray<IloNumVarArray>>(env, inst.m);
+	x = IloArray<IloArray<IloNumVarArray>>(env, inst.m + 1);
 	int var_x_count = 0;
 
 	for (int k : inst.M) {
-		x[k - 1] = IloArray<IloNumVarArray>(env, inst.n[k - 1]);
+		x[k] = IloArray<IloNumVarArray>(env, inst.n[k - 1]);
 		for (int i = 0; i < inst.n[k - 1]; i++) {
-			x[k - 1][i] = IloNumVarArray(env, inst.n[k], 0, 1, ILOBOOL);
+			x[k][i] = IloNumVarArray(env, inst.n[k], 0, 1, ILOBOOL);
 			var_x_count += inst.n[k];
 		}
 	}
@@ -23,15 +23,30 @@ void MLBPCCFormulation::createDecisionVariables(IloEnv env, const Instance<MLBPC
 	SOUT() << "created " << var_x_count << " x_{kij} variables" << std::endl;
 
 	// decision variables y_{kj}
-	y = IloArray<IloNumVarArray>(env, inst.m);
+	y = IloArray<IloNumVarArray>(env, inst.m + 1);
 	int amount_of_bins = 0;
 
 	for (int k : inst.M) {
-		y[k - 1] = IloNumVarArray(env, inst.n[k], 0, 1, ILOBOOL);
+		y[k] = IloNumVarArray(env, inst.n[k], 0, 1, ILOBOOL);
 		amount_of_bins += inst.n[k];
 	}
 
 	SOUT() << "created " << amount_of_bins << " y_{kj} variables" << std::endl;
+
+	// decision variables c_{kij}
+	c = IloArray<IloArray<IloNumVarArray>>(env, inst.m + 1);
+	int var_c_count = 0;
+
+	for (int k : inst.M) {
+		c[k] = IloArray<IloNumVarArray>(env, inst.n[0]);
+		for (int i = 0; i < inst.n[0]; i++) {
+			c[k][i] = IloNumVarArray(env, inst.n[k], 0, 1, ILOBOOL);
+			var_c_count += inst.n[k];
+		}
+	}
+
+	//SOUT() << "created " << bin_and_item_num << " c_{kij} variables" << std::endl;
+	SOUT() << "created " << var_c_count << " c_{kij} variables" << std::endl;
 }
 
 void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instance<MLBPCC>& inst)
@@ -41,7 +56,7 @@ void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instanc
 	for (int i = 0; i < inst.n[0]; i++) {
 		IloExpr sum(env);
 		for (int j = 0; j < inst.n[1]; j++) {
-			sum += x[0][i][j];
+			sum += x[1][i][j];
 		}
 		model.add(sum == 1);
 		sum.end();
@@ -55,9 +70,9 @@ void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instanc
 		for (int i = 0; i < inst.n[k - 1]; i++) {
 			IloExpr sum(env);
 			for (int j = 0; j < inst.n[k]; j++) {
-				sum += x[k - 1][i][j];
+				sum += x[k][i][j];
 			}
-			model.add(sum == y[k - 2][i]);
+			model.add(sum == y[k - 1][i]);
 			sum.end();
 			num++;
 		}
@@ -71,26 +86,68 @@ void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instanc
 		for (int j = 0; j < inst.n[k]; j++) {
 			IloExpr sum(env);
 			for (int i = 0; i < inst.n[k - 1]; i++) {
-				sum += x[k - 1][i][j] * inst.s[k - 1][i];
+				sum += x[k][i][j] * inst.s[k - 1][i];
 			}
-			model.add(sum <= y[k - 1][j] * inst.w[k][j]);
+			model.add(sum <= y[k][j] * inst.w[k][j]);
 			sum.end();
 		}
 	}
 	SOUT() << "added " << num << " capacity constraints" << std::endl;
 
-	//4. conflicting items can't share a bin
+	//-------------------------------
+	//4. Populate c
 
-	//conflicting items can't share the same bin in level 1
-	for (int j = 0; j < inst.n[1]; j++) {
-		for (int a = 0; a < inst.n[0] - 1; a++) {
-			for (int b = a + 1; b < inst.n[0]; b++) {
-				if (inst.conflict[a][b] == 1) {
-					model.add(!(x[0][a][j] == 1 && x[0][b][j] == 1));
+	//a) If there is a connection between item a and bin j of level 1, then item a is in bin j of level 1
+	num = 0;
+	for (int a = 0; a < inst.n[0]; a++) {
+		for (int j = 0; j < inst.n[1]; j++) {
+			model.add(x[1][a][j] <= x[1][a][j] * c[1][a][j]);
+			num++;
+		}
+	}
+	//SOUT() << "added " << num << " constraints to enforce the packing of each item" << std::endl;
+
+	//b) If there is a connection between bin i of level k-1 and bin j of level k and item a is in bin i of level k-1, 
+	//then item a needs to be in a bin j of level k
+	num = 0;
+	for (int k = 2; k <= inst.m; k++) {
+		for (int i = 0; i < inst.n[k-1]; i++) {
+			for (int j = 0; j < inst.n[k]; j++) {
+				for (int a = 0; a < inst.n[0]; a++) {
+					model.add(x[k][i][j] * c[k-1][a][i] <= x[k][i][j] * c[k][a][j]);
+					num++;
 				}
 			}
 		}
 	}
+	//-------------------------------
+
+	//5. If item a and item b are conflicting, they cannot be in the same bin j for all the levels
+	for (int k : inst.M) {
+		for (int j = 0; j < inst.n[k]; j++) {
+			for (int a = 0; a < inst.n[0]-1; a++) {
+				for (int b = a+1; b < inst.n[0]; b++) {
+					model.add(inst.conflict[a][b] + c[k][a][j] + c[k][b][j] < 3);
+				}
+			}			
+		}
+	}
+
+
+
+
+	//4. conflicting items can't share a bin
+
+	////conflicting items can't share the same bin in level 1
+	//for (int j = 0; j < inst.n[1]; j++) {
+	//	for (int a = 0; a < inst.n[0] - 1; a++) {
+	//		for (int b = a + 1; b < inst.n[0]; b++) {
+	//			if (inst.conflict[a][b] == 1) {
+	//				model.add(!(x[0][a][j] == 1 && x[0][b][j] == 1));
+	//			}
+	//		}
+	//	}
+	//}
 
 	//additional data strucutre of conliciting bins?? - nah
 
@@ -127,7 +184,7 @@ void MLBPCCFormulation::addObjectiveFunction(IloEnv env, IloModel model, const I
 	IloExpr sum(env);
 	for (int k : inst.M) {
 		for (int j = 0; j < inst.n[k]; j++) {
-			sum += y[k - 1][j] * inst.c[k][j];
+			sum += y[k][j] * inst.c[k][j];
 		}
 	}
 	model.add(IloMinimize(env, sum));
@@ -138,10 +195,10 @@ void MLBPCCFormulation::extractSolution(IloCplex cplex, const Instance<MLBPCC>& 
 {
 	// add cost of each bin that has been used
 	sol.total_bin_cost = 0;
-	for (int k = 0; k < inst.m; k++) {
-		for (int j = 0; j < inst.n[k + 1]; j++) {
+	for (int k : inst.M) {
+		for (int j = 0; j < inst.n[k]; j++) {
 			if (cplex.getValue(y[k][j]) > 0.5) {
-				sol.total_bin_cost += inst.c[k + 1][j];
+				sol.total_bin_cost += inst.c[k][j];
 			}
 		}
 	}
@@ -157,7 +214,7 @@ void MLBPCCFormulation::extractSolution(IloCplex cplex, const Instance<MLBPCC>& 
 		for (int k = 1; k < inst.m + 1; k++) {
 			int res = -1;
 			for (int h = 0; h < inst.n[k]; h++) {
-				if (cplex.getValue(x[k - 1][i][h]) > 0.5) {
+				if (cplex.getValue(x[k][i][h]) > 0.5) {
 					res = h;
 					break;
 				}
@@ -166,5 +223,17 @@ void MLBPCCFormulation::extractSolution(IloCplex cplex, const Instance<MLBPCC>& 
 			i = res;
 		}
 	}
+
+	////printing y
+	//for (int k = 0; k < inst.m; k++) {
+	//	SOUT() << "[";
+	//	for (int j = 0; j < inst.n[k+1]; j++) {
+	//		if (j > 0) {
+	//			SOUT() << ", ";
+	//		}
+	//		SOUT() << cplex.getValue(y[k][j]);
+	//	}
+	//	SOUT() << "]" << std::endl;
+	//}
 }
 
