@@ -1,4 +1,3 @@
-import os
 import subprocess
 from itertools import takewhile
 from tqdm import tqdm
@@ -6,23 +5,23 @@ from tqdm import tqdm
 # n_trials = 5
 
 MLBP_instances = []
-# n = [50]
+n = [20,30,40]
 # m = [3,4,5]
 # n = [100]
 m = [3,4,5]
 inst = [0,1,2,3,4]
 
-# for i in n:
-for j in m:
-    for k in inst:
-        MLBP_instances.append("n0100_m0{}__00{}.inst".format(j,k))
+for i in n:
+    for j in m:
+        for k in inst:
+            MLBP_instances.append("n00{}_m0{}__00{}.inst".format(i,j,k))
 
-# MLBP_instances.remove("n0030_m03__000.inst")
+# MLBP_instances.remove("n0040_m03__001.inst")
 # MLBP_instances.append("n0030_m03__000.inst") #for reference
 
 t = 0
-
-file = open("ticks_MLBP_raw_{}.txt".format(t), "a")
+filename = "ticks_NF_old_1-new.txt".format()
+file = open(filename, "a")
 
 result="-------------------------------\n"
 file.write(result)
@@ -30,7 +29,7 @@ file.write(result)
 
 
 for inst in tqdm(MLBP_instances):
-    input_str = ".\\x64\\Debug\\MLBP.exe ifile inst\\mlbp\\{} prob MLBP ttime {}".format(inst, t)
+    input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbp\\{} prob MLBP ttime {}".format(inst, t)
 
     # n_avg = 0
     # for i in range(n_trials):
