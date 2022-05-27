@@ -140,7 +140,7 @@ bool SolutionVerifier<MLBP>::verify(const Instance<MLBP>& inst, const Solution<M
 	}
 	for (int i = 0; i < inst.n[0]; i++) {
 		int next_level_idx = i;
-		
+
 		for (int k = 1; k <= inst.m; k++) {
 			int prev = next_level_idx;
 			next_level_idx = sol.item_to_bins[k-1][next_level_idx];
@@ -157,7 +157,7 @@ bool SolutionVerifier<MLBP>::verify(const Instance<MLBP>& inst, const Solution<M
 			if (!used_bins[k - 1][next_level_idx]) {
 				used_bins[k - 1][next_level_idx] = true;
 				bins[k - 1][next_level_idx] += inst.s[k - 1][prev];
-			}	
+			}
 			//2.
 			if (bins[k - 1][next_level_idx] > inst.w[k][next_level_idx]) {
 				if (error_msg) {

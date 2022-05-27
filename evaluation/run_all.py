@@ -2,7 +2,7 @@ import os
 import subprocess
 from itertools import takewhile
 
-all_MLBP_instances = os.listdir('inst\\mlbp')
+all_MLBP_instances = os.listdir('..\\inst\\mlbp')
 
 t = 1
 opt_count = 0
@@ -11,7 +11,7 @@ idk_count = 0
 result = ""
 
 for inst in all_MLBP_instances:
-    input_str = ".\\x64\\Debug\\MLBP.exe ifile inst\\mlbp\\{} prob MLBP ttime {}".format(inst, t)
+    input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbp\\{} prob MLBP ttime {}".format(inst, t)
 
     try:
         res = subprocess.run(input_str, shell=True, capture_output=True, text=True) #, timeout=1

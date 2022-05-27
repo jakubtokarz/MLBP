@@ -151,19 +151,16 @@ void NF_MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instan
 	// implicated LP-Relaxation constraint that can improve the performance
 
 	//Every connection between i and j should be less than or equal to whether bin i is used for all k
-	//Flow between i and j should be less than or equal to whether bin i is used for all k
 	num = 0;
 	for (int k = 2; k <= inst.m; k++) {
 		for (int i = 0; i < inst.n[k - 1]; i++) {
 			for (int j = 0; j < inst.n[k]; j++) {
 				model.add(x[k][i][j] <= y[k - 1][i]);
-				//model.add(f[k][i][j] <= y[k - 1][i] * inst.n[0]);
-				
-				num+=2;
+				num++;
 			}
 		}
 	}
-	MIP_OUT(TRACE) << "added " << num << " constraints to enforce LP f-y and x-y relaxation" << std::endl;
+	MIP_OUT(TRACE) << "added " << num << " constraints to enforce LP x-y relaxation" << std::endl;
 
 	// Every connection between i and j should be active/inactive for both x and f
 	num = 0;
@@ -171,7 +168,6 @@ void NF_MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instan
 		for (int i = 0; i < inst.n[k - 1]; i++) {
 			for (int j = 0; j < inst.n[k]; j++) {
 				model.add(f[k][i][j] <= x[k][i][j] * inst.n[0]);
-				//model.add((x[k][i][j] == 0 && f[k][i][j] == 0) || (x[k][i][j] == 1 && f[k][i][j] > 0));
 				num++;
 			}
 		}
