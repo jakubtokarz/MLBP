@@ -64,7 +64,7 @@ Solution<CCMLBP>::Solution(const Instance<CCMLBP>& inst) : Solution<MLBP>(inst)
 }
 
 std::ostream& operator<<(std::ostream& os, const Solution<CCMLBP>& sol) {
-	// TODO
+	// TOD
 	return os;
 }
 
@@ -79,7 +79,9 @@ Solution<MLBPCC>::Solution(const Instance<MLBPCC>& inst) : Solution<MLBP>(inst)
 }
 
 std::ostream& operator<<(std::ostream& os, const Solution<MLBPCC>& sol) {
-	// TODO
+	for (int i = 0; i < sol.item_to_bins.size(); i++) {
+		os << sol.item_to_bins[i];
+	}
 	return os;
 }
 
@@ -94,7 +96,7 @@ Solution<MLBPPO>::Solution(const Instance<MLBPPO>& inst) : Solution<MLBP>(inst)
 }
 
 std::ostream& operator<<(std::ostream& os, const Solution<MLBPPO>& sol) {
-	// TODO
+	// TOD
 	return os;
 }
 
@@ -109,7 +111,7 @@ Solution<MLBPTW>::Solution(const Instance<MLBPTW>& inst) : Solution<MLBP>(inst)
 }
 
 std::ostream& operator<<(std::ostream& os, const Solution<MLBPTW>& sol) {
-	// TODO
+	// TOD
 	return os;
 }
 
@@ -124,7 +126,7 @@ Solution<MLBPFC>::Solution(const Instance<MLBPFC>& inst) : Solution<MLBP>(inst)
 }
 
 std::ostream& operator<<(std::ostream& os, const Solution<MLBPFC>& sol) {
-	// TODO
+	// TOD
 	return os;
 }
 

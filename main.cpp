@@ -15,10 +15,11 @@
 #include "solution_verifier.h"  // verifies if a solution is feasible with respect to a given instance object
 
 // MIP stuff
-#include "mipsolver.h"			 // generic mip solver, uses CPLEX to solve mips
-#include "bpformulation.h"		 // mip formulation for the bin packing problem
-#include "mlbpformulation.h"	 // mip formulation 1 for the multi-level bin packing problem
-#include "nf_mlbpformulation.h"  // mip formulation 2 for the multi-level bin packing problem
+#include "mipsolver.h"			// generic mip solver, uses CPLEX to solve mips
+#include "bpformulation.h"		// mip formulation for the bin packing problem
+#include "mlbpformulation.h"	// mip formulation for the multi-level bin packing problem
+#include "nf_mlbpformulation.h" // mip formulation 2 for the multi-level bin packing problem
+#include "mlbpccformulation.h"  // mip formulation for the multi-level bin packing problem with conflict constraints
 
 
 int main(int argc, char* argv[])
@@ -32,7 +33,9 @@ int main(int argc, char* argv[])
 
 	try {
 		arg_parser.add<std::string>("ifile", "Input file", "inst/bp/bp1.inst");
-		arg_parser.add<std::string>("prob", "Problem: Bin Packing (BP), Multi-Level Bin Packing (MLBP)", "BP", {"BP", "MLBP"});
+		arg_parser.add<std::string>("prob", 
+			"Problem: Bin Packing (BP), Multi-Level Bin Packing (MLBP), Multi-Level Bin Packing Problem with Conflict Constraints (MLBPCC)", 
+			"BP", {"BP", "MLBP", "MLBPCC"});
 		arg_parser.add<int>("ttime", "total time limit", 0, 0, std::numeric_limits<int>::max());
 		arg_parser.add<int>("threads", "Number of used threads", 1, 0, 100);
 
@@ -142,6 +145,63 @@ int main(int argc, char* argv[])
 		// check if solution is feasible
 		std::vector<std::string> msg;
 		if (!SolutionVerifier<MLBP>::verify(inst, sol, &msg)) {
+			std::cerr << "ERROR:" << std::endl;
+			for (auto it = msg.begin(); it != msg.end(); ++it)
+				std::cerr << *it << std::endl;
+			return EXIT_FAILURE;
+		}
+	}
+	else if (arg_parser.get<std::string>("prob") == "MLBPCC") {
+		/*****************************************************************************************/
+		/** Multi-Level Bin Packing Problem with Conflict Constraints ****************************/
+		/*****************************************************************************************/
+
+		Instance<MLBPCC> inst(instance_filename);  // read MLBPCC instance
+
+		SOUT() << "instance: " << instance_filename << std::endl;
+		SOUT() << "\t" << inst << std::endl;
+
+		Solution<MLBPCC> sol(inst);  // create empty MLBPCC solution
+
+		// setup MIP solver
+		MIPSolver<MLBPCC> mip_solver;
+		mip_solver.setTimeLimit(arg_parser.get<int>("ttime"));  // set time limit; 0 -> no time limit
+		mip_solver.setThreads(arg_parser.get<int>("threads"));  // number of used threads, should always be one for our experiments
+
+		mip_solver.setFormulation<MLBPCCFormulation>();  // set MIP formulation
+
+		/**************************************************************/
+		auto status = mip_solver.run(inst, sol);  /** run MIP solver **/
+		/**************************************************************/
+
+		if (status == MIPSolver<MLBPCC>::Feasible || status == MIPSolver<MLBPCC>::Optimal) {
+			SOUT() << std::endl;
+			SOUT() << "# best solution:" << std::endl;
+			SOUT() << "best objective value:\t" << inst.objective(sol) << std::endl;
+			SOUT() << "best dual bound value:\t" << sol.db << std::endl;
+			SOUT() << "optimality gap:\t" << (double)(inst.objective(sol) - sol.db) / (double)inst.objective(sol) * 100.0 << "%" << std::endl;
+			SOUT() << "solution item to bin:\n\t" << sol.item_to_bins << std::endl;
+
+				std::vector<std::vector<int>> bins;
+				for (int k : inst.M) {
+					bins.push_back(std::vector<int>(inst.n[k - 1], -1));
+				}
+				bins[0] = sol.item_to_bins[0];
+				for (int k = 1; k < inst.m; k++) {
+					for (int i = 0; i < inst.n[k]; i++) {
+						for (int j = 0; j < inst.n[k - 1]; j++) {
+							if (sol.item_to_bins[k - 1][j] == i) {
+								bins[k][i] = sol.item_to_bins[k][j];
+							}
+						}
+					}
+				}
+				SOUT() << "solution k-1 to k:\n\t" << bins << std::endl;
+			}
+
+		// check if solution is feasible
+		std::vector<std::string> msg;
+		if (!SolutionVerifier<MLBPCC>::verify(inst, sol, &msg)) {
 			std::cerr << "ERROR:" << std::endl;
 			for (auto it = msg.begin(); it != msg.end(); ++it)
 				std::cerr << *it << std::endl;

@@ -5,22 +5,26 @@ from tqdm import tqdm
 # n_trials = 5
 
 MLBP_instances = []
-n = [20,30,40]
-# m = [3,4,5]
-# n = [100]
-m = [3,4,5]
+MLBPCC_instances = []
+
+n = ['05', '10']
+m = [3,4]
+p = [25,50]
 inst = [0,1,2,3,4]
 
 for i in n:
     for j in m:
-        for k in inst:
-            MLBP_instances.append("n00{}_m0{}__00{}.inst".format(i,j,k))
+        for l in p:
+            for k in inst:
+                # MLBP_instances.append("n00{}_m0{}__00{}.inst".format(i,j,k))
+                MLBPCC_instances.append("n00{}_m0{}_p0{}__00{}.inst".format(i, j, l, k))
 
 # MLBP_instances.remove("n0040_m03__001.inst")
 # MLBP_instances.append("n0030_m03__000.inst") #for reference
+# print(MLBPCC_instances)
 
 t = 0
-filename = "ticks_NF_old_1-new.txt".format()
+filename = "ticks_MLBPCC_MLBP.txt".format()
 file = open(filename, "a")
 
 result="-------------------------------\n"
@@ -28,8 +32,9 @@ file.write(result)
 # result = "n_trials = " + str(n_trials) + '\n'
 
 
-for inst in tqdm(MLBP_instances):
-    input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbp\\{} prob MLBP ttime {}".format(inst, t)
+for inst in tqdm(MLBPCC_instances):
+    # input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbp\\{} prob MLBP ttime {}".format(inst, t)
+    input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbpcc\\{} prob MLBPCC ttime {}".format(inst, t)
 
     # n_avg = 0
     # for i in range(n_trials):
@@ -42,7 +47,6 @@ for inst in tqdm(MLBP_instances):
         if err:
             print("Error in " + inst + " -> " + err)
         #     # break
-
         try:
             a1 = output[output.index('CPLEX status:') + len('CPLEX status:'):]
             b = a1[:a1.index('\n')].strip()

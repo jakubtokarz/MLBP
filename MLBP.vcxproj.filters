@@ -45,6 +45,9 @@
     <ClCompile Include="lib\lutze.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mlbpccformulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="nf_mlbpformulation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -87,6 +90,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lib\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mlbpccformulation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="nf_mlbpformulation.h">
