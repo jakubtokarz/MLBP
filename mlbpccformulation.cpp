@@ -101,82 +101,47 @@ void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instanc
 	num = 0;
 	for (int a = 0; a < inst.n[0]; a++) {
 		for (int j = 0; j < inst.n[1]; j++) {
-			model.add(x[1][a][j] <= x[1][a][j] * c[1][a][j]);
+			model.add(x[1][a][j] == c[1][a][j]);
 			num++;
 		}
 	}
-	//SOUT() << "added " << num << " constraints to enforce the packing of each item" << std::endl;
+	SOUT() << "added " << num << " constraints to enforce the packing of each item" << std::endl;
 
-	//b) If there is a connection between bin i of level k-1 and bin j of level k and item a is in bin i of level k-1, 
+	//b) If item a is in bin i of level k-1 and there is a connection between bin i of level k-1 and bin j of level k, 
 	//then item a needs to be in a bin j of level k
 	num = 0;
 	for (int k = 2; k <= inst.m; k++) {
 		for (int i = 0; i < inst.n[k-1]; i++) {
 			for (int j = 0; j < inst.n[k]; j++) {
 				for (int a = 0; a < inst.n[0]; a++) {
-					model.add(x[k][i][j] * c[k-1][a][i] <= x[k][i][j] * c[k][a][j]);
+					model.add(IloIfThen(env, c[k - 1][a][i] == 1 && x[k][i][j] == 1, c[k][a][j] == 1));
+					//model.add(c[k - 1][a][i] + x[k][i][j] - c[k][a][j] < 2);
 					num++;
 				}
 			}
 		}
 	}
+	SOUT() << "added " << num << " constraints to enforce the packing in between levels" << std::endl;
 	//-------------------------------
 
 	//5. If item a and item b are conflicting, they cannot be in the same bin j for all the levels
+	num = 0;
 	for (int k : inst.M) {
 		for (int j = 0; j < inst.n[k]; j++) {
 			for (int a = 0; a < inst.n[0]-1; a++) {
 				for (int b = a+1; b < inst.n[0]; b++) {
-					model.add(inst.conflict[a][b] + c[k][a][j] + c[k][b][j] < 3);
+					if (inst.conflict[a][b] == 1) {
+						//model.add(c[k][a][j] + c[k][b][j] < 2);
+						model.add(c[k][a][j] + c[k][b][j] <= y[k][j]);
+						num++;
+					}
 				}
 			}			
 		}
 	}
+	SOUT() << "added " << num << " constraints to conflicting items" << std::endl;
 
-
-
-
-	//4. conflicting items can't share a bin
-
-	////conflicting items can't share the same bin in level 1
-	//for (int j = 0; j < inst.n[1]; j++) {
-	//	for (int a = 0; a < inst.n[0] - 1; a++) {
-	//		for (int b = a + 1; b < inst.n[0]; b++) {
-	//			if (inst.conflict[a][b] == 1) {
-	//				model.add(!(x[0][a][j] == 1 && x[0][b][j] == 1));
-	//			}
-	//		}
-	//	}
-	//}
-
-	//additional data strucutre of conliciting bins?? - nah
-
-	////conflicting bins can't share the same bin in levels 2+
-	//for (int k = 2; k <= inst.m; k++) {
-	//	for (int j = 0; j < inst.n[k]; j++) {
-	//		for (int a = 0; a < inst.n[k-1] - 1; a++) {
-	//			for (int b = a + 1; b < inst.n[k-1]; b++) {
-	//				int item_in_a_idx = -1; //idx of item that goes to bin a
-	//				int item_in_b_idx = -1; //idx of item that goes to bin b
-	//				if (inst.conflict[item_in_a_idx][item_in_b_idx] == 1) {
-	//					model.add(x[k-1][a][j] != 1 || x[k-1][b][j] != 1);
-	//				}
-	//			}
-	//		}
-	//	}
-	//}
-
-
-		//IloExpr sum(env);
-		//for (int a = 0; a < inst.n[0]; a++) {
-		//	sum += x[1][a][j];
-		//}
-		//model.add(sum == ())
-
-	//if a and b are conflicting
-	//inst.conflict[a][b] == 1
-	//then they cannot be put into the same bin
-	//x[k][a][j] != x[k][b][j]
+	//if an item is conflicitn with every other item, it need to go alone
 }
 
 void MLBPCCFormulation::addObjectiveFunction(IloEnv env, IloModel model, const Instance<MLBPCC>& inst)

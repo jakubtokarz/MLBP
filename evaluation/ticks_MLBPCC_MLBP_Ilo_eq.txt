@@ -1,0 +1,17 @@
+n0010_m03_p025__000.inst -> Ticks: 709.4 | Time: 0.734
+n0010_m03_p025__001.inst -> Ticks: 189.33 | Time: 0.187
+n0010_m03_p025__002.inst -> Ticks: 9241.06 | Time: 7.203
+n0010_m03_p025__003.inst -> Ticks: 160.64 | Time: 0.171
+n0010_m03_p025__004.inst -> Ticks: 11023.02 | Time: 7.891
+n0010_m03_p050__000.inst -> Ticks: 52163.4 | Time: 37.796
+n0010_m03_p050__001.inst -> Ticks: 69119.59 | Time: 58.187
+n0010_m03_p050__002.inst -> Ticks: 3532021.39 | Time: 2430.25
+n0010_m03_p050__003.inst -> Ticks: 45661.4 | Time: 36.734
+n0010_m03_p050__004.inst -> Ticks: 132434.66 | Time: 98.5
+n0010_m04_p025__000.inst -> Ticks: 1390.13 | Time: 1.078
+n0010_m04_p025__001.inst -> Ticks: 83264.15 | Time: 59.296
+n0010_m04_p025__002.inst -> Ticks: 30816.34 | Time: 23.703
+n0010_m04_p025__003.inst -> Ticks: 3082.25 | Time: 2.437
+n0010_m04_p025__004.inst -> Ticks: 3532148.78 | Time: 2507.58
+n0010_m04_p050__000.inst -> Ticks: 204163.99 | Time: 174.093
+n0010_m04_p050__001.inst -> Ticks: 65628.76 | Time: 54.531

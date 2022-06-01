@@ -8,18 +8,19 @@
 #include "lib/lutze.h"      // time measurement
 #include "lib/argparser.h"  // simple command line argument parser
 
-#include "users.h"              // register users/submodules for writing to stdout, register your own user name for writing to stdout
-#include "problems.h"           // contains for each problem a struct type that is used in other classes / algorithms
-#include "instance.h"           // contains for each problem an instance class that contains all information related to a specific instance of a problem
-#include "solution.h"           // contains for each problem a solution class that represents a solution to a specific instance
-#include "solution_verifier.h"  // verifies if a solution is feasible with respect to a given instance object
+#include "users.h"                // register users/submodules for writing to stdout, register your own user name for writing to stdout
+#include "problems.h"             // contains for each problem a struct type that is used in other classes / algorithms
+#include "instance.h"             // contains for each problem an instance class that contains all information related to a specific instance of a problem
+#include "solution.h"             // contains for each problem a solution class that represents a solution to a specific instance
+#include "solution_verifier.h"    // verifies if a solution is feasible with respect to a given instance object
 
 // MIP stuff
-#include "mipsolver.h"			// generic mip solver, uses CPLEX to solve mips
-#include "bpformulation.h"		// mip formulation for the bin packing problem
-#include "mlbpformulation.h"	// mip formulation for the multi-level bin packing problem
-#include "nf_mlbpformulation.h" // mip formulation 2 for the multi-level bin packing problem
-#include "mlbpccformulation.h"  // mip formulation for the multi-level bin packing problem with conflict constraints
+#include "mipsolver.h"			  // generic mip solver, uses CPLEX to solve mips
+#include "bpformulation.h"		  // mip formulation for the bin packing problem
+#include "mlbpformulation.h"	  // mip formulation for the multi-level bin packing problem
+#include "nf_mlbpformulation.h"   // mip formulation 2 for the multi-level bin packing problem
+#include "mlbpccformulation.h"    // mip formulation for the multi-level bin packing problem with conflict constraints
+#include "nf_mlbpccformulation.h" // mip formulation 2 for the multi-level bin packing problem with conflict constraints
 
 
 int main(int argc, char* argv[])
@@ -110,8 +111,8 @@ int main(int argc, char* argv[])
 		mip_solver.setTimeLimit(arg_parser.get<int>("ttime"));  // set time limit; 0 -> no time limit
 		mip_solver.setThreads(arg_parser.get<int>("threads"));  // number of used threads, should always be one for our experiments
 
-		//mip_solver.setFormulation<MLBPFormulation>();  // set MIP formulation
-		mip_solver.setFormulation<NF_MLBPFormulation>();  // set MIP formulation
+		//mip_solver.setFormulation<MLBPFormulation>();  // set MIP formulation to standard MLBP
+		mip_solver.setFormulation<NF_MLBPFormulation>();  // set MIP formulation to NF MLBP
 
 		/**************************************************************/
 		auto status = mip_solver.run(inst, sol);  /** run MIP solver **/
@@ -125,7 +126,7 @@ int main(int argc, char* argv[])
 			SOUT() << "optimality gap:\t" << (double)(inst.objective(sol) - sol.db) / (double)inst.objective(sol) * 100.0 << "%" << std::endl;
 			SOUT() << "solution item to bin:\n\t" << sol.item_to_bins << std::endl;
 			
-			std::vector<std::vector<int>> bins;
+			std::vector<std::vector<int>> bins; //display the solution in a k-1 to k format
 			for (int k : inst.M) {
 				bins.push_back(std::vector<int>(inst.n[k - 1], -1));
 			}
@@ -139,7 +140,7 @@ int main(int argc, char* argv[])
 					}
 				}
 			}
-			SOUT() << "solution k-1 to k:\n\t" << bins << std::endl;
+			SOUT() << "solution k to k+1:\n\t" << bins << std::endl;
 		}
 
 		// check if solution is feasible
@@ -168,7 +169,8 @@ int main(int argc, char* argv[])
 		mip_solver.setTimeLimit(arg_parser.get<int>("ttime"));  // set time limit; 0 -> no time limit
 		mip_solver.setThreads(arg_parser.get<int>("threads"));  // number of used threads, should always be one for our experiments
 
-		mip_solver.setFormulation<MLBPCCFormulation>();  // set MIP formulation
+		mip_solver.setFormulation<MLBPCCFormulation>();		// set MIP formulation to standard MLBP
+		//mip_solver.setFormulation<NF_MLBPCCFormulation>();  // set MIP formulation to NF MLBP
 
 		/**************************************************************/
 		auto status = mip_solver.run(inst, sol);  /** run MIP solver **/
@@ -182,7 +184,7 @@ int main(int argc, char* argv[])
 			SOUT() << "optimality gap:\t" << (double)(inst.objective(sol) - sol.db) / (double)inst.objective(sol) * 100.0 << "%" << std::endl;
 			SOUT() << "solution item to bin:\n\t" << sol.item_to_bins << std::endl;
 
-				std::vector<std::vector<int>> bins;
+				std::vector<std::vector<int>> bins; //display the solution in a k-1 to k format
 				for (int k : inst.M) {
 					bins.push_back(std::vector<int>(inst.n[k - 1], -1));
 				}
@@ -196,7 +198,7 @@ int main(int argc, char* argv[])
 						}
 					}
 				}
-				SOUT() << "solution k-1 to k:\n\t" << bins << std::endl;
+				SOUT() << "solution k to k+1:\n\t" << bins << std::endl;
 			}
 
 		// check if solution is feasible

@@ -7,7 +7,7 @@ from tqdm import tqdm
 MLBP_instances = []
 MLBPCC_instances = []
 
-n = ['05', '10']
+n = ['10','20']
 m = [3,4]
 p = [25,50]
 inst = [0,1,2,3,4]
@@ -24,7 +24,7 @@ for i in n:
 # print(MLBPCC_instances)
 
 t = 0
-filename = "ticks_MLBPCC_MLBP.txt".format()
+filename = "ticks_MLBPCC_MLBP_Ilo_eq_y.txt".format()
 file = open(filename, "a")
 
 result="-------------------------------\n"
