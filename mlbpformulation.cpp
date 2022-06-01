@@ -18,8 +18,6 @@ void MLBPFormulation::createDecisionVariables(IloEnv env, const Instance<MLBP>& 
 			var_x_count += inst.n[k];
 		}
 	}
-
-	//SOUT() << "created " << bin_and_item_num << " x_{kij} variables" << std::endl;
 	MIP_OUT(TRACE) << "created " << var_x_count << " x_{kij} variables" << std::endl;
 
 	// decision variables y_{kj}
@@ -30,7 +28,6 @@ void MLBPFormulation::createDecisionVariables(IloEnv env, const Instance<MLBP>& 
 		y[k] = IloNumVarArray(env, inst.n[k], 0, 1, ILOBOOL);
 		amount_of_bins += inst.n[k];
 	}
-		
 	MIP_OUT(TRACE) << "created " << amount_of_bins << " y_{kj} variables" << std::endl;
 }
 
@@ -78,41 +75,6 @@ void MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instance<
 		}
 	}
 	MIP_OUT(TRACE) << "added " << num << " capacity constraints" << std::endl;
-
-	//----------------------------------------------------------------------
-	// implicated LP-Relaxation constraint that can improve the performance
-
-	//Every connection between i and j should be less than or equal to whether bin j is used for all k
-	//num = 0;
-	//for (int k = 2; k <= inst.m; k++) {
-	//	
-	//		for (int i = 0; i < inst.n[k - 1]; i++) {
-	//			for (int j = 0; j < inst.n[k]; j++) {
-	//			model.add(x[k][i][j] <= y[k - 1][i]);
-	//			num++;
-	//		}
-	//	}
-	//}
-	//MIP_OUT(TRACE) << "added " << num << " constraints to enforce LP x-y relaxation" << std::endl;
-
-	////----------------------------------------------------------------------
-	////Symmetry breaking constraints
-
-	////1. If bin j is better than or as good as bin j+1, use bin j first
-	//num = 0;
-	//for (int k = 1; k <= inst.m; k++) {
-	//	for (int j = 0; j < inst.n[k]; j++) {
-	//		for (int q = 0; j < inst.n[k]; j++) {
-	//			if (j == q)continue;
-	//			if (inst.s[k][j] >= inst.s[k][q] && inst.w[k][j] >= inst.w[k][q] && inst.c[k][j] <= inst.c[k][q]) {
-	//				model.add(y[k][j] >= y[k][q]);
-	//			}
-	//			num++;
-	//		}
-	//	}
-	//}
-	//		
-	//MIP_OUT(TRACE) << "added " << num << " better bin symmetry breaking constraints" << std::endl;
 }
 
 void MLBPFormulation::addObjectiveFunction(IloEnv env, IloModel model, const Instance<MLBP>& inst)
@@ -139,8 +101,7 @@ void MLBPFormulation::extractSolution(IloCplex cplex, const Instance<MLBP>& inst
 		}
 	}
 
-	//initalize sol.item_to_bins (size = m x n[0])
-	// item_to_bins[level][item] = bin
+	// initalize sol.item_to_bins (size = m x n[0])
 	for (int i = 0; i < inst.m; i++) {
 		sol.item_to_bins[i].assign(inst.n[0], -1);
 	}
@@ -159,25 +120,4 @@ void MLBPFormulation::extractSolution(IloCplex cplex, const Instance<MLBP>& inst
 			i = res;
 		}
 	}
-
-	////printing y
-	//for (int k = 0; k < inst.m; k++) {
-	//	SOUT() << "[";
-	//	for (int j = 0; j < inst.n[k+1]; j++) {
-	//		if (j > 0) {
-	//			SOUT() << ", ";
-	//		}
-	//		SOUT() << cplex.getValue(y[k][j]);
-	//	}
-	//	SOUT() << "]" << std::endl;
-	//}
 }
-
-//int reconstruct(IloArray<IloArray<IloNumVarArray>> x, IloCplex cplex, const Instance<MLBP>& inst, int level, int item) {
-//	for (int j = 0; j < inst.n[level]; j++) {
-//		if (cplex.getValue(x[level][item][j]) > 0.5) {
-//			return j;
-//		}
-//	}
-//	return -1;
-//}

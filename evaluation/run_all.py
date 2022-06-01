@@ -2,8 +2,8 @@ import os
 import subprocess
 from itertools import takewhile
 
-all_MLBP_instances = os.listdir('..\\inst\\mlbp')
-# all_MLBPCC_instances = os.listdir('..\\inst\\mlbpcc')
+# all_MLBP_instances = os.listdir('..\\inst\\mlbp')
+all_MLBPCC_instances = os.listdir('..\\inst\\mlbpcc')
 
 t = 1
 opt_count = 0
@@ -11,11 +11,11 @@ fea_count = 0
 idk_count = 0
 result = ""
 
-filename = "run_all_MLBP_NF_{}s.txt".format(t)
+filename = "run_all_MLBPCC_NF_{}s.txt".format(t)
 
-for inst in all_MLBP_instances:
-    input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbp\\{} prob MLBP ttime {}".format(inst, t)
-    # input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbpcc\\{} prob MLBPCC ttime {}".format(inst, t)
+for inst in all_MLBPCC_instances:
+    # input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbp\\{} prob MLBP ttime {}".format(inst, t)
+    input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbpcc\\{} prob MLBPCC ttime {}".format(inst, t)
     error = False
 
     try:
@@ -64,9 +64,9 @@ for inst in all_MLBP_instances:
 
 
 print("Optimal: " + str(opt_count) + " | " + "Feasible: " + str(fea_count) + " | " + "Unknown: " + str(idk_count))
-print(str(opt_count + fea_count) + '/' + str(len(all_MLBP_instances)))
+print(str(opt_count + fea_count) + '/' + str(len(all_MLBPCC_instances)))
 result += "Optimal: " + str(opt_count) + " | " + "Feasible: " + str(fea_count) + " | " + "Unknown: " + str(idk_count) + '\n'
-result += str(opt_count + fea_count) + '/' + str(len(all_MLBP_instances)) + '\n'
+result += str(opt_count + fea_count) + '/' + str(len(all_MLBPCC_instances)) + '\n'
 
 file = open(filename, "w")
 file.write(result)

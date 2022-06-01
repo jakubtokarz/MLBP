@@ -111,8 +111,8 @@ int main(int argc, char* argv[])
 		mip_solver.setTimeLimit(arg_parser.get<int>("ttime"));  // set time limit; 0 -> no time limit
 		mip_solver.setThreads(arg_parser.get<int>("threads"));  // number of used threads, should always be one for our experiments
 
-		//mip_solver.setFormulation<MLBPFormulation>();  // set MIP formulation to standard MLBP
-		mip_solver.setFormulation<NF_MLBPFormulation>();  // set MIP formulation to NF MLBP
+		mip_solver.setFormulation<MLBPFormulation>();  // set MIP formulation to standard MLBP
+		//mip_solver.setFormulation<NF_MLBPFormulation>();  // set MIP formulation to NF MLBP
 
 		/**************************************************************/
 		auto status = mip_solver.run(inst, sol);  /** run MIP solver **/
@@ -126,7 +126,7 @@ int main(int argc, char* argv[])
 			SOUT() << "optimality gap:\t" << (double)(inst.objective(sol) - sol.db) / (double)inst.objective(sol) * 100.0 << "%" << std::endl;
 			SOUT() << "solution item to bin:\n\t" << sol.item_to_bins << std::endl;
 			
-			std::vector<std::vector<int>> bins; //display the solution in a k-1 to k format
+			std::vector<std::vector<int>> bins; //display the solution in a k to k+1 format
 			for (int k : inst.M) {
 				bins.push_back(std::vector<int>(inst.n[k - 1], -1));
 			}
@@ -169,8 +169,8 @@ int main(int argc, char* argv[])
 		mip_solver.setTimeLimit(arg_parser.get<int>("ttime"));  // set time limit; 0 -> no time limit
 		mip_solver.setThreads(arg_parser.get<int>("threads"));  // number of used threads, should always be one for our experiments
 
-		mip_solver.setFormulation<MLBPCCFormulation>();		// set MIP formulation to standard MLBP
-		//mip_solver.setFormulation<NF_MLBPCCFormulation>();  // set MIP formulation to NF MLBP
+		//mip_solver.setFormulation<MLBPCCFormulation>();		// set MIP formulation to standard MLBP
+		mip_solver.setFormulation<NF_MLBPCCFormulation>();  // set MIP formulation to NF MLBP
 
 		/**************************************************************/
 		auto status = mip_solver.run(inst, sol);  /** run MIP solver **/
@@ -184,7 +184,7 @@ int main(int argc, char* argv[])
 			SOUT() << "optimality gap:\t" << (double)(inst.objective(sol) - sol.db) / (double)inst.objective(sol) * 100.0 << "%" << std::endl;
 			SOUT() << "solution item to bin:\n\t" << sol.item_to_bins << std::endl;
 
-				std::vector<std::vector<int>> bins; //display the solution in a k-1 to k format
+				std::vector<std::vector<int>> bins; //display the solution in a k to k+1 format
 				for (int k : inst.M) {
 					bins.push_back(std::vector<int>(inst.n[k - 1], -1));
 				}

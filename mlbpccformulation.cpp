@@ -18,9 +18,7 @@ void MLBPCCFormulation::createDecisionVariables(IloEnv env, const Instance<MLBPC
 			var_x_count += inst.n[k];
 		}
 	}
-
-	//SOUT() << "created " << bin_and_item_num << " x_{kij} variables" << std::endl;
-	SOUT() << "created " << var_x_count << " x_{kij} variables" << std::endl;
+	MIP_OUT(TRACE) << "created " << var_x_count << " x_{kij} variables" << std::endl;
 
 	// decision variables y_{kj}
 	y = IloArray<IloNumVarArray>(env, inst.m + 1);
@@ -30,8 +28,7 @@ void MLBPCCFormulation::createDecisionVariables(IloEnv env, const Instance<MLBPC
 		y[k] = IloNumVarArray(env, inst.n[k], 0, 1, ILOBOOL);
 		amount_of_bins += inst.n[k];
 	}
-
-	SOUT() << "created " << amount_of_bins << " y_{kj} variables" << std::endl;
+	MIP_OUT(TRACE) << "created " << amount_of_bins << " y_{kj} variables" << std::endl;
 
 	// decision variables c_{kij}
 	c = IloArray<IloArray<IloNumVarArray>>(env, inst.m + 1);
@@ -44,9 +41,7 @@ void MLBPCCFormulation::createDecisionVariables(IloEnv env, const Instance<MLBPC
 			var_c_count += inst.n[k];
 		}
 	}
-
-	//SOUT() << "created " << bin_and_item_num << " c_{kij} variables" << std::endl;
-	SOUT() << "created " << var_c_count << " c_{kij} variables" << std::endl;
+	MIP_OUT(TRACE) << "created " << var_c_count << " c_{kij} variables" << std::endl;
 }
 
 void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instance<MLBPCC>& inst)
@@ -62,7 +57,7 @@ void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instanc
 		sum.end();
 		num++;
 	}
-	SOUT() << "added " << num << " constraints to enforce the packing of each item" << std::endl;
+	MIP_OUT(TRACE) << "added " << num << " constraints to enforce the packing of each item" << std::endl;
 
 	//2. All used bins (level 1+) must be put into the next level
 	num = 0;
@@ -77,7 +72,7 @@ void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instanc
 			num++;
 		}
 	}
-	SOUT() << "added " << num << " constraints to enforce the packing of each used bin to the next level" << std::endl;
+	MIP_OUT(TRACE) << "added " << num << " constraints to enforce the packing of each used bin to the next level" << std::endl;
 
 	//3. All bins' capacity must be greater than the size of its contents
 	num = 0;
@@ -92,9 +87,9 @@ void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instanc
 			sum.end();
 		}
 	}
-	SOUT() << "added " << num << " capacity constraints" << std::endl;
+	MIP_OUT(TRACE) << "added " << num << " capacity constraints" << std::endl;
 
-	//-------------------------------
+	//----------------------------------------------------------------------
 	//4. Populate c
 
 	//a) If there is a connection between item a and bin j of level 1, then item a is in bin j of level 1
@@ -105,7 +100,7 @@ void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instanc
 			num++;
 		}
 	}
-	SOUT() << "added " << num << " constraints to enforce the packing of each item" << std::endl;
+	MIP_OUT(TRACE) << "added " << num << " constraints to enforce the packing of each item to level 1 bins" << std::endl;
 
 	//b) If item a is in bin i of level k-1 and there is a connection between bin i of level k-1 and bin j of level k, 
 	//then item a needs to be in a bin j of level k
@@ -115,14 +110,13 @@ void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instanc
 			for (int j = 0; j < inst.n[k]; j++) {
 				for (int a = 0; a < inst.n[0]; a++) {
 					model.add(IloIfThen(env, c[k - 1][a][i] == 1 && x[k][i][j] == 1, c[k][a][j] == 1));
-					//model.add(c[k - 1][a][i] + x[k][i][j] - c[k][a][j] < 2);
 					num++;
 				}
 			}
 		}
 	}
-	SOUT() << "added " << num << " constraints to enforce the packing in between levels" << std::endl;
-	//-------------------------------
+	MIP_OUT(TRACE) << "added " << num << " constraints to enforce the packing in between levels" << std::endl;
+	//----------------------------------------------------------------------
 
 	//5. If item a and item b are conflicting, they cannot be in the same bin j for all the levels
 	num = 0;
@@ -131,7 +125,6 @@ void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instanc
 			for (int a = 0; a < inst.n[0]-1; a++) {
 				for (int b = a+1; b < inst.n[0]; b++) {
 					if (inst.conflict[a][b] == 1) {
-						//model.add(c[k][a][j] + c[k][b][j] < 2);
 						model.add(c[k][a][j] + c[k][b][j] <= y[k][j]);
 						num++;
 					}
@@ -139,9 +132,7 @@ void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instanc
 			}			
 		}
 	}
-	SOUT() << "added " << num << " constraints to conflicting items" << std::endl;
-
-	//if an item is conflicitn with every other item, it need to go alone
+	MIP_OUT(TRACE) << "added " << num << " constraints to conflicting items" << std::endl;
 }
 
 void MLBPCCFormulation::addObjectiveFunction(IloEnv env, IloModel model, const Instance<MLBPCC>& inst)
@@ -168,8 +159,7 @@ void MLBPCCFormulation::extractSolution(IloCplex cplex, const Instance<MLBPCC>& 
 		}
 	}
 
-	//initalize sol.item_to_bins (size = m x n[0])
-	// item_to_bins[level][item] = bin
+	// initalize sol.item_to_bins (size = m x n[0])
 	for (int i = 0; i < inst.m; i++) {
 		sol.item_to_bins[i].assign(inst.n[0], -1);
 	}
@@ -188,17 +178,4 @@ void MLBPCCFormulation::extractSolution(IloCplex cplex, const Instance<MLBPCC>& 
 			i = res;
 		}
 	}
-
-	////printing y
-	//for (int k = 0; k < inst.m; k++) {
-	//	SOUT() << "[";
-	//	for (int j = 0; j < inst.n[k+1]; j++) {
-	//		if (j > 0) {
-	//			SOUT() << ", ";
-	//		}
-	//		SOUT() << cplex.getValue(y[k][j]);
-	//	}
-	//	SOUT() << "]" << std::endl;
-	//}
 }
-

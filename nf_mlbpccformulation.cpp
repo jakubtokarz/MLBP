@@ -8,8 +8,6 @@
 
 void NF_MLBPCCFormulation::createDecisionVariables(IloEnv env, const Instance<MLBPCC>& inst)
 {
-	MIP_OUT(TRACE) << "NF" << std::endl;
-
 	// decision variables x_{kij}
 	x = IloArray<IloArray<IloNumVarArray>>(env, inst.m + 1);
 	int var_x_count = 0;
@@ -21,8 +19,6 @@ void NF_MLBPCCFormulation::createDecisionVariables(IloEnv env, const Instance<ML
 			var_x_count += inst.n[k];
 		}
 	}
-
-	//SOUT() << "created " << bin_and_item_num << " x_{kij} variables" << std::endl;
 	MIP_OUT(TRACE) << "created " << var_x_count << " x_{kij} variables" << std::endl;
 
 	// decision variables y_{kj}
@@ -33,9 +29,7 @@ void NF_MLBPCCFormulation::createDecisionVariables(IloEnv env, const Instance<ML
 		y[k] = IloNumVarArray(env, inst.n[k], 0, 1, ILOBOOL);
 		amount_of_bins += inst.n[k];
 	}
-
 	MIP_OUT(TRACE) << "created " << amount_of_bins << " y_{kj} variables" << std::endl;
-
 
 	// decision variables f_{kij}
 	f = IloArray<IloArray<IloNumVarArray>>(env, inst.m + 1);
@@ -53,8 +47,6 @@ void NF_MLBPCCFormulation::createDecisionVariables(IloEnv env, const Instance<ML
 			var_f_count += inst.n[k];
 		}
 	}
-
-	// should be same as x
 	MIP_OUT(TRACE) << "created " << var_f_count << " f_{kij} variables" << std::endl;
 
 	// decision variables c_{kij}
@@ -68,9 +60,7 @@ void NF_MLBPCCFormulation::createDecisionVariables(IloEnv env, const Instance<ML
 			var_c_count += inst.n[k];
 		}
 	}
-
-	//SOUT() << "created " << bin_and_item_num << " c_{kij} variables" << std::endl;
-	SOUT() << "created " << var_c_count << " c_{kij} variables" << std::endl;
+	MIP_OUT(TRACE) << "created " << var_c_count << " c_{kij} variables" << std::endl;
 }
 
 void NF_MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instance<MLBPCC>& inst)
@@ -162,47 +152,53 @@ void NF_MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Inst
 	num++;
 	MIP_OUT(TRACE) << "added " << num << " constraints to enforce the sink constraint" << std::endl;
 
-	//-------------------------------
+	//----------------------------------------------------------------------
 	//7. Populate c
 
 	//a) If there is a connection between item a and bin j of level 1, then item a is in bin j of level 1
 	num = 0;
 	for (int a = 0; a < inst.n[0]; a++) {
 		for (int j = 0; j < inst.n[1]; j++) {
-			model.add(x[1][a][j] <= x[1][a][j] * c[1][a][j]);
+			model.add(x[1][a][j] == c[1][a][j]);
 			num++;
 		}
 	}
-	//SOUT() << "added " << num << " constraints to enforce the packing of each item" << std::endl;
+	MIP_OUT(TRACE) << "added " << num << " constraints to enforce the packing of each item to level 1 bins" << std::endl;
 
-	//b) If there is a connection between bin i of level k-1 and bin j of level k and item a is in bin i of level k-1, 
+	//b) If item a is in bin i of level k-1 and there is a connection between bin i of level k-1 and bin j of level k, 
 	//then item a needs to be in a bin j of level k
 	num = 0;
 	for (int k = 2; k <= inst.m; k++) {
 		for (int i = 0; i < inst.n[k - 1]; i++) {
 			for (int j = 0; j < inst.n[k]; j++) {
 				for (int a = 0; a < inst.n[0]; a++) {
-					model.add(x[k][i][j] * c[k - 1][a][i] <= x[k][i][j] * c[k][a][j]);
+					model.add(IloIfThen(env, c[k - 1][a][i] == 1 && x[k][i][j] == 1, c[k][a][j] == 1));
 					num++;
 				}
 			}
 		}
 	}
-	//-------------------------------
+	MIP_OUT(TRACE) << "added " << num << " constraints to enforce the packing in between levels" << std::endl;
+	//----------------------------------------------------------------------
 
 	//8. If item a and item b are conflicting, they cannot be in the same bin j for all the levels
+	num = 0;
 	for (int k : inst.M) {
 		for (int j = 0; j < inst.n[k]; j++) {
 			for (int a = 0; a < inst.n[0] - 1; a++) {
 				for (int b = a + 1; b < inst.n[0]; b++) {
-					model.add(inst.conflict[a][b] + c[k][a][j] + c[k][b][j] < 3);
+					if (inst.conflict[a][b] == 1) {
+						model.add(c[k][a][j] + c[k][b][j] <= y[k][j]);
+						num++;
+					}
 				}
 			}
 		}
 	}
+	MIP_OUT(TRACE) << "added " << num << " constraints to conflicting items" << std::endl;
 
 	//----------------------------------------------------------------------
-	// implicated LP-Relaxation constraint that can improve the performance
+	// Implicated LP-Relaxation constraint that can improve the performance, connections between decisions varibales y-x x-f
 
 	//Every connection between i and j should be less than or equal to whether bin i is used for all k
 	num = 0;
@@ -226,13 +222,12 @@ void NF_MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Inst
 			}
 		}
 	}
-
 	MIP_OUT(TRACE) << "added " << num << " constraints to enforce LP x-f relaxation" << std::endl;
 
 	//----------------------------------------------------------------------
-	//Symmetry breaking constraints
+	// Symmetry breaking constraints
 
-	//1. If bin j is better than or as good as bin j+1, use bin j first
+	// If bin j is better than or as good as bin q, use bin j first
 	num = 0;
 	for (int k = 1; k <= inst.m; k++) {
 		for (int j = 0; j < inst.n[k]; j++) {
@@ -240,12 +235,11 @@ void NF_MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Inst
 				if (j == q)continue;
 				if (inst.s[k][j] >= inst.s[k][q] && inst.w[k][j] >= inst.w[k][q] && inst.c[k][j] <= inst.c[k][q]) {
 					model.add(y[k][j] >= y[k][q]);
+					num++;
 				}
-				num++;
 			}
 		}
 	}
-
 	MIP_OUT(TRACE) << "added " << num << " better bin symmetry breaking constraints" << std::endl;
 }
 
@@ -273,8 +267,7 @@ void NF_MLBPCCFormulation::extractSolution(IloCplex cplex, const Instance<MLBPCC
 		}
 	}
 
-	//initalize sol.item_to_bins (size = m x n[0])
-	// item_to_bins[level][item] = bin
+	// initalize sol.item_to_bins (size = m x n[0])
 	for (int i = 0; i < inst.m; i++) {
 		sol.item_to_bins[i].assign(inst.n[0], -1);
 	}
@@ -293,16 +286,4 @@ void NF_MLBPCCFormulation::extractSolution(IloCplex cplex, const Instance<MLBPCC
 			i = res;
 		}
 	}
-
-	////printing y
-	//for (int k = 0; k < inst.m; k++) {
-	//	SOUT() << "[";
-	//	for (int j = 0; j < inst.n[k+1]; j++) {
-	//		if (j > 0) {
-	//			SOUT() << ", ";
-	//		}
-	//		SOUT() << cplex.getValue(y[k][j]);
-	//	}
-	//	SOUT() << "]" << std::endl;
-	//}
 }

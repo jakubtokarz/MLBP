@@ -1,7 +1,7 @@
 
 
-file_a = "run_all_MLBP_raw_1s.txt"
-file_b = "run_all_MLBP_NF_1s.txt"
+file_a = "run_all_MLBPCC_MLBP_best_1s.txt"
+file_b = "run_all_MLBPCC_NF_1s.txt"
 
 
 n = 275

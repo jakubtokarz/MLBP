@@ -16,12 +16,11 @@ void BPFormulation::createDecisionVariables(IloEnv env, const Instance<BP>& inst
 	//                               |     |  +------------ maximum value of variables
 	//                               |     +--------------- minium value of variables
 	//                               +--------------------- number of variables
-	SOUT() << "created " << inst.n * inst.n << " x_{ij} variables" << std::endl;
-	//SOUT() << "created " << x << " x_{ij} variables" << std::endl;
+	MIP_OUT(TRACE) << "created " << inst.n * inst.n << " x_{ij} variables" << std::endl;
 
 	// decision variables y_j
 	y = IloNumVarArray(env, inst.n, 0, 1, ILOBOOL);
-	SOUT() << "created " << inst.n << " y_{i} variables" << std::endl;
+	MIP_OUT(TRACE) << "created " << inst.n << " y_{i} variables" << std::endl;
 }
 
 void BPFormulation::addConstraints(IloEnv env, IloModel model, const Instance<BP>& inst)

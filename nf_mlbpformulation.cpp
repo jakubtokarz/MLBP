@@ -8,8 +8,6 @@
 
 void NF_MLBPFormulation::createDecisionVariables(IloEnv env, const Instance<MLBP>& inst)
 {
-	MIP_OUT(TRACE) << "NF" << std::endl;
-
 	// decision variables x_{kij}
 	x = IloArray<IloArray<IloNumVarArray>>(env, inst.m + 1);
 	int var_x_count = 0;
@@ -21,8 +19,6 @@ void NF_MLBPFormulation::createDecisionVariables(IloEnv env, const Instance<MLBP
 			var_x_count += inst.n[k];
 		}
 	}
-
-	//SOUT() << "created " << bin_and_item_num << " x_{kij} variables" << std::endl;
 	MIP_OUT(TRACE) << "created " << var_x_count << " x_{kij} variables" << std::endl;
 
 	// decision variables y_{kj}
@@ -33,7 +29,6 @@ void NF_MLBPFormulation::createDecisionVariables(IloEnv env, const Instance<MLBP
 		y[k] = IloNumVarArray(env, inst.n[k], 0, 1, ILOBOOL);
 		amount_of_bins += inst.n[k];
 	}
-
 	MIP_OUT(TRACE) << "created " << amount_of_bins << " y_{kj} variables" << std::endl;
 
 
@@ -53,7 +48,6 @@ void NF_MLBPFormulation::createDecisionVariables(IloEnv env, const Instance<MLBP
 			var_f_count += inst.n[k];
 		}
 	}
-
 	// should be same as x
 	MIP_OUT(TRACE) << "created " << var_f_count << " f_{kij} variables" << std::endl;
 }
@@ -148,7 +142,7 @@ void NF_MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instan
 	MIP_OUT(TRACE) << "added " << num << " constraints to enforce the sink constraint" << std::endl;
 
 	//----------------------------------------------------------------------
-	// implicated LP-Relaxation constraint that can improve the performance
+	// Implicated LP-Relaxation constraint that can improve the performance, connections between decisions varibales y-x x-f
 
 	//Every connection between i and j should be less than or equal to whether bin i is used for all k
 	num = 0;
@@ -172,13 +166,12 @@ void NF_MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instan
 			}
 		}
 	}
-
 	MIP_OUT(TRACE) << "added " << num << " constraints to enforce LP x-f relaxation" << std::endl;
 
 	//----------------------------------------------------------------------
-	//Symmetry breaking constraints
+	// Symmetry breaking constraints
 
-	//1. If bin j is better than or as good as bin j+1, use bin j first
+	// If bin j is better than or as good as bin q, use bin j first
 	num = 0;
 	for (int k = 1; k <= inst.m; k++) {
 		for (int j = 0; j < inst.n[k]; j++) {
@@ -186,12 +179,11 @@ void NF_MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instan
 				if (j == q)continue;
 				if (inst.s[k][j] >= inst.s[k][q] && inst.w[k][j] >= inst.w[k][q] && inst.c[k][j] <= inst.c[k][q]) {
 					model.add(y[k][j] >= y[k][q]);
+					num++;
 				}
-				num++;
 			}
 		}
 	}
-		
 	MIP_OUT(TRACE) << "added " << num << " better bin symmetry breaking constraints" << std::endl;
 }
 
@@ -219,8 +211,7 @@ void NF_MLBPFormulation::extractSolution(IloCplex cplex, const Instance<MLBP>& i
 		}
 	}
 
-	//initalize sol.item_to_bins (size = m x n[0])
-	// item_to_bins[level][item] = bin
+	// initalize sol.item_to_bins (size = m x n[0])
 	for (int i = 0; i < inst.m; i++) {
 		sol.item_to_bins[i].assign(inst.n[0], -1);
 	}
@@ -239,16 +230,4 @@ void NF_MLBPFormulation::extractSolution(IloCplex cplex, const Instance<MLBP>& i
 			i = res;
 		}
 	}
-
-	////printing y
-	//for (int k = 0; k < inst.m; k++) {
-	//	SOUT() << "[";
-	//	for (int j = 0; j < inst.n[k+1]; j++) {
-	//		if (j > 0) {
-	//			SOUT() << ", ";
-	//		}
-	//		SOUT() << cplex.getValue(y[k][j]);
-	//	}
-	//	SOUT() << "]" << std::endl;
-	//}
 }
