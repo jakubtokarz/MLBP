@@ -1,30 +1,34 @@
 import subprocess
 from itertools import takewhile
 from tqdm import tqdm
+import os
 
 # n_trials = 5
 
 MLBP_instances = []
-MLBPCC_instances = []
+# MLBPCC_instances = []
+
+# all_MLBPCC_instances = os.listdir('..\\inst\\mlbpcc')
+all_MLBP_instances = os.listdir('..\\inst\\mlbp')
 
 n = ['10','20']
-m = [3,4]
-p = [25,50]
+m = [2,3,4,5]
+# p = [25,50]
 inst = [0,1,2,3,4]
 
 for i in n:
     for j in m:
-        for l in p:
+        # for l in p:
             for k in inst:
-                # MLBP_instances.append("n00{}_m0{}__00{}.inst".format(i,j,k))
-                MLBPCC_instances.append("n00{}_m0{}_p0{}__00{}.inst".format(i, j, l, k))
+                MLBP_instances.append("n00{}_m0{}__00{}.inst".format(i,j,k))
+                # MLBPCC_instances.append("n00{}_m0{}_p0{}__00{}.inst".format(i, j, l, k))
 
 # MLBP_instances.remove("n0040_m03__001.inst")
 # MLBP_instances.append("n0030_m03__000.inst") #for reference
 # print(MLBPCC_instances)
 
 t = 0
-filename = "ticks_MLBPCC_MLBP_Ilo_eq_y.txt".format()
+filename = "ticks_MLBP_all.txt".format()
 file = open(filename, "a")
 
 result="-------------------------------\n"
@@ -32,9 +36,9 @@ file.write(result)
 # result = "n_trials = " + str(n_trials) + '\n'
 
 
-for inst in tqdm(MLBPCC_instances):
-    # input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbp\\{} prob MLBP ttime {}".format(inst, t)
-    input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbpcc\\{} prob MLBPCC ttime {}".format(inst, t)
+for inst in tqdm(all_MLBP_instances):
+    input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbp\\{} prob MLBP ttime {}".format(inst, t)
+    # input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbpcc\\{} prob MLBPCC ttime {}".format(inst, t)
 
     # n_avg = 0
     # for i in range(n_trials):

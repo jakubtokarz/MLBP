@@ -11,7 +11,7 @@ fea_count = 0
 idk_count = 0
 result = ""
 
-filename = "run_all_MLBPCC_NF_{}s.txt".format(t)
+filename = "run_all_MLBPCC_MLBP_{}s.txt".format(t)
 
 for inst in all_MLBPCC_instances:
     # input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbp\\{} prob MLBP ttime {}".format(inst, t)
