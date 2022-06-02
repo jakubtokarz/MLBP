@@ -30,18 +30,18 @@ void MLBPCCFormulation::createDecisionVariables(IloEnv env, const Instance<MLBPC
 	}
 	MIP_OUT(TRACE) << "created " << amount_of_bins << " y_{kj} variables" << std::endl;
 
-	// decision variables c_{kij}
-	c = IloArray<IloArray<IloNumVarArray>>(env, inst.m + 1);
-	int var_c_count = 0;
+	// decision variables z_{kij}
+	z = IloArray<IloArray<IloNumVarArray>>(env, inst.m + 1);
+	int var_z_count = 0;
 
 	for (int k : inst.M) {
-		c[k] = IloArray<IloNumVarArray>(env, inst.n[0]);
+		z[k] = IloArray<IloNumVarArray>(env, inst.n[0]);
 		for (int i = 0; i < inst.n[0]; i++) {
-			c[k][i] = IloNumVarArray(env, inst.n[k], 0, 1, ILOBOOL);
-			var_c_count += inst.n[k];
+			z[k][i] = IloNumVarArray(env, inst.n[k], 0, 1, ILOBOOL);
+			var_z_count += inst.n[k];
 		}
 	}
-	MIP_OUT(TRACE) << "created " << var_c_count << " c_{kij} variables" << std::endl;
+	MIP_OUT(TRACE) << "created " << var_z_count << " z_{kij} variables" << std::endl;
 }
 
 void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instance<MLBPCC>& inst)
@@ -90,13 +90,13 @@ void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instanc
 	MIP_OUT(TRACE) << "added " << num << " capacity constraints" << std::endl;
 
 	//----------------------------------------------------------------------
-	//4. Populate c
+	//4. Populate z
 
 	//a) If there is a connection between item a and bin j of level 1, then item a is in bin j of level 1
 	num = 0;
 	for (int a = 0; a < inst.n[0]; a++) {
 		for (int j = 0; j < inst.n[1]; j++) {
-			model.add(x[1][a][j] == c[1][a][j]);
+			model.add(x[1][a][j] == z[1][a][j]);
 			num++;
 		}
 	}
@@ -109,7 +109,7 @@ void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instanc
 		for (int i = 0; i < inst.n[k-1]; i++) {
 			for (int j = 0; j < inst.n[k]; j++) {
 				for (int a = 0; a < inst.n[0]; a++) {
-					model.add(IloIfThen(env, c[k - 1][a][i] == 1 && x[k][i][j] == 1, c[k][a][j] == 1));
+					model.add(IloIfThen(env, z[k - 1][a][i] == 1 && x[k][i][j] == 1, z[k][a][j] == 1));
 					num++;
 				}
 			}
@@ -125,7 +125,7 @@ void MLBPCCFormulation::addConstraints(IloEnv env, IloModel model, const Instanc
 			for (int a = 0; a < inst.n[0]-1; a++) {
 				for (int b = a+1; b < inst.n[0]; b++) {
 					if (inst.conflict[a][b] == 1) {
-						model.add(c[k][a][j] + c[k][b][j] <= y[k][j]);
+						model.add(z[k][a][j] + z[k][b][j] <= y[k][j]);
 						num++;
 					}
 				}

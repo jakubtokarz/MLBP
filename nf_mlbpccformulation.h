@@ -25,8 +25,8 @@ private:
 	// decision variables f_{kij}: flow between item/bin i in level k-1 and bin j at level k (=0) if no flow and (=[1,n[0]] if there is flow)
 	IloArray<IloArray<IloNumVarArray>> f;
 
-	// binary decision variables c_{kij}: item i is in bin j of level k (=1) or not (=0) 
-	IloArray<IloArray<IloNumVarArray>> c;
+	// binary decision variables z_{kij}: item a is in bin j of level k (=1) or not (=0) 
+	IloArray<IloArray<IloNumVarArray>> z;
 };
 
 

@@ -22,8 +22,8 @@ private:
 	// binary decision variables y_{kj}: bin j of level k is used (=1) or not (=0)
 	IloArray<IloNumVarArray> y;
 
-	// binary decision variables c_{kij}: item i is in bin j of level k (=1) or not (=0) 
-	IloArray<IloArray<IloNumVarArray>> c;
+	// binary decision variables z_{kij}: item a is in bin j of level k (=1) or not (=0) 
+	IloArray<IloArray<IloNumVarArray>> z;
 };
 
 
