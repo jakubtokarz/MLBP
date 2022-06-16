@@ -1,53 +1,23 @@
 import subprocess
 from itertools import takewhile
-# from tqdm import tqdm
+from tqdm import tqdm
 import os
 
-# MLBP_instances = []
-# MLBPCC_instances = []
-
 # all_MLBPCC_instances = os.listdir('..\\inst\\mlbpcc')
-# all_MLBP_instances = os.listdir('..\\inst\\mlbp')[100:]
-all_MLBP_instances = os.listdir('inst/mlbp')[100:]
+all_MLBP_instances = os.listdir('..\\inst\\mlbp')
 
-n = [50]
-m = [5]
-# p = [25,50]
-inst = [2,3,4]
-
-for i in n:
-    for j in m:
-        # for l in p:
-            for k in inst:
-                1
-                # MLBP_instances.append("n00{}_m0{}__00{}.inst".format(i,j,k))
-                # MLBPCC_instances.append("n00{}_m0{}_p0{}__00{}.inst".format(i, j, l, k))
-
-# MLBP_instances.append("n0050_m03__000.inst")
-# MLBP_instances.remove("n0050_m03__000.inst")
-# MLBP_instances.remove("n0050_m03__001.inst")
-# MLBP_instances.remove("n0050_m03__002.inst")
-# MLBP_instances.remove("n0050_m03__003.inst")
-# MLBP_instances.append("n0030_m03__000.inst") #for reference
-# print(all_MLBPCC_instances)
-
-
-t = 60
-filename = "f_ticks_MLBPCC_all_t60.txt".format()
+t = 0
+filename = "ticks_MLBP_all.txt".format()
 file = open(filename, "a")
 
 result = "-------------------------------\n"
 file.write(result)
-# result = "n_trials = " + str(n_trials) + '\n'
 
 
-for inst in all_MLBP_instances:
-    # input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbp\\{} prob MLBP ttime {}".format(inst, t)
+for inst in tqdm(all_MLBP_instances):
+    input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbp\\{} prob MLBP ttime {}".format(inst, t)
     # input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbpcc\\{} prob MLBPCC ttime {}".format(inst, t)
-    input_str = "./mlbp ifile inst/mlbp/{} prob MLBP ttime {}".format(inst, t)
 
-    # n_avg = 0
-    # for i in range(n_trials):
     ticks = -1
     time = -1
     bnb_nodes = -1

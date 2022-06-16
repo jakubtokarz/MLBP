@@ -3,25 +3,23 @@ import subprocess
 from itertools import takewhile
 from tqdm import tqdm
 
-# all_MLBP_instances = os.listdir('..\\inst\\mlbp')
-all_MLBPCC_instances = os.listdir('..\\inst\\mlbpcc')
-# aa = list(all_MLBPCC_instances)[::-1]
-# print(all_MLBPCC_instances)
+all_MLBP_instances = os.listdir('..\\inst\\mlbp')
+# all_MLBPCC_instances = os.listdir('..\\inst\\mlbpcc')
 
-t = 60  # 1 min timout
+t = 600  # 10 min timout
 opt_count = 0
 fea_count = 0
 idk_count = 0
 
-filename = "scores_MLBPCC_NF_{}s.txt".format(t)
+filename = "scores_MLBP_{}s.txt".format(t)
 file = open(filename, "a")
 
 result = "-------------------------------\n"
 file.write(result)
 
-for inst in tqdm(all_MLBPCC_instances):
-    # input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbp\\{} prob MLBP ttime {}".format(inst, t)
-    input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbpcc\\{} prob MLBPCC ttime {}".format(inst, t)
+for inst in tqdm(all_MLBP_instances):
+    input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbp\\{} prob MLBP ttime {}".format(inst, t)
+    # input_str = "..\\x64\\Debug\\MLBP.exe ifile ..\\inst\\mlbpcc\\{} prob MLBPCC ttime {}".format(inst, t)
     error = False
 
     try:
@@ -70,9 +68,9 @@ for inst in tqdm(all_MLBPCC_instances):
         break
 
 result += "Optimal: " + str(opt_count) + " | " + "Feasible: " + str(fea_count) + " | " + "Unknown: " + str(idk_count) + '\n'
-result += str(opt_count + fea_count) + '/' + str(len(all_MLBPCC_instances)) + '\n'
+result += str(opt_count + fea_count) + '/' + str(len(all_MLBP_instances)) + '\n'
 file.write("Optimal: " + str(opt_count) + " | " + "Feasible: " + str(fea_count) + " | " + "Unknown: " + str(idk_count) + '\n')
-file.write(str(opt_count + fea_count) + '/' + str(len(all_MLBPCC_instances)) + '\n')
+file.write(str(opt_count + fea_count) + '/' + str(len(all_MLBP_instances)) + '\n')
 
 print(result)
 file.close()

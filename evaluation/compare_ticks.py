@@ -1,9 +1,12 @@
 
-file_b = "f_ticks_MLBPCC_NF_all_t60.txt"
-file_a = "f_ticks_MLBPCC_all_t60.txt"
-# file_b
+file_b = "f_ticks_MLBP_all.txt"
+file_a = "f_ticks_MLBP_NF_all.txt"
+n = 250
 
-n = 1100
+# file_a = "f_ticks_MLBPCC_all_t60.txt"
+# file_b = "f_ticks_MLBPCC_NF_all_t60.txt"
+# n = 1100
+
 count_ticks_a = 0
 count_ticks_b = 0
 count_bnb_a = 0
@@ -81,7 +84,7 @@ print("Both Unknown:", unknown_count)
 print(file_a, count_ticks_a, "-", "avg_win", str(round(avg_a_win, 5)))
 print(file_b, count_ticks_b, "-", "avg_win", str(round(avg_b_win, 5)))
 print("average a of b:", round(avg_total, 15))
-print("---")  # Keep bnb table comp???
+print("---")
 print("Same:", bnb_same + unknown_count)
 print(file_a, count_bnb_a)
 print(file_b, count_bnb_b)
