@@ -1,0 +1,1102 @@
+n0005_m01_p025__000.inst -> Optimal: 1443
+n0005_m01_p025__001.inst -> Optimal: 1157
+n0005_m01_p025__002.inst -> Optimal: 1245
+n0005_m01_p025__003.inst -> Optimal: 772
+n0005_m01_p025__004.inst -> Optimal: 1908
+n0005_m01_p050__000.inst -> Optimal: 1126
+n0005_m01_p050__001.inst -> Optimal: 1728
+n0005_m01_p050__002.inst -> Optimal: 1717
+n0005_m01_p050__003.inst -> Optimal: 1499
+n0005_m01_p050__004.inst -> Optimal: 1685
+n0005_m01_p075__000.inst -> Optimal: 2090
+n0005_m01_p075__001.inst -> Optimal: 2241
+n0005_m01_p075__002.inst -> Optimal: 2303
+n0005_m01_p075__003.inst -> Optimal: 2050
+n0005_m01_p075__004.inst -> Optimal: 2098
+n0005_m01_p090__000.inst -> Optimal: 2316
+n0005_m01_p090__001.inst -> Optimal: 2108
+n0005_m01_p090__002.inst -> Optimal: 1974
+n0005_m01_p090__003.inst -> Optimal: 2362
+n0005_m01_p090__004.inst -> Optimal: 1906
+n0005_m02_p025__000.inst -> Optimal: 3901
+n0005_m02_p025__001.inst -> Optimal: 3607
+n0005_m02_p025__002.inst -> Optimal: 3037
+n0005_m02_p025__003.inst -> Optimal: 3102
+n0005_m02_p025__004.inst -> Optimal: 2776
+n0005_m02_p050__000.inst -> Optimal: 3803
+n0005_m02_p050__001.inst -> Optimal: 2173
+n0005_m02_p050__002.inst -> Optimal: 3934
+n0005_m02_p050__003.inst -> Optimal: 2893
+n0005_m02_p050__004.inst -> Optimal: 5218
+n0005_m02_p075__000.inst -> Optimal: 2933
+n0005_m02_p075__001.inst -> Optimal: 3311
+n0005_m02_p075__002.inst -> Optimal: 3704
+n0005_m02_p075__003.inst -> Optimal: 3692
+n0005_m02_p075__004.inst -> Optimal: 3329
+n0005_m02_p090__000.inst -> Optimal: 4043
+n0005_m02_p090__001.inst -> Optimal: 3946
+n0005_m02_p090__002.inst -> Optimal: 3639
+n0005_m02_p090__003.inst -> Optimal: 4621
+n0005_m02_p090__004.inst -> Optimal: 4803
+n0005_m03_p025__000.inst -> Optimal: 3261
+n0005_m03_p025__001.inst -> Optimal: 5654
+n0005_m03_p025__002.inst -> Optimal: 5212
+n0005_m03_p025__003.inst -> Optimal: 6388
+n0005_m03_p025__004.inst -> Optimal: 6676
+n0005_m03_p050__000.inst -> Optimal: 6308
+n0005_m03_p050__001.inst -> Optimal: 4921
+n0005_m03_p050__002.inst -> Optimal: 5360
+n0005_m03_p050__003.inst -> Optimal: 5524
+n0005_m03_p050__004.inst -> Optimal: 6579
+n0005_m03_p075__000.inst -> Optimal: 6651
+n0005_m03_p075__001.inst -> Optimal: 6881
+n0005_m03_p075__002.inst -> Optimal: 7163
+n0005_m03_p075__003.inst -> Optimal: 7077
+n0005_m03_p075__004.inst -> Optimal: 9327
+n0005_m03_p090__000.inst -> Optimal: 5271
+n0005_m03_p090__001.inst -> Optimal: 5049
+n0005_m03_p090__002.inst -> Optimal: 6313
+n0005_m03_p090__003.inst -> Optimal: 8150
+n0005_m03_p090__004.inst -> Optimal: 8331
+n0005_m04_p025__000.inst -> Optimal: 4137
+n0005_m04_p025__001.inst -> Optimal: 5921
+n0005_m04_p025__002.inst -> Optimal: 9338
+n0005_m04_p025__003.inst -> Optimal: 5818
+n0005_m04_p025__004.inst -> Optimal: 8856
+n0005_m04_p050__000.inst -> Optimal: 7019
+n0005_m04_p050__001.inst -> Optimal: 11101
+n0005_m04_p050__002.inst -> Optimal: 8323
+n0005_m04_p050__003.inst -> Optimal: 11472
+n0005_m04_p050__004.inst -> Optimal: 9274
+n0005_m04_p075__000.inst -> Optimal: 12013
+n0005_m04_p075__001.inst -> Optimal: 10401
+n0005_m04_p075__002.inst -> Optimal: 11723
+n0005_m04_p075__003.inst -> Optimal: 14274
+n0005_m04_p075__004.inst -> Optimal: 5160
+n0005_m04_p090__000.inst -> Optimal: 12840
+n0005_m04_p090__001.inst -> Optimal: 9746
+n0005_m04_p090__002.inst -> Feasible: 12785
+n0005_m04_p090__003.inst -> Optimal: 10554
+n0005_m04_p090__004.inst -> Optimal: 11940
+n0005_m05_p025__000.inst -> Optimal: 10766
+n0005_m05_p025__001.inst -> Optimal: 7877
+n0005_m05_p025__002.inst -> Optimal: 10302
+n0005_m05_p025__003.inst -> Optimal: 11365
+n0005_m05_p025__004.inst -> Optimal: 10406
+n0005_m05_p050__000.inst -> Optimal: 14692
+n0005_m05_p050__001.inst -> Optimal: 13454
+n0005_m05_p050__002.inst -> Optimal: 14976
+n0005_m05_p050__003.inst -> Optimal: 16912
+n0005_m05_p050__004.inst -> Optimal: 10956
+n0005_m05_p075__000.inst -> Optimal: 15885
+n0005_m05_p075__001.inst -> Feasible: 16134
+n0005_m05_p075__002.inst -> Optimal: 11341
+n0005_m05_p075__003.inst -> Feasible: 13516
+n0005_m05_p075__004.inst -> Feasible: 16721
+n0005_m05_p090__000.inst -> Feasible: 20573
+n0005_m05_p090__001.inst -> Optimal: 12135
+n0005_m05_p090__002.inst -> Optimal: 13942
+n0005_m05_p090__003.inst -> Optimal: 20734
+n0005_m05_p090__004.inst -> Optimal: 20404
+n0010_m01_p025__000.inst -> Optimal: 2208
+n0010_m01_p025__001.inst -> Optimal: 2715
+n0010_m01_p025__002.inst -> Optimal: 2322
+n0010_m01_p025__003.inst -> Optimal: 2211
+n0010_m01_p025__004.inst -> Optimal: 2523
+n0010_m01_p050__000.inst -> Optimal: 2318
+n0010_m01_p050__001.inst -> Optimal: 3223
+n0010_m01_p050__002.inst -> Optimal: 2758
+n0010_m01_p050__003.inst -> Optimal: 2345
+n0010_m01_p050__004.inst -> Optimal: 2317
+n0010_m01_p075__000.inst -> Optimal: 2574
+n0010_m01_p075__001.inst -> Optimal: 3110
+n0010_m01_p075__002.inst -> Optimal: 2577
+n0010_m01_p075__003.inst -> Optimal: 3683
+n0010_m01_p075__004.inst -> Optimal: 3162
+n0010_m01_p090__000.inst -> Optimal: 3641
+n0010_m01_p090__001.inst -> Optimal: 3249
+n0010_m01_p090__002.inst -> Optimal: 3355
+n0010_m01_p090__003.inst -> Optimal: 4504
+n0010_m01_p090__004.inst -> Optimal: 3100
+n0010_m02_p025__000.inst -> Optimal: 5319
+n0010_m02_p025__001.inst -> Optimal: 4196
+n0010_m02_p025__002.inst -> Optimal: 7079
+n0010_m02_p025__003.inst -> Optimal: 5369
+n0010_m02_p025__004.inst -> Optimal: 4523
+n0010_m02_p050__000.inst -> Optimal: 5356
+n0010_m02_p050__001.inst -> Optimal: 7339
+n0010_m02_p050__002.inst -> Optimal: 6861
+n0010_m02_p050__003.inst -> Optimal: 3897
+n0010_m02_p050__004.inst -> Optimal: 5658
+n0010_m02_p075__000.inst -> Optimal: 7467
+n0010_m02_p075__001.inst -> Optimal: 7317
+n0010_m02_p075__002.inst -> Optimal: 7053
+n0010_m02_p075__003.inst -> Optimal: 8134
+n0010_m02_p075__004.inst -> Optimal: 6165
+n0010_m02_p090__000.inst -> Optimal: 8555
+n0010_m02_p090__001.inst -> Optimal: 5966
+n0010_m02_p090__002.inst -> Feasible: 8449
+n0010_m02_p090__003.inst -> Optimal: 5893
+n0010_m02_p090__004.inst -> Feasible: 8408
+n0010_m03_p025__000.inst -> Optimal: 8534
+n0010_m03_p025__001.inst -> Optimal: 6016
+n0010_m03_p025__002.inst -> Optimal: 8319
+n0010_m03_p025__003.inst -> Optimal: 11808
+n0010_m03_p025__004.inst -> Optimal: 7317
+n0010_m03_p050__000.inst -> Optimal: 8636
+n0010_m03_p050__001.inst -> Optimal: 8383
+n0010_m03_p050__002.inst -> Feasible: 10642
+n0010_m03_p050__003.inst -> Optimal: 8926
+n0010_m03_p050__004.inst -> Feasible: 9535
+n0010_m03_p075__000.inst -> Feasible: 8801
+n0010_m03_p075__001.inst -> Feasible: 11729
+n0010_m03_p075__002.inst -> Feasible: 9497
+n0010_m03_p075__003.inst -> Feasible: 7413
+n0010_m03_p075__004.inst -> Feasible: 12206
+n0010_m03_p090__000.inst -> Feasible: 15205
+n0010_m03_p090__001.inst -> Feasible: 11581
+n0010_m03_p090__002.inst -> Feasible: 13356
+n0010_m03_p090__003.inst -> Feasible: 11165
+n0010_m03_p090__004.inst -> Feasible: 11151
+n0010_m04_p025__000.inst -> Optimal: 12749
+n0010_m04_p025__001.inst -> Optimal: 14814
+n0010_m04_p025__002.inst -> Optimal: 11547
+n0010_m04_p025__003.inst -> Optimal: 12432
+n0010_m04_p025__004.inst -> Feasible: 12714
+n0010_m04_p050__000.inst -> Feasible: 17506
+n0010_m04_p050__001.inst -> Optimal: 12077
+n0010_m04_p050__002.inst -> Feasible: 15114
+n0010_m04_p050__003.inst -> Optimal: 14149
+n0010_m04_p050__004.inst -> Feasible: 12332
+n0010_m04_p075__000.inst -> Optimal: 19075
+n0010_m04_p075__001.inst -> Feasible: 23139
+n0010_m04_p075__002.inst -> Feasible: 13968
+n0010_m04_p075__003.inst -> Feasible: 14898
+n0010_m04_p075__004.inst -> Feasible: 16208
+n0010_m04_p090__000.inst -> Feasible: 16085
+n0010_m04_p090__001.inst -> Feasible: 20481
+n0010_m04_p090__002.inst -> Feasible: 18335
+n0010_m04_p090__003.inst -> Feasible: 22524
+n0010_m04_p090__004.inst -> Feasible: 20839
+n0010_m05_p025__000.inst -> Feasible: 16660
+n0010_m05_p025__001.inst -> Feasible: 16334
+n0010_m05_p025__002.inst -> Feasible: 12960
+n0010_m05_p025__003.inst -> Feasible: 18209
+n0010_m05_p025__004.inst -> Feasible: 19828
+n0010_m05_p050__000.inst -> Feasible: 19529
+n0010_m05_p050__001.inst -> Feasible: 19474
+n0010_m05_p050__002.inst -> Feasible: 16735
+n0010_m05_p050__003.inst -> Feasible: 22429
+n0010_m05_p050__004.inst -> Feasible: 24570
+n0010_m05_p075__000.inst -> Feasible: 23763
+n0010_m05_p075__001.inst -> Feasible: 21990
+n0010_m05_p075__002.inst -> Feasible: 30200
+n0010_m05_p075__003.inst -> Feasible: 27507
+n0010_m05_p075__004.inst -> Feasible: 26776
+n0010_m05_p090__000.inst -> Feasible: 28404
+n0010_m05_p090__001.inst -> Feasible: 27314
+n0010_m05_p090__002.inst -> Feasible: 35425
+n0010_m05_p090__003.inst -> Feasible: 30896
+n0010_m05_p090__004.inst -> Feasible: 24831
+n0015_m01_p025__000.inst -> Optimal: 3243
+n0015_m01_p025__001.inst -> Optimal: 4295
+n0015_m01_p025__002.inst -> Optimal: 3546
+n0015_m01_p025__003.inst -> Optimal: 3870
+n0015_m01_p025__004.inst -> Optimal: 3124
+n0015_m01_p050__000.inst -> Optimal: 4734
+n0015_m01_p050__001.inst -> Optimal: 4396
+n0015_m01_p050__002.inst -> Optimal: 3013
+n0015_m01_p050__003.inst -> Optimal: 4345
+n0015_m01_p050__004.inst -> Optimal: 4104
+n0015_m01_p075__000.inst -> Optimal: 4214
+n0015_m01_p075__001.inst -> Optimal: 4448
+n0015_m01_p075__002.inst -> Optimal: 3569
+n0015_m01_p075__003.inst -> Optimal: 3904
+n0015_m01_p075__004.inst -> Optimal: 4908
+n0015_m01_p090__000.inst -> Optimal: 4405
+n0015_m01_p090__001.inst -> Optimal: 4306
+n0015_m01_p090__002.inst -> Optimal: 4110
+n0015_m01_p090__003.inst -> Optimal: 4119
+n0015_m01_p090__004.inst -> Optimal: 4191
+n0015_m02_p025__000.inst -> Optimal: 5852
+n0015_m02_p025__001.inst -> Feasible: 6081
+n0015_m02_p025__002.inst -> Optimal: 7127
+n0015_m02_p025__003.inst -> Optimal: 9278
+n0015_m02_p025__004.inst -> Optimal: 6614
+n0015_m02_p050__000.inst -> Optimal: 7328
+n0015_m02_p050__001.inst -> Feasible: 8092
+n0015_m02_p050__002.inst -> Feasible: 7532
+n0015_m02_p050__003.inst -> Feasible: 8032
+n0015_m02_p050__004.inst -> Optimal: 8971
+n0015_m02_p075__000.inst -> Feasible: 9482
+n0015_m02_p075__001.inst -> Feasible: 9166
+n0015_m02_p075__002.inst -> Feasible: 8883
+n0015_m02_p075__003.inst -> Feasible: 8762
+n0015_m02_p075__004.inst -> Feasible: 9600
+n0015_m02_p090__000.inst -> Feasible: 7869
+n0015_m02_p090__001.inst -> Feasible: 10557
+n0015_m02_p090__002.inst -> Feasible: 11554
+n0015_m02_p090__003.inst -> Feasible: 11231
+n0015_m02_p090__004.inst -> Feasible: 9281
+n0015_m03_p025__000.inst -> Optimal: 12275
+n0015_m03_p025__001.inst -> Feasible: 11144
+n0015_m03_p025__002.inst -> Feasible: 10887
+n0015_m03_p025__003.inst -> Optimal: 10333
+n0015_m03_p025__004.inst -> Optimal: 11344
+n0015_m03_p050__000.inst -> Feasible: 12356
+n0015_m03_p050__001.inst -> Feasible: 11997
+n0015_m03_p050__002.inst -> Feasible: 10785
+n0015_m03_p050__003.inst -> Feasible: 12571
+n0015_m03_p050__004.inst -> Feasible: 10357
+n0015_m03_p075__000.inst -> Feasible: 13508
+n0015_m03_p075__001.inst -> Feasible: 14765
+n0015_m03_p075__002.inst -> Feasible: 12378
+n0015_m03_p075__003.inst -> Feasible: 19347
+n0015_m03_p075__004.inst -> Feasible: 15378
+n0015_m03_p090__000.inst -> Feasible: 19660
+n0015_m03_p090__001.inst -> Feasible: 17851
+n0015_m03_p090__002.inst -> Feasible: 15812
+n0015_m03_p090__003.inst -> Feasible: 16465
+n0015_m03_p090__004.inst -> Feasible: 15921
+n0015_m04_p025__000.inst -> Feasible: 11466
+n0015_m04_p025__001.inst -> Feasible: 14036
+n0015_m04_p025__002.inst -> Feasible: 20469
+n0015_m04_p025__003.inst -> Feasible: 15290
+n0015_m04_p025__004.inst -> Optimal: 17636
+n0015_m04_p050__000.inst -> Feasible: 19343
+n0015_m04_p050__001.inst -> Feasible: 22420
+n0015_m04_p050__002.inst -> Feasible: 25209
+n0015_m04_p050__003.inst -> Feasible: 22414
+n0015_m04_p050__004.inst -> Feasible: 21201
+n0015_m04_p075__000.inst -> Feasible: 26224
+n0015_m04_p075__001.inst -> Feasible: 25564
+n0015_m04_p075__002.inst -> Feasible: 26265
+n0015_m04_p075__003.inst -> Feasible: 27862
+n0015_m04_p075__004.inst -> Feasible: 21394
+n0015_m04_p090__000.inst -> Feasible: 35858
+n0015_m04_p090__001.inst -> Feasible: 30117
+n0015_m04_p090__002.inst -> Feasible: 31261
+n0015_m04_p090__003.inst -> Feasible: 27083
+n0015_m04_p090__004.inst -> Feasible: 27932
+n0015_m05_p025__000.inst -> Feasible: 24645
+n0015_m05_p025__001.inst -> Feasible: 23786
+n0015_m05_p025__002.inst -> Feasible: 30970
+n0015_m05_p025__003.inst -> Feasible: 25453
+n0015_m05_p025__004.inst -> Feasible: 27499
+n0015_m05_p050__000.inst -> Feasible: 29764
+n0015_m05_p050__001.inst -> Feasible: 27217
+n0015_m05_p050__002.inst -> Feasible: 30130
+n0015_m05_p050__003.inst -> Feasible: 30913
+n0015_m05_p050__004.inst -> Feasible: 30703
+n0015_m05_p075__000.inst -> Feasible: 34970
+n0015_m05_p075__001.inst -> Feasible: 38682
+n0015_m05_p075__002.inst -> Feasible: 39321
+n0015_m05_p075__003.inst -> Feasible: 34807
+n0015_m05_p075__004.inst -> Feasible: 41468
+n0015_m05_p090__000.inst -> Feasible: 57058
+n0015_m05_p090__001.inst -> Feasible: 39237
+n0015_m05_p090__002.inst -> Feasible: 49646
+n0015_m05_p090__003.inst -> Feasible: 39335
+n0015_m05_p090__004.inst -> Feasible: 41433
+n0020_m01_p025__000.inst -> Optimal: 4947
+n0020_m01_p025__001.inst -> Optimal: 5399
+n0020_m01_p025__002.inst -> Optimal: 5121
+n0020_m01_p025__003.inst -> Optimal: 6076
+n0020_m01_p025__004.inst -> Optimal: 4674
+n0020_m01_p050__000.inst -> Optimal: 4190
+n0020_m01_p050__001.inst -> Optimal: 6120
+n0020_m01_p050__002.inst -> Optimal: 4817
+n0020_m01_p050__003.inst -> Optimal: 4314
+n0020_m01_p050__004.inst -> Optimal: 3882
+n0020_m01_p075__000.inst -> Optimal: 6108
+n0020_m01_p075__001.inst -> Optimal: 4978
+n0020_m01_p075__002.inst -> Optimal: 5376
+n0020_m01_p075__003.inst -> Optimal: 5078
+n0020_m01_p075__004.inst -> Optimal: 4693
+n0020_m01_p090__000.inst -> Optimal: 5963
+n0020_m01_p090__001.inst -> Optimal: 5888
+n0020_m01_p090__002.inst -> Optimal: 4480
+n0020_m01_p090__003.inst -> Optimal: 5497
+n0020_m01_p090__004.inst -> Optimal: 5602
+n0020_m02_p025__000.inst -> Optimal: 8433
+n0020_m02_p025__001.inst -> Feasible: 8353
+n0020_m02_p025__002.inst -> Optimal: 9464
+n0020_m02_p025__003.inst -> Optimal: 10494
+n0020_m02_p025__004.inst -> Optimal: 9414
+n0020_m02_p050__000.inst -> Feasible: 8937
+n0020_m02_p050__001.inst -> Feasible: 8028
+n0020_m02_p050__002.inst -> Feasible: 11160
+n0020_m02_p050__003.inst -> Feasible: 11604
+n0020_m02_p050__004.inst -> Feasible: 9522
+n0020_m02_p075__000.inst -> Feasible: 12829
+n0020_m02_p075__001.inst -> Feasible: 10340
+n0020_m02_p075__002.inst -> Feasible: 10482
+n0020_m02_p075__003.inst -> Feasible: 12709
+n0020_m02_p075__004.inst -> Feasible: 12903
+n0020_m02_p090__000.inst -> Feasible: 11438
+n0020_m02_p090__001.inst -> Feasible: 14673
+n0020_m02_p090__002.inst -> Feasible: 12222
+n0020_m02_p090__003.inst -> Feasible: 12630
+n0020_m02_p090__004.inst -> Feasible: 14226
+n0020_m03_p025__000.inst -> Feasible: 14977
+n0020_m03_p025__001.inst -> Feasible: 12413
+n0020_m03_p025__002.inst -> Feasible: 14422
+n0020_m03_p025__003.inst -> Feasible: 17391
+n0020_m03_p025__004.inst -> Feasible: 16513
+n0020_m03_p050__000.inst -> Feasible: 17654
+n0020_m03_p050__001.inst -> Feasible: 17502
+n0020_m03_p050__002.inst -> Feasible: 17872
+n0020_m03_p050__003.inst -> Feasible: 19104
+n0020_m03_p050__004.inst -> Feasible: 18296
+n0020_m03_p075__000.inst -> Feasible: 25299
+n0020_m03_p075__001.inst -> Feasible: 24240
+n0020_m03_p075__002.inst -> Feasible: 22088
+n0020_m03_p075__003.inst -> Feasible: 21471
+n0020_m03_p075__004.inst -> Feasible: 21226
+n0020_m03_p090__000.inst -> Feasible: 22900
+n0020_m03_p090__001.inst -> Feasible: 25385
+n0020_m03_p090__002.inst -> Feasible: 26181
+n0020_m03_p090__003.inst -> Feasible: 22197
+n0020_m03_p090__004.inst -> Feasible: 23103
+n0020_m04_p025__000.inst -> Feasible: 19424
+n0020_m04_p025__001.inst -> Feasible: 24199
+n0020_m04_p025__002.inst -> Feasible: 26841
+n0020_m04_p025__003.inst -> Feasible: 23804
+n0020_m04_p025__004.inst -> Feasible: 19991
+n0020_m04_p050__000.inst -> Feasible: 29012
+n0020_m04_p050__001.inst -> Feasible: 22508
+n0020_m04_p050__002.inst -> Feasible: 31917
+n0020_m04_p050__003.inst -> Feasible: 28752
+n0020_m04_p050__004.inst -> Feasible: 28851
+n0020_m04_p075__000.inst -> Feasible: 36398
+n0020_m04_p075__001.inst -> Feasible: 34976
+n0020_m04_p075__002.inst -> Feasible: 36232
+n0020_m04_p075__003.inst -> Feasible: 36156
+n0020_m04_p075__004.inst -> Feasible: 28320
+n0020_m04_p090__000.inst -> Feasible: 34930
+n0020_m04_p090__001.inst -> Feasible: 44992
+n0020_m04_p090__002.inst -> Feasible: 39273
+n0020_m04_p090__003.inst -> Feasible: 36484
+n0020_m04_p090__004.inst -> Feasible: 36848
+n0020_m05_p025__000.inst -> Feasible: 29964
+n0020_m05_p025__001.inst -> Feasible: 28554
+n0020_m05_p025__002.inst -> Feasible: 45060
+n0020_m05_p025__003.inst -> Feasible: 33528
+n0020_m05_p025__004.inst -> Feasible: 36698
+n0020_m05_p050__000.inst -> Unknown:
+n0020_m05_p050__001.inst -> Feasible: 42209
+n0020_m05_p050__002.inst -> Feasible: 44510
+n0020_m05_p050__003.inst -> Unknown:
+n0020_m05_p050__004.inst -> Feasible: 49198
+n0020_m05_p075__000.inst -> Unknown:
+n0020_m05_p075__001.inst -> Feasible: 40569
+n0020_m05_p075__002.inst -> Feasible: 42532
+n0020_m05_p075__003.inst -> Feasible: 55129
+n0020_m05_p075__004.inst -> Feasible: 47391
+n0020_m05_p090__000.inst -> Unknown:
+n0020_m05_p090__001.inst -> Feasible: 67887
+n0020_m05_p090__002.inst -> Feasible: 62913
+n0020_m05_p090__003.inst -> Feasible: 52613
+n0020_m05_p090__004.inst -> Unknown:
+n0025_m01_p025__000.inst -> Optimal: 6015
+n0025_m01_p025__001.inst -> Optimal: 5819
+n0025_m01_p025__002.inst -> Optimal: 5484
+n0025_m01_p025__003.inst -> Optimal: 6347
+n0025_m01_p025__004.inst -> Optimal: 6182
+n0025_m01_p050__000.inst -> Optimal: 5447
+n0025_m01_p050__001.inst -> Optimal: 6131
+n0025_m01_p050__002.inst -> Optimal: 5828
+n0025_m01_p050__003.inst -> Optimal: 5997
+n0025_m01_p050__004.inst -> Optimal: 6678
+n0025_m01_p075__000.inst -> Optimal: 6609
+n0025_m01_p075__001.inst -> Optimal: 6279
+n0025_m01_p075__002.inst -> Optimal: 4985
+n0025_m01_p075__003.inst -> Optimal: 7104
+n0025_m01_p075__004.inst -> Optimal: 5793
+n0025_m01_p090__000.inst -> Optimal: 7154
+n0025_m01_p090__001.inst -> Optimal: 7774
+n0025_m01_p090__002.inst -> Optimal: 6855
+n0025_m01_p090__003.inst -> Optimal: 7656
+n0025_m01_p090__004.inst -> Optimal: 7090
+n0025_m02_p025__000.inst -> Optimal: 11279
+n0025_m02_p025__001.inst -> Feasible: 13369
+n0025_m02_p025__002.inst -> Feasible: 11809
+n0025_m02_p025__003.inst -> Feasible: 11948
+n0025_m02_p025__004.inst -> Feasible: 12785
+n0025_m02_p050__000.inst -> Feasible: 14304
+n0025_m02_p050__001.inst -> Feasible: 12964
+n0025_m02_p050__002.inst -> Feasible: 14123
+n0025_m02_p050__003.inst -> Feasible: 13619
+n0025_m02_p050__004.inst -> Feasible: 12379
+n0025_m02_p075__000.inst -> Feasible: 14859
+n0025_m02_p075__001.inst -> Feasible: 16338
+n0025_m02_p075__002.inst -> Feasible: 12257
+n0025_m02_p075__003.inst -> Feasible: 15037
+n0025_m02_p075__004.inst -> Feasible: 16117
+n0025_m02_p090__000.inst -> Feasible: 16639
+n0025_m02_p090__001.inst -> Feasible: 15526
+n0025_m02_p090__002.inst -> Feasible: 16788
+n0025_m02_p090__003.inst -> Feasible: 14589
+n0025_m02_p090__004.inst -> Feasible: 15426
+n0025_m03_p025__000.inst -> Feasible: 17219
+n0025_m03_p025__001.inst -> Feasible: 20936
+n0025_m03_p025__002.inst -> Feasible: 19566
+n0025_m03_p025__003.inst -> Feasible: 20668
+n0025_m03_p025__004.inst -> Feasible: 18738
+n0025_m03_p050__000.inst -> Feasible: 22015
+n0025_m03_p050__001.inst -> Feasible: 22114
+n0025_m03_p050__002.inst -> Feasible: 20373
+n0025_m03_p050__003.inst -> Unknown:
+n0025_m03_p050__004.inst -> Feasible: 22439
+n0025_m03_p075__000.inst -> Feasible: 27407
+n0025_m03_p075__001.inst -> Feasible: 25052
+n0025_m03_p075__002.inst -> Feasible: 28732
+n0025_m03_p075__003.inst -> Feasible: 26580
+n0025_m03_p075__004.inst -> Feasible: 30092
+n0025_m03_p090__000.inst -> Feasible: 30418
+n0025_m03_p090__001.inst -> Feasible: 29440
+n0025_m03_p090__002.inst -> Feasible: 34711
+n0025_m03_p090__003.inst -> Feasible: 28808
+n0025_m03_p090__004.inst -> Feasible: 26795
+n0025_m04_p025__000.inst -> Feasible: 29781
+n0025_m04_p025__001.inst -> Feasible: 28941
+n0025_m04_p025__002.inst -> Feasible: 25465
+n0025_m04_p025__003.inst -> Feasible: 36780
+n0025_m04_p025__004.inst -> Feasible: 31828
+n0025_m04_p050__000.inst -> Feasible: 36142
+n0025_m04_p050__001.inst -> Feasible: 31804
+n0025_m04_p050__002.inst -> Feasible: 33346
+n0025_m04_p050__003.inst -> Unknown:
+n0025_m04_p050__004.inst -> Feasible: 36521
+n0025_m04_p075__000.inst -> Feasible: 42776
+n0025_m04_p075__001.inst -> Feasible: 47134
+n0025_m04_p075__002.inst -> Feasible: 44039
+n0025_m04_p075__003.inst -> Feasible: 41910
+n0025_m04_p075__004.inst -> Feasible: 39939
+n0025_m04_p090__000.inst -> Feasible: 51621
+n0025_m04_p090__001.inst -> Feasible: 47544
+n0025_m04_p090__002.inst -> Feasible: 44479
+n0025_m04_p090__003.inst -> Feasible: 54604
+n0025_m04_p090__004.inst -> Unknown:
+n0025_m05_p025__000.inst -> Feasible: 34885
+n0025_m05_p025__001.inst -> Feasible: 47284
+n0025_m05_p025__002.inst -> Feasible: 47427
+n0025_m05_p025__003.inst -> Feasible: 56109
+n0025_m05_p025__004.inst -> Feasible: 45535
+n0025_m05_p050__000.inst -> Unknown:
+n0025_m05_p050__001.inst -> Unknown:
+n0025_m05_p050__002.inst -> Unknown:
+n0025_m05_p050__003.inst -> Unknown:
+n0025_m05_p050__004.inst -> Feasible: 45190
+n0025_m05_p075__000.inst -> Unknown:
+n0025_m05_p075__001.inst -> Feasible: 55323
+n0025_m05_p075__002.inst -> Unknown:
+n0025_m05_p075__003.inst -> Unknown:
+n0025_m05_p075__004.inst -> Unknown:
+n0025_m05_p090__000.inst -> Unknown:
+n0025_m05_p090__001.inst -> Unknown:
+n0025_m05_p090__002.inst -> Unknown:
+n0025_m05_p090__003.inst -> Unknown:
+n0025_m05_p090__004.inst -> Unknown:
+n0030_m01_p025__000.inst -> Optimal: 8519
+n0030_m01_p025__001.inst -> Optimal: 7149
+n0030_m01_p025__002.inst -> Optimal: 8133
+n0030_m01_p025__003.inst -> Optimal: 7376
+n0030_m01_p025__004.inst -> Optimal: 7095
+n0030_m01_p050__000.inst -> Optimal: 6928
+n0030_m01_p050__001.inst -> Optimal: 7999
+n0030_m01_p050__002.inst -> Optimal: 8012
+n0030_m01_p050__003.inst -> Optimal: 8645
+n0030_m01_p050__004.inst -> Optimal: 7598
+n0030_m01_p075__000.inst -> Optimal: 7482
+n0030_m01_p075__001.inst -> Feasible: 8262
+n0030_m01_p075__002.inst -> Feasible: 7126
+n0030_m01_p075__003.inst -> Optimal: 8081
+n0030_m01_p075__004.inst -> Feasible: 7412
+n0030_m01_p090__000.inst -> Optimal: 8715
+n0030_m01_p090__001.inst -> Optimal: 8730
+n0030_m01_p090__002.inst -> Optimal: 8193
+n0030_m01_p090__003.inst -> Optimal: 8133
+n0030_m01_p090__004.inst -> Optimal: 7779
+n0030_m02_p025__000.inst -> Feasible: 12195
+n0030_m02_p025__001.inst -> Feasible: 14613
+n0030_m02_p025__002.inst -> Feasible: 15274
+n0030_m02_p025__003.inst -> Feasible: 12706
+n0030_m02_p025__004.inst -> Feasible: 13493
+n0030_m02_p050__000.inst -> Feasible: 13715
+n0030_m02_p050__001.inst -> Feasible: 14517
+n0030_m02_p050__002.inst -> Feasible: 16958
+n0030_m02_p050__003.inst -> Feasible: 14174
+n0030_m02_p050__004.inst -> Feasible: 14086
+n0030_m02_p075__000.inst -> Feasible: 17350
+n0030_m02_p075__001.inst -> Feasible: 18011
+n0030_m02_p075__002.inst -> Feasible: 17094
+n0030_m02_p075__003.inst -> Feasible: 16770
+n0030_m02_p075__004.inst -> Feasible: 18730
+n0030_m02_p090__000.inst -> Feasible: 18266
+n0030_m02_p090__001.inst -> Feasible: 21339
+n0030_m02_p090__002.inst -> Feasible: 18234
+n0030_m02_p090__003.inst -> Feasible: 20686
+n0030_m02_p090__004.inst -> Feasible: 20848
+n0030_m03_p025__000.inst -> Feasible: 21590
+n0030_m03_p025__001.inst -> Feasible: 22673
+n0030_m03_p025__002.inst -> Feasible: 18929
+n0030_m03_p025__003.inst -> Feasible: 23788
+n0030_m03_p025__004.inst -> Feasible: 22140
+n0030_m03_p050__000.inst -> Unknown:
+n0030_m03_p050__001.inst -> Unknown:
+n0030_m03_p050__002.inst -> Feasible: 23293
+n0030_m03_p050__003.inst -> Unknown:
+n0030_m03_p050__004.inst -> Feasible: 28559
+n0030_m03_p075__000.inst -> Unknown:
+n0030_m03_p075__001.inst -> Feasible: 30079
+n0030_m03_p075__002.inst -> Unknown:
+n0030_m03_p075__003.inst -> Unknown:
+n0030_m03_p075__004.inst -> Unknown:
+n0030_m03_p090__000.inst -> Unknown:
+n0030_m03_p090__001.inst -> Feasible: 43710
+n0030_m03_p090__002.inst -> Feasible: 39075
+n0030_m03_p090__003.inst -> Unknown:
+n0030_m03_p090__004.inst -> Unknown:
+n0030_m04_p025__000.inst -> Unknown:
+n0030_m04_p025__001.inst -> Feasible: 32792
+n0030_m04_p025__002.inst -> Feasible: 36084
+n0030_m04_p025__003.inst -> Unknown:
+n0030_m04_p025__004.inst -> Unknown:
+n0030_m04_p050__000.inst -> Unknown:
+n0030_m04_p050__001.inst -> Unknown:
+n0030_m04_p050__002.inst -> Unknown:
+n0030_m04_p050__003.inst -> Unknown:
+n0030_m04_p050__004.inst -> Unknown:
+n0030_m04_p075__000.inst -> Unknown:
+n0030_m04_p075__001.inst -> Unknown:
+n0030_m04_p075__002.inst -> Unknown:
+n0030_m04_p075__003.inst -> Unknown:
+n0030_m04_p075__004.inst -> Unknown:
+n0030_m04_p090__000.inst -> Unknown:
+n0030_m04_p090__001.inst -> Unknown:
+n0030_m04_p090__002.inst -> Unknown:
+n0030_m04_p090__003.inst -> Unknown:
+n0030_m04_p090__004.inst -> Unknown:
+n0030_m05_p025__000.inst -> Unknown:
+n0030_m05_p025__001.inst -> Feasible: 47636
+n0030_m05_p025__002.inst -> Unknown:
+n0030_m05_p025__003.inst -> Unknown:
+n0030_m05_p025__004.inst -> Unknown:
+n0030_m05_p050__000.inst -> Unknown:
+n0030_m05_p050__001.inst -> Unknown:
+n0030_m05_p050__002.inst -> Unknown:
+n0030_m05_p050__003.inst -> Unknown:
+n0030_m05_p050__004.inst -> Unknown:
+n0030_m05_p075__000.inst -> Unknown:
+n0030_m05_p075__001.inst -> Unknown:
+n0030_m05_p075__002.inst -> Unknown:
+n0030_m05_p075__003.inst -> Unknown:
+n0030_m05_p075__004.inst -> Unknown:
+n0030_m05_p090__000.inst -> Unknown:
+n0030_m05_p090__001.inst -> Unknown:
+n0030_m05_p090__002.inst -> Unknown:
+n0030_m05_p090__003.inst -> Unknown:
+n0030_m05_p090__004.inst -> Unknown:
+n0035_m01_p025__000.inst -> Optimal: 7181
+n0035_m01_p025__001.inst -> Optimal: 8535
+n0035_m01_p025__002.inst -> Optimal: 8783
+n0035_m01_p025__003.inst -> Optimal: 8075
+n0035_m01_p025__004.inst -> Optimal: 8684
+n0035_m01_p050__000.inst -> Optimal: 9572
+n0035_m01_p050__001.inst -> Feasible: 7391
+n0035_m01_p050__002.inst -> Optimal: 8805
+n0035_m01_p050__003.inst -> Optimal: 8735
+n0035_m01_p050__004.inst -> Optimal: 7687
+n0035_m01_p075__000.inst -> Feasible: 8732
+n0035_m01_p075__001.inst -> Feasible: 8628
+n0035_m01_p075__002.inst -> Feasible: 8521
+n0035_m01_p075__003.inst -> Optimal: 8570
+n0035_m01_p075__004.inst -> Feasible: 9097
+n0035_m01_p090__000.inst -> Optimal: 9154
+n0035_m01_p090__001.inst -> Optimal: 8808
+n0035_m01_p090__002.inst -> Optimal: 9427
+n0035_m01_p090__003.inst -> Optimal: 10039
+n0035_m01_p090__004.inst -> Optimal: 8977
+n0035_m02_p025__000.inst -> Feasible: 15823
+n0035_m02_p025__001.inst -> Feasible: 18708
+n0035_m02_p025__002.inst -> Feasible: 16069
+n0035_m02_p025__003.inst -> Feasible: 18971
+n0035_m02_p025__004.inst -> Feasible: 18396
+n0035_m02_p050__000.inst -> Feasible: 18522
+n0035_m02_p050__001.inst -> Feasible: 18083
+n0035_m02_p050__002.inst -> Feasible: 18901
+n0035_m02_p050__003.inst -> Feasible: 17385
+n0035_m02_p050__004.inst -> Feasible: 22650
+n0035_m02_p075__000.inst -> Feasible: 22103
+n0035_m02_p075__001.inst -> Feasible: 22030
+n0035_m02_p075__002.inst -> Feasible: 21344
+n0035_m02_p075__003.inst -> Unknown:
+n0035_m02_p075__004.inst -> Unknown:
+n0035_m02_p090__000.inst -> Feasible: 25020
+n0035_m02_p090__001.inst -> Feasible: 24939
+n0035_m02_p090__002.inst -> Feasible: 22128
+n0035_m02_p090__003.inst -> Feasible: 21947
+n0035_m02_p090__004.inst -> Feasible: 19842
+n0035_m03_p025__000.inst -> Feasible: 30913
+n0035_m03_p025__001.inst -> Feasible: 24191
+n0035_m03_p025__002.inst -> Feasible: 26348
+n0035_m03_p025__003.inst -> Feasible: 21647
+n0035_m03_p025__004.inst -> Feasible: 34639
+n0035_m03_p050__000.inst -> Unknown:
+n0035_m03_p050__001.inst -> Unknown:
+n0035_m03_p050__002.inst -> Unknown:
+n0035_m03_p050__003.inst -> Unknown:
+n0035_m03_p050__004.inst -> Unknown:
+n0035_m03_p075__000.inst -> Unknown:
+n0035_m03_p075__001.inst -> Unknown:
+n0035_m03_p075__002.inst -> Unknown:
+n0035_m03_p075__003.inst -> Unknown:
+n0035_m03_p075__004.inst -> Unknown:
+n0035_m03_p090__000.inst -> Unknown:
+n0035_m03_p090__001.inst -> Unknown:
+n0035_m03_p090__002.inst -> Unknown:
+n0035_m03_p090__003.inst -> Unknown:
+n0035_m03_p090__004.inst -> Unknown:
+n0035_m04_p025__000.inst -> Unknown:
+n0035_m04_p025__001.inst -> Unknown:
+n0035_m04_p025__002.inst -> Unknown:
+n0035_m04_p025__003.inst -> Feasible: 35256
+n0035_m04_p025__004.inst -> Feasible: 52088
+n0035_m04_p050__000.inst -> Unknown:
+n0035_m04_p050__001.inst -> Unknown:
+n0035_m04_p050__002.inst -> Unknown:
+n0035_m04_p050__003.inst -> Unknown:
+n0035_m04_p050__004.inst -> Unknown:
+n0035_m04_p075__000.inst -> Unknown:
+n0035_m04_p075__001.inst -> Unknown:
+n0035_m04_p075__002.inst -> Unknown:
+n0035_m04_p075__003.inst -> Unknown:
+n0035_m04_p075__004.inst -> Unknown:
+n0035_m04_p090__000.inst -> Unknown:
+n0035_m04_p090__001.inst -> Unknown:
+n0035_m04_p090__002.inst -> Unknown:
+n0035_m04_p090__003.inst -> Unknown:
+n0035_m04_p090__004.inst -> Unknown:
+n0035_m05_p025__000.inst -> Unknown:
+n0035_m05_p025__001.inst -> Unknown:
+n0035_m05_p025__002.inst -> Unknown:
+n0035_m05_p025__003.inst -> Unknown:
+n0035_m05_p025__004.inst -> Unknown:
+n0035_m05_p050__000.inst -> Unknown:
+n0035_m05_p050__001.inst -> Unknown:
+n0035_m05_p050__002.inst -> Unknown:
+n0035_m05_p050__003.inst -> Unknown:
+n0035_m05_p050__004.inst -> Unknown:
+n0035_m05_p075__000.inst -> Unknown:
+n0035_m05_p075__001.inst -> Unknown:
+n0035_m05_p075__002.inst -> Unknown:
+n0035_m05_p075__003.inst -> Unknown:
+n0035_m05_p075__004.inst -> Unknown:
+n0035_m05_p090__000.inst -> Unknown:
+n0035_m05_p090__001.inst -> Unknown:
+n0035_m05_p090__002.inst -> Unknown:
+n0035_m05_p090__003.inst -> Unknown:
+n0035_m05_p090__004.inst -> Unknown:
+n0040_m01_p025__000.inst -> Optimal: 9153
+n0040_m01_p025__001.inst -> Optimal: 10188
+n0040_m01_p025__002.inst -> Optimal: 9422
+n0040_m01_p025__003.inst -> Optimal: 9972
+n0040_m01_p025__004.inst -> Optimal: 10022
+n0040_m01_p050__000.inst -> Feasible: 9598
+n0040_m01_p050__001.inst -> Optimal: 8533
+n0040_m01_p050__002.inst -> Optimal: 9423
+n0040_m01_p050__003.inst -> Optimal: 9682
+n0040_m01_p050__004.inst -> Feasible: 10531
+n0040_m01_p075__000.inst -> Feasible: 9811
+n0040_m01_p075__001.inst -> Feasible: 9656
+n0040_m01_p075__002.inst -> Feasible: 9946
+n0040_m01_p075__003.inst -> Feasible: 10004
+n0040_m01_p075__004.inst -> Feasible: 10128
+n0040_m01_p090__000.inst -> Feasible: 10798
+n0040_m01_p090__001.inst -> Optimal: 10258
+n0040_m01_p090__002.inst -> Optimal: 10567
+n0040_m01_p090__003.inst -> Optimal: 10618
+n0040_m01_p090__004.inst -> Optimal: 11518
+n0040_m02_p025__000.inst -> Feasible: 19245
+n0040_m02_p025__001.inst -> Feasible: 16786
+n0040_m02_p025__002.inst -> Feasible: 19643
+n0040_m02_p025__003.inst -> Feasible: 21184
+n0040_m02_p025__004.inst -> Feasible: 17675
+n0040_m02_p050__000.inst -> Unknown:
+n0040_m02_p050__001.inst -> Feasible: 19889
+n0040_m02_p050__002.inst -> Feasible: 21345
+n0040_m02_p050__003.inst -> Feasible: 26006
+n0040_m02_p050__004.inst -> Feasible: 20921
+n0040_m02_p075__000.inst -> Unknown:
+n0040_m02_p075__001.inst -> Unknown:
+n0040_m02_p075__002.inst -> Unknown:
+n0040_m02_p075__003.inst -> Unknown:
+n0040_m02_p075__004.inst -> Unknown:
+n0040_m02_p090__000.inst -> Unknown:
+n0040_m02_p090__001.inst -> Feasible: 25831
+n0040_m02_p090__002.inst -> Unknown:
+n0040_m02_p090__003.inst -> Unknown:
+n0040_m02_p090__004.inst -> Unknown:
+n0040_m03_p025__000.inst -> Unknown:
+n0040_m03_p025__001.inst -> Feasible: 36287
+n0040_m03_p025__002.inst -> Feasible: 34759
+n0040_m03_p025__003.inst -> Unknown:
+n0040_m03_p025__004.inst -> Feasible: 41484
+n0040_m03_p050__000.inst -> Unknown:
+n0040_m03_p050__001.inst -> Unknown:
+n0040_m03_p050__002.inst -> Unknown:
+n0040_m03_p050__003.inst -> Unknown:
+n0040_m03_p050__004.inst -> Unknown:
+n0040_m03_p075__000.inst -> Unknown:
+n0040_m03_p075__001.inst -> Unknown:
+n0040_m03_p075__002.inst -> Unknown:
+n0040_m03_p075__003.inst -> Unknown:
+n0040_m03_p075__004.inst -> Unknown:
+n0040_m03_p090__000.inst -> Unknown:
+n0040_m03_p090__001.inst -> Unknown:
+n0040_m03_p090__002.inst -> Unknown:
+n0040_m03_p090__003.inst -> Unknown:
+n0040_m03_p090__004.inst -> Unknown:
+n0040_m04_p025__000.inst -> Unknown:
+n0040_m04_p025__001.inst -> Unknown:
+n0040_m04_p025__002.inst -> Unknown:
+n0040_m04_p025__003.inst -> Unknown:
+n0040_m04_p025__004.inst -> Unknown:
+n0040_m04_p050__000.inst -> Unknown:
+n0040_m04_p050__001.inst -> Unknown:
+n0040_m04_p050__002.inst -> Unknown:
+n0040_m04_p050__003.inst -> Unknown:
+n0040_m04_p050__004.inst -> Unknown:
+n0040_m04_p075__000.inst -> Unknown:
+n0040_m04_p075__001.inst -> Unknown:
+n0040_m04_p075__002.inst -> Unknown:
+n0040_m04_p075__003.inst -> Unknown:
+n0040_m04_p075__004.inst -> Unknown:
+n0040_m04_p090__000.inst -> Unknown:
+n0040_m04_p090__001.inst -> Unknown:
+n0040_m04_p090__002.inst -> Unknown:
+n0040_m04_p090__003.inst -> Unknown:
+n0040_m04_p090__004.inst -> Unknown:
+n0040_m05_p025__000.inst -> Unknown:
+n0040_m05_p025__001.inst -> Unknown:
+n0040_m05_p025__002.inst -> Unknown:
+n0040_m05_p025__003.inst -> Unknown:
+n0040_m05_p025__004.inst -> Unknown:
+n0040_m05_p050__000.inst -> Unknown:
+n0040_m05_p050__001.inst -> Unknown:
+n0040_m05_p050__002.inst -> Unknown:
+n0040_m05_p050__003.inst -> Unknown:
+n0040_m05_p050__004.inst -> Unknown:
+n0040_m05_p075__000.inst -> Unknown:
+n0040_m05_p075__001.inst -> Unknown:
+n0040_m05_p075__002.inst -> Unknown:
+n0040_m05_p075__003.inst -> Unknown:
+n0040_m05_p075__004.inst -> Unknown:
+n0040_m05_p090__000.inst -> Unknown:
+n0040_m05_p090__001.inst -> Unknown:
+n0040_m05_p090__002.inst -> Unknown:
+n0040_m05_p090__003.inst -> Unknown:
+n0040_m05_p090__004.inst -> Unknown:
+n0045_m01_p025__000.inst -> Optimal: 11552
+n0045_m01_p025__001.inst -> Optimal: 11111
+n0045_m01_p025__002.inst -> Optimal: 10037
+n0045_m01_p025__003.inst -> Optimal: 9805
+n0045_m01_p025__004.inst -> Optimal: 10821
+n0045_m01_p050__000.inst -> Feasible: 12126
+n0045_m01_p050__001.inst -> Feasible: 10902
+n0045_m01_p050__002.inst -> Feasible: 10896
+n0045_m01_p050__003.inst -> Optimal: 9762
+n0045_m01_p050__004.inst -> Feasible: 12486
+n0045_m01_p075__000.inst -> Feasible: 11397
+n0045_m01_p075__001.inst -> Feasible: 11760
+n0045_m01_p075__002.inst -> Feasible: 11466
+n0045_m01_p075__003.inst -> Feasible: 11363
+n0045_m01_p075__004.inst -> Feasible: 11374
+n0045_m01_p090__000.inst -> Feasible: 9987
+n0045_m01_p090__001.inst -> Feasible: 10572
+n0045_m01_p090__002.inst -> Feasible: 10854
+n0045_m01_p090__003.inst -> Feasible: 11665
+n0045_m01_p090__004.inst -> Optimal: 11672
+n0045_m02_p025__000.inst -> Feasible: 20529
+n0045_m02_p025__001.inst -> Feasible: 19514
+n0045_m02_p025__002.inst -> Feasible: 20522
+n0045_m02_p025__003.inst -> Feasible: 21724
+n0045_m02_p025__004.inst -> Feasible: 22911
+n0045_m02_p050__000.inst -> Unknown:
+n0045_m02_p050__001.inst -> Unknown:
+n0045_m02_p050__002.inst -> Unknown:
+n0045_m02_p050__003.inst -> Feasible: 21535
+n0045_m02_p050__004.inst -> Feasible: 29972
+n0045_m02_p075__000.inst -> Unknown:
+n0045_m02_p075__001.inst -> Unknown:
+n0045_m02_p075__002.inst -> Unknown:
+n0045_m02_p075__003.inst -> Unknown:
+n0045_m02_p075__004.inst -> Unknown:
+n0045_m02_p090__000.inst -> Unknown:
+n0045_m02_p090__001.inst -> Unknown:
+n0045_m02_p090__002.inst -> Unknown:
+n0045_m02_p090__003.inst -> Unknown:
+n0045_m02_p090__004.inst -> Unknown:
+n0045_m03_p025__000.inst -> Unknown:
+n0045_m03_p025__001.inst -> Unknown:
+n0045_m03_p025__002.inst -> Unknown:
+n0045_m03_p025__003.inst -> Unknown:
+n0045_m03_p025__004.inst -> Unknown:
+n0045_m03_p050__000.inst -> Unknown:
+n0045_m03_p050__001.inst -> Unknown:
+n0045_m03_p050__002.inst -> Unknown:
+n0045_m03_p050__003.inst -> Unknown:
+n0045_m03_p050__004.inst -> Unknown:
+n0045_m03_p075__000.inst -> Unknown:
+n0045_m03_p075__001.inst -> Unknown:
+n0045_m03_p075__002.inst -> Unknown:
+n0045_m03_p075__003.inst -> Unknown:
+n0045_m03_p075__004.inst -> Unknown:
+n0045_m03_p090__000.inst -> Unknown:
+n0045_m03_p090__001.inst -> Unknown:
+n0045_m03_p090__002.inst -> Unknown:
+n0045_m03_p090__003.inst -> Unknown:
+n0045_m03_p090__004.inst -> Unknown:
+n0045_m04_p025__000.inst -> Unknown:
+n0045_m04_p025__001.inst -> Unknown:
+n0045_m04_p025__002.inst -> Unknown:
+n0045_m04_p025__003.inst -> Unknown:
+n0045_m04_p025__004.inst -> Unknown:
+n0045_m04_p050__000.inst -> Unknown:
+n0045_m04_p050__001.inst -> Unknown:
+n0045_m04_p050__002.inst -> Unknown:
+n0045_m04_p050__003.inst -> Unknown:
+n0045_m04_p050__004.inst -> Unknown:
+n0045_m04_p075__000.inst -> Unknown:
+n0045_m04_p075__001.inst -> Unknown:
+n0045_m04_p075__002.inst -> Unknown:
+n0045_m04_p075__003.inst -> Unknown:
+n0045_m04_p075__004.inst -> Unknown:
+n0045_m04_p090__000.inst -> Unknown:
+n0045_m04_p090__001.inst -> Unknown:
+n0045_m04_p090__002.inst -> Unknown:
+n0045_m04_p090__003.inst -> Unknown:
+n0045_m04_p090__004.inst -> Unknown:
+n0045_m05_p025__000.inst -> Unknown:
+n0045_m05_p025__001.inst -> Unknown:
+n0045_m05_p025__002.inst -> Unknown:
+n0045_m05_p025__003.inst -> Unknown:
+n0045_m05_p025__004.inst -> Unknown:
+n0045_m05_p050__000.inst -> Unknown:
+n0045_m05_p050__001.inst -> Unknown:
+n0045_m05_p050__002.inst -> Unknown:
+n0045_m05_p050__003.inst -> Unknown:
+n0045_m05_p050__004.inst -> Unknown:
+n0045_m05_p075__000.inst -> Unknown:
+n0045_m05_p075__001.inst -> Unknown:
+n0045_m05_p075__002.inst -> Unknown:
+n0045_m05_p075__003.inst -> Unknown:
+n0045_m05_p075__004.inst -> Unknown:
+n0045_m05_p090__000.inst -> Unknown:
+n0045_m05_p090__001.inst -> Unknown:
+n0045_m05_p090__002.inst -> Unknown:
+n0045_m05_p090__003.inst -> Unknown:
+n0045_m05_p090__004.inst -> Unknown:
+n0050_m01_p025__000.inst -> Optimal: 12264
+n0050_m01_p025__001.inst -> Optimal: 11267
+n0050_m01_p025__002.inst -> Optimal: 13156
+n0050_m01_p025__003.inst -> Optimal: 11045
+n0050_m01_p025__004.inst -> Optimal: 11215
+n0050_m01_p050__000.inst -> Feasible: 12064
+n0050_m01_p050__001.inst -> Optimal: 11730
+n0050_m01_p050__002.inst -> Optimal: 10950
+n0050_m01_p050__003.inst -> Feasible: 12534
+n0050_m01_p050__004.inst -> Feasible: 12712
+n0050_m01_p075__000.inst -> Feasible: 12871
+n0050_m01_p075__001.inst -> Feasible: 13126
+n0050_m01_p075__002.inst -> Feasible: 11618
+n0050_m01_p075__003.inst -> Feasible: 12468
+n0050_m01_p075__004.inst -> Feasible: 11235
+n0050_m01_p090__000.inst -> Feasible: 12158
+n0050_m01_p090__001.inst -> Feasible: 13145
+n0050_m01_p090__002.inst -> Feasible: 13799
+n0050_m01_p090__003.inst -> Feasible: 13407
+n0050_m01_p090__004.inst -> Feasible: 13027
+n0050_m02_p025__000.inst -> Feasible: 29125
+n0050_m02_p025__001.inst -> Feasible: 25553
+n0050_m02_p025__002.inst -> Feasible: 27239
+n0050_m02_p025__003.inst -> Feasible: 25234
+n0050_m02_p025__004.inst -> Feasible: 28309
+n0050_m02_p050__000.inst -> Unknown:
+n0050_m02_p050__001.inst -> Unknown:
+n0050_m02_p050__002.inst -> Unknown:
+n0050_m02_p050__003.inst -> Feasible: 35964
+n0050_m02_p050__004.inst -> Unknown:
+n0050_m02_p075__000.inst -> Unknown:
+n0050_m02_p075__001.inst -> Unknown:
+n0050_m02_p075__002.inst -> Unknown:
+n0050_m02_p075__003.inst -> Unknown:
+n0050_m02_p075__004.inst -> Unknown:
+n0050_m02_p090__000.inst -> Unknown:
+n0050_m02_p090__001.inst -> Unknown:
+n0050_m02_p090__002.inst -> Unknown:
+n0050_m02_p090__003.inst -> Unknown:
+n0050_m02_p090__004.inst -> Unknown:
+n0050_m03_p025__000.inst -> Unknown:
+n0050_m03_p025__001.inst -> Feasible: 42034
+n0050_m03_p025__002.inst -> Unknown:
+n0050_m03_p025__003.inst -> Unknown:
+n0050_m03_p025__004.inst -> Unknown:
+n0050_m03_p050__000.inst -> Unknown:
+n0050_m03_p050__001.inst -> Unknown:
+n0050_m03_p050__002.inst -> Unknown:
+n0050_m03_p050__003.inst -> Unknown:
+n0050_m03_p050__004.inst -> Unknown:
+n0050_m03_p075__000.inst -> Unknown:
+n0050_m03_p075__001.inst -> Unknown:
+n0050_m03_p075__002.inst -> Unknown:
+n0050_m03_p075__003.inst -> Unknown:
+n0050_m03_p075__004.inst -> Unknown:
+n0050_m03_p090__000.inst -> Unknown:
+n0050_m03_p090__001.inst -> Unknown:
+n0050_m03_p090__002.inst -> Unknown:
+n0050_m03_p090__003.inst -> Unknown:
+n0050_m03_p090__004.inst -> Unknown:
+n0050_m04_p025__000.inst -> Unknown:
+n0050_m04_p025__001.inst -> Unknown:
+n0050_m04_p025__002.inst -> Unknown:
+n0050_m04_p025__003.inst -> Unknown:
+n0050_m04_p025__004.inst -> Unknown:
+n0050_m04_p050__000.inst -> Unknown:
+n0050_m04_p050__001.inst -> Unknown:
+n0050_m04_p050__002.inst -> Unknown:
+n0050_m04_p050__003.inst -> Unknown:
+n0050_m04_p050__004.inst -> Unknown:
+n0050_m04_p075__000.inst -> Unknown:
+n0050_m04_p075__001.inst -> Unknown:
+n0050_m04_p075__002.inst -> Unknown:
+n0050_m04_p075__003.inst -> Unknown:
+n0050_m04_p075__004.inst -> Unknown:
+n0050_m04_p090__000.inst -> Unknown:
+n0050_m04_p090__001.inst -> Unknown:
+n0050_m04_p090__002.inst -> Unknown:
+n0050_m04_p090__003.inst -> Unknown:
+n0050_m04_p090__004.inst -> Unknown:
+n0050_m05_p025__000.inst -> Unknown:
+n0050_m05_p025__001.inst -> Unknown:
+n0050_m05_p025__002.inst -> Unknown:
+n0050_m05_p025__003.inst -> Unknown:
+n0050_m05_p025__004.inst -> Unknown:
+n0050_m05_p050__000.inst -> Unknown:
+n0050_m05_p050__001.inst -> Unknown:
+n0050_m05_p050__002.inst -> Unknown:
+n0050_m05_p050__003.inst -> Unknown:
+n0050_m05_p050__004.inst -> Unknown:
+n0050_m05_p075__000.inst -> Unknown:
+n0050_m05_p075__001.inst -> Unknown:
+n0050_m05_p075__002.inst -> Unknown:
+n0050_m05_p075__003.inst -> Unknown:
+n0050_m05_p075__004.inst -> Unknown:
+n0050_m05_p090__000.inst -> Unknown:
+n0050_m05_p090__001.inst -> Unknown:
+n0050_m05_p090__002.inst -> Unknown:
+n0050_m05_p090__003.inst -> Unknown:
+n0050_m05_p090__004.inst -> Unknown:
+n0100_m01_p025__000.inst -> Feasible: 24749
+n0100_m01_p025__001.inst -> Feasible: 24701
+n0100_m01_p025__002.inst -> Optimal: 23280
+n0100_m01_p025__003.inst -> Feasible: 25557
+n0100_m01_p025__004.inst -> Feasible: 24219
+n0100_m01_p050__000.inst -> Feasible: 25794
+n0100_m01_p050__001.inst -> Feasible: 27054
+n0100_m01_p050__002.inst -> Feasible: 27250
+n0100_m01_p050__003.inst -> Feasible: 24918
+n0100_m01_p050__004.inst -> Feasible: 24507
+n0100_m01_p075__000.inst -> Unknown:
+n0100_m01_p075__001.inst -> Unknown:
+n0100_m01_p075__002.inst -> Unknown:
+n0100_m01_p075__003.inst -> Unknown:
+n0100_m01_p075__004.inst -> Unknown:
+n0100_m01_p090__000.inst -> Unknown:
+n0100_m01_p090__001.inst -> Unknown:
+n0100_m01_p090__002.inst -> Unknown:
+n0100_m01_p090__003.inst -> Unknown:
+n0100_m01_p090__004.inst -> Unknown:
+n0100_m02_p025__000.inst -> Unknown:
+n0100_m02_p025__001.inst -> Unknown:
+n0100_m02_p025__002.inst -> Unknown:
+n0100_m02_p025__003.inst -> Unknown:
+n0100_m02_p025__004.inst -> Unknown:
+n0100_m02_p050__000.inst -> Unknown:
+n0100_m02_p050__001.inst -> Unknown:
+n0100_m02_p050__002.inst -> Unknown:
+n0100_m02_p050__003.inst -> Unknown:
+n0100_m02_p050__004.inst -> Unknown:
+n0100_m02_p075__000.inst -> Unknown:
+n0100_m02_p075__001.inst -> Unknown:
+n0100_m02_p075__002.inst -> Unknown:
+n0100_m02_p075__003.inst -> Unknown:
+n0100_m02_p075__004.inst -> Unknown:
+n0100_m02_p090__000.inst -> Unknown:
+n0100_m02_p090__001.inst -> Unknown:
+n0100_m02_p090__002.inst -> Unknown:
+n0100_m02_p090__003.inst -> Unknown:
+n0100_m02_p090__004.inst -> Unknown:
+n0100_m03_p025__000.inst -> Unknown:
+n0100_m03_p025__001.inst -> Unknown:
+n0100_m03_p025__002.inst -> Unknown:
+n0100_m03_p025__003.inst -> Unknown:
+n0100_m03_p025__004.inst -> Unknown:
+n0100_m03_p050__000.inst -> Unknown:
+n0100_m03_p050__001.inst -> Unknown:
+n0100_m03_p050__002.inst -> Unknown:
+n0100_m03_p050__003.inst -> Unknown:
+n0100_m03_p050__004.inst -> Unknown:
+n0100_m03_p075__000.inst -> Unknown:
+n0100_m03_p075__001.inst -> Unknown:
+n0100_m03_p075__002.inst -> Unknown:
+n0100_m03_p075__003.inst -> Unknown:
+n0100_m03_p075__004.inst -> Unknown:
+n0100_m03_p090__000.inst -> Unknown:
+n0100_m03_p090__001.inst -> Unknown:
+n0100_m03_p090__002.inst -> Unknown:
+n0100_m03_p090__003.inst -> Unknown:
+n0100_m03_p090__004.inst -> Unknown:
+n0100_m04_p025__000.inst -> Unknown:
+n0100_m04_p025__001.inst -> Unknown:
+n0100_m04_p025__002.inst -> Unknown:
+n0100_m04_p025__003.inst -> Unknown:
+n0100_m04_p025__004.inst -> Unknown:
+n0100_m04_p050__000.inst -> Unknown:
+n0100_m04_p050__001.inst -> Unknown:
+n0100_m04_p050__002.inst -> Unknown:
+n0100_m04_p050__003.inst -> Unknown:
+n0100_m04_p050__004.inst -> Unknown:
+n0100_m04_p075__000.inst -> Unknown:
+n0100_m04_p075__001.inst -> Unknown:
+n0100_m04_p075__002.inst -> Unknown:
+n0100_m04_p075__003.inst -> Unknown:
+n0100_m04_p075__004.inst -> Unknown:
+n0100_m04_p090__000.inst -> Unknown:
+n0100_m04_p090__001.inst -> Unknown:
+n0100_m04_p090__002.inst -> Unknown:
+n0100_m04_p090__003.inst -> Unknown:
+n0100_m04_p090__004.inst -> Unknown:
+n0100_m05_p025__000.inst -> Unknown:
+n0100_m05_p025__001.inst -> Unknown:
+n0100_m05_p025__002.inst -> Unknown:
+n0100_m05_p025__003.inst -> Unknown:
+n0100_m05_p025__004.inst -> Unknown:
+n0100_m05_p050__000.inst -> Unknown:
+n0100_m05_p050__001.inst -> Unknown:
+n0100_m05_p050__002.inst -> Unknown:
+n0100_m05_p050__003.inst -> Unknown:
+n0100_m05_p050__004.inst -> Unknown:
+n0100_m05_p075__000.inst -> Unknown:
+n0100_m05_p075__001.inst -> Unknown:
+n0100_m05_p075__002.inst -> Unknown:
+n0100_m05_p075__003.inst -> Unknown:
+n0100_m05_p075__004.inst -> Unknown:
+n0100_m05_p090__000.inst -> Unknown:
+n0100_m05_p090__001.inst -> Unknown:
+n0100_m05_p090__002.inst -> Unknown:
+n0100_m05_p090__003.inst -> Unknown:
+n0100_m05_p090__004.inst -> Unknown:
+Optimal: 282 | Feasible: 392 | Unknown: 426
+674/1100

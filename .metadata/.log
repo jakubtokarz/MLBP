@@ -1,0 +1,15 @@
+!SESSION 2022-06-07 19:06:52.052 -----------------------------------------------
+eclipse.buildId=Build R2
+java.fullversion=11.0.13+8
+JRE 11 Windows 8 amd64-64-Bit Compressed References 20211022_218 (JIT enabled, AOT enabled)
+OpenJ9   - e1e72c497
+OMR      - 299b6a2d2
+JCL      - 2d83aa3b76 based on jdk-11.0.13+8
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -clean
+
+!ENTRY org.eclipse.ui 2 2 2022-06-07 19:07:05.619
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.web (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY ilog.odms.ide.opllang 1 0 2022-06-07 19:12:53.619
+!MESSAGE concert_wrap.IloEndMT

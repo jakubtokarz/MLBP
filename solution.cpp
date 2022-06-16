@@ -30,12 +30,26 @@ std::ostream& operator<<(std::ostream& os, const Solution<BP>& sol)
 /*****************************************************************************************/
 /** Multi-Level Bin Packing Problem ******************************************************/
 /*****************************************************************************************/
-Solution<MLBP>::Solution(const Instance<MLBP>& inst) : db(-1)
+//Solution<MLBP>::Solution(const Instance<MLBP>& inst) : db(-1)
+//{
+//}
+
+Solution<MLBP>::Solution(const Instance<MLBP>& inst)
 {
+	total_bin_cost = 0;
+	for (int k = 0; k < inst.m; k++) {
+		item_to_bins.push_back(std::vector<int>(inst.n[0], -1));
+		for (int j = 0; j < inst.n[k+1]; j++) {
+
+			total_bin_cost += inst.c[k+1][j];
+		}
+	}
 }
 
 std::ostream& operator<<(std::ostream& os, const Solution<MLBP>& sol) {
-	// TODO
+	for (int i = 0; i < sol.item_to_bins.size(); i++) {
+		os << sol.item_to_bins[i];
+	}
 	return os;
 }
 
@@ -50,7 +64,7 @@ Solution<CCMLBP>::Solution(const Instance<CCMLBP>& inst) : Solution<MLBP>(inst)
 }
 
 std::ostream& operator<<(std::ostream& os, const Solution<CCMLBP>& sol) {
-	// TODO
+	// TOD
 	return os;
 }
 
@@ -65,7 +79,9 @@ Solution<MLBPCC>::Solution(const Instance<MLBPCC>& inst) : Solution<MLBP>(inst)
 }
 
 std::ostream& operator<<(std::ostream& os, const Solution<MLBPCC>& sol) {
-	// TODO
+	for (int i = 0; i < sol.item_to_bins.size(); i++) {
+		os << sol.item_to_bins[i];
+	}
 	return os;
 }
 
@@ -80,7 +96,7 @@ Solution<MLBPPO>::Solution(const Instance<MLBPPO>& inst) : Solution<MLBP>(inst)
 }
 
 std::ostream& operator<<(std::ostream& os, const Solution<MLBPPO>& sol) {
-	// TODO
+	// TOD
 	return os;
 }
 
@@ -95,7 +111,7 @@ Solution<MLBPTW>::Solution(const Instance<MLBPTW>& inst) : Solution<MLBP>(inst)
 }
 
 std::ostream& operator<<(std::ostream& os, const Solution<MLBPTW>& sol) {
-	// TODO
+	// TOD
 	return os;
 }
 
@@ -110,7 +126,7 @@ Solution<MLBPFC>::Solution(const Instance<MLBPFC>& inst) : Solution<MLBP>(inst)
 }
 
 std::ostream& operator<<(std::ostream& os, const Solution<MLBPFC>& sol) {
-	// TODO
+	// TOD
 	return os;
 }
 

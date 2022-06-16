@@ -1,0 +1,1100 @@
+n0005_m01_p025__000.inst -> Ticks: 0.51 | Time: 0 | BnB nodes: 0
+n0005_m01_p025__001.inst -> Ticks: 0.46 | Time: 0 | BnB nodes: 0
+n0005_m01_p025__002.inst -> Ticks: 0.34 | Time: 0.015 | BnB nodes: 0
+n0005_m01_p025__003.inst -> Ticks: 0.38 | Time: 0.015 | BnB nodes: 0
+n0005_m01_p025__004.inst -> Ticks: 0.76 | Time: 0 | BnB nodes: 0
+n0005_m01_p050__000.inst -> Ticks: 0.57 | Time: 0.015 | BnB nodes: 0
+n0005_m01_p050__001.inst -> Ticks: 0.52 | Time: 0 | BnB nodes: 0
+n0005_m01_p050__002.inst -> Ticks: 0.68 | Time: 0 | BnB nodes: 0
+n0005_m01_p050__003.inst -> Ticks: 0.82 | Time: 0.015 | BnB nodes: 0
+n0005_m01_p050__004.inst -> Ticks: 0.41 | Time: 0 | BnB nodes: 0
+n0005_m01_p075__000.inst -> Ticks: 0.86 | Time: 0.015 | BnB nodes: 0
+n0005_m01_p075__001.inst -> Ticks: 0.71 | Time: 0 | BnB nodes: 0
+n0005_m01_p075__002.inst -> Ticks: 0.35 | Time: 0 | BnB nodes: 0
+n0005_m01_p075__003.inst -> Ticks: 0.67 | Time: 0 | BnB nodes: 0
+n0005_m01_p075__004.inst -> Ticks: 0.53 | Time: 0 | BnB nodes: 0
+n0005_m01_p090__000.inst -> Ticks: 0.63 | Time: 0 | BnB nodes: 0
+n0005_m01_p090__001.inst -> Ticks: 0.64 | Time: 0 | BnB nodes: 0
+n0005_m01_p090__002.inst -> Ticks: 0.72 | Time: 0 | BnB nodes: 0
+n0005_m01_p090__003.inst -> Ticks: 0.6 | Time: 0 | BnB nodes: 0
+n0005_m01_p090__004.inst -> Ticks: 0.93 | Time: 0 | BnB nodes: 0
+n0005_m02_p025__000.inst -> Ticks: 6.22 | Time: 0.016 | BnB nodes: 0
+n0005_m02_p025__001.inst -> Ticks: 13.81 | Time: 0.031 | BnB nodes: 49
+n0005_m02_p025__002.inst -> Ticks: 12.42 | Time: 0.031 | BnB nodes: 8
+n0005_m02_p025__003.inst -> Ticks: 2.48 | Time: 0 | BnB nodes: 0
+n0005_m02_p025__004.inst -> Ticks: 4.64 | Time: 0 | BnB nodes: 0
+n0005_m02_p050__000.inst -> Ticks: 3.16 | Time: 0 | BnB nodes: 0
+n0005_m02_p050__001.inst -> Ticks: 29.19 | Time: 0.062 | BnB nodes: 26
+n0005_m02_p050__002.inst -> Ticks: 9.65 | Time: 0.015 | BnB nodes: 0
+n0005_m02_p050__003.inst -> Ticks: 22.59 | Time: 0.046 | BnB nodes: 9
+n0005_m02_p050__004.inst -> Ticks: 4.88 | Time: 0 | BnB nodes: 0
+n0005_m02_p075__000.inst -> Ticks: 9.58 | Time: 0.031 | BnB nodes: 0
+n0005_m02_p075__001.inst -> Ticks: 16.4 | Time: 0.031 | BnB nodes: 23
+n0005_m02_p075__002.inst -> Ticks: 41.04 | Time: 0.078 | BnB nodes: 0
+n0005_m02_p075__003.inst -> Ticks: 4.05 | Time: 0 | BnB nodes: 7
+n0005_m02_p075__004.inst -> Ticks: 26.02 | Time: 0.046 | BnB nodes: 11
+n0005_m02_p090__000.inst -> Ticks: 34.08 | Time: 0.062 | BnB nodes: 14
+n0005_m02_p090__001.inst -> Ticks: 15.76 | Time: 0.015 | BnB nodes: 19
+n0005_m02_p090__002.inst -> Ticks: 63.11 | Time: 0.093 | BnB nodes: 31
+n0005_m02_p090__003.inst -> Ticks: 32.39 | Time: 0.062 | BnB nodes: 9
+n0005_m02_p090__004.inst -> Ticks: 4.93 | Time: 0 | BnB nodes: 0
+n0005_m03_p025__000.inst -> Ticks: 2.56 | Time: 0.015 | BnB nodes: 0
+n0005_m03_p025__001.inst -> Ticks: 8.61 | Time: 0.031 | BnB nodes: 16
+n0005_m03_p025__002.inst -> Ticks: 50.6 | Time: 0.046 | BnB nodes: 102
+n0005_m03_p025__003.inst -> Ticks: 125.54 | Time: 0.156 | BnB nodes: 545
+n0005_m03_p025__004.inst -> Ticks: 71.18 | Time: 0.078 | BnB nodes: 73
+n0005_m03_p050__000.inst -> Ticks: 91.56 | Time: 0.125 | BnB nodes: 117
+n0005_m03_p050__001.inst -> Ticks: 6.69 | Time: 0.015 | BnB nodes: 0
+n0005_m03_p050__002.inst -> Ticks: 66.01 | Time: 0.078 | BnB nodes: 68
+n0005_m03_p050__003.inst -> Ticks: 39.03 | Time: 0.062 | BnB nodes: 15
+n0005_m03_p050__004.inst -> Ticks: 207.6 | Time: 0.203 | BnB nodes: 254
+n0005_m03_p075__000.inst -> Ticks: 4.01 | Time: 0.015 | BnB nodes: 0
+n0005_m03_p075__001.inst -> Ticks: 92.51 | Time: 0.093 | BnB nodes: 110
+n0005_m03_p075__002.inst -> Ticks: 247.42 | Time: 0.234 | BnB nodes: 646
+n0005_m03_p075__003.inst -> Ticks: 63.44 | Time: 0.093 | BnB nodes: 108
+n0005_m03_p075__004.inst -> Ticks: 119.4 | Time: 0.14 | BnB nodes: 212
+n0005_m03_p090__000.inst -> Ticks: 50.4 | Time: 0.063 | BnB nodes: 81
+n0005_m03_p090__001.inst -> Ticks: 118.33 | Time: 0.14 | BnB nodes: 20
+n0005_m03_p090__002.inst -> Ticks: 101.93 | Time: 0.125 | BnB nodes: 316
+n0005_m03_p090__003.inst -> Ticks: 258.64 | Time: 0.265 | BnB nodes: 328
+n0005_m03_p090__004.inst -> Ticks: 83.43 | Time: 0.125 | BnB nodes: 25
+n0005_m04_p025__000.inst -> Ticks: 26.58 | Time: 0.046 | BnB nodes: 22
+n0005_m04_p025__001.inst -> Ticks: 1.59 | Time: 0 | BnB nodes: 0
+n0005_m04_p025__002.inst -> Ticks: 266.41 | Time: 0.265 | BnB nodes: 746
+n0005_m04_p025__003.inst -> Ticks: 104.45 | Time: 0.093 | BnB nodes: 142
+n0005_m04_p025__004.inst -> Ticks: 563.51 | Time: 0.468 | BnB nodes: 1062
+n0005_m04_p050__000.inst -> Ticks: 46.05 | Time: 0.062 | BnB nodes: 74
+n0005_m04_p050__001.inst -> Ticks: 991.29 | Time: 0.921 | BnB nodes: 1693
+n0005_m04_p050__002.inst -> Ticks: 147.73 | Time: 0.141 | BnB nodes: 456
+n0005_m04_p050__003.inst -> Ticks: 7566.66 | Time: 6.375 | BnB nodes: 11362
+n0005_m04_p050__004.inst -> Ticks: 5886.09 | Time: 4.64 | BnB nodes: 7098
+n0005_m04_p075__000.inst -> Ticks: 942.35 | Time: 0.859 | BnB nodes: 1447
+n0005_m04_p075__001.inst -> Ticks: 3398.9 | Time: 2.828 | BnB nodes: 5129
+n0005_m04_p075__002.inst -> Ticks: 954.66 | Time: 0.828 | BnB nodes: 2358
+n0005_m04_p075__003.inst -> Ticks: 18446.45 | Time: 15.656 | BnB nodes: 21320
+n0005_m04_p075__004.inst -> Ticks: 862.91 | Time: 0.766 | BnB nodes: 1180
+n0005_m04_p090__000.inst -> Ticks: 5513.79 | Time: 4.64 | BnB nodes: 5952
+n0005_m04_p090__001.inst -> Ticks: 6076.41 | Time: 5.25 | BnB nodes: 6804
+n0005_m04_p090__002.inst -> Ticks: 77714.07 | Time: 59.89 | BnB nodes: 46360 | Status: Feasible
+n0005_m04_p090__003.inst -> Ticks: 11898.24 | Time: 9.718 | BnB nodes: 10789
+n0005_m04_p090__004.inst -> Ticks: 21885.42 | Time: 19.281 | BnB nodes: 25182
+n0005_m05_p025__000.inst -> Ticks: 62.5 | Time: 0.109 | BnB nodes: 30
+n0005_m05_p025__001.inst -> Ticks: 101.31 | Time: 0.094 | BnB nodes: 84
+n0005_m05_p025__002.inst -> Ticks: 6.23 | Time: 0.031 | BnB nodes: 7
+n0005_m05_p025__003.inst -> Ticks: 41.79 | Time: 0.078 | BnB nodes: 53
+n0005_m05_p025__004.inst -> Ticks: 3.04 | Time: 0 | BnB nodes: 0
+n0005_m05_p050__000.inst -> Ticks: 118.94 | Time: 0.156 | BnB nodes: 430
+n0005_m05_p050__001.inst -> Ticks: 539.86 | Time: 0.5 | BnB nodes: 1155
+n0005_m05_p050__002.inst -> Ticks: 718.17 | Time: 0.937 | BnB nodes: 1760
+n0005_m05_p050__003.inst -> Ticks: 26637.48 | Time: 21.593 | BnB nodes: 27464
+n0005_m05_p050__004.inst -> Ticks: 259.63 | Time: 0.234 | BnB nodes: 463
+n0005_m05_p075__000.inst -> Ticks: 910.25 | Time: 0.75 | BnB nodes: 810
+n0005_m05_p075__001.inst -> Ticks: 78115.06 | Time: 59.796 | BnB nodes: 38904 | Status: Feasible
+n0005_m05_p075__002.inst -> Ticks: 807.11 | Time: 0.89 | BnB nodes: 644
+n0005_m05_p075__003.inst -> Ticks: 73123.99 | Time: 59.843 | BnB nodes: 38849 | Status: Feasible
+n0005_m05_p075__004.inst -> Ticks: 72261.72 | Time: 59.875 | BnB nodes: 89034 | Status: Feasible
+n0005_m05_p090__000.inst -> Ticks: 80686.74 | Time: 59.921 | BnB nodes: 39827 | Status: Feasible
+n0005_m05_p090__001.inst -> Ticks: 729.24 | Time: 0.64 | BnB nodes: 614
+n0005_m05_p090__002.inst -> Ticks: 36884.62 | Time: 28.296 | BnB nodes: 18497
+n0005_m05_p090__003.inst -> Ticks: 2447.13 | Time: 2.14 | BnB nodes: 3035
+n0005_m05_p090__004.inst -> Ticks: 13875.57 | Time: 11.75 | BnB nodes: 11855
+n0010_m01_p025__000.inst -> Ticks: 11.35 | Time: 0.031 | BnB nodes: 0
+n0010_m01_p025__001.inst -> Ticks: 4.75 | Time: 0.015 | BnB nodes: 0
+n0010_m01_p025__002.inst -> Ticks: 1.81 | Time: 0 | BnB nodes: 0
+n0010_m01_p025__003.inst -> Ticks: 2.98 | Time: 0 | BnB nodes: 0
+n0010_m01_p025__004.inst -> Ticks: 8.19 | Time: 0.031 | BnB nodes: 0
+n0010_m01_p050__000.inst -> Ticks: 9.12 | Time: 0.015 | BnB nodes: 0
+n0010_m01_p050__001.inst -> Ticks: 21.41 | Time: 0.031 | BnB nodes: 0
+n0010_m01_p050__002.inst -> Ticks: 14.6 | Time: 0.015 | BnB nodes: 0
+n0010_m01_p050__003.inst -> Ticks: 8.66 | Time: 0 | BnB nodes: 0
+n0010_m01_p050__004.inst -> Ticks: 27.56 | Time: 0.031 | BnB nodes: 29
+n0010_m01_p075__000.inst -> Ticks: 7.09 | Time: 0.015 | BnB nodes: 0
+n0010_m01_p075__001.inst -> Ticks: 15.69 | Time: 0.031 | BnB nodes: 0
+n0010_m01_p075__002.inst -> Ticks: 10.23 | Time: 0.015 | BnB nodes: 0
+n0010_m01_p075__003.inst -> Ticks: 8.64 | Time: 0.031 | BnB nodes: 0
+n0010_m01_p075__004.inst -> Ticks: 5.55 | Time: 0 | BnB nodes: 0
+n0010_m01_p090__000.inst -> Ticks: 4.13 | Time: 0 | BnB nodes: 0
+n0010_m01_p090__001.inst -> Ticks: 3.46 | Time: 0.015 | BnB nodes: 0
+n0010_m01_p090__002.inst -> Ticks: 9.99 | Time: 0.016 | BnB nodes: 0
+n0010_m01_p090__003.inst -> Ticks: 4.5 | Time: 0 | BnB nodes: 0
+n0010_m01_p090__004.inst -> Ticks: 4.86 | Time: 0.031 | BnB nodes: 0
+n0010_m02_p025__000.inst -> Ticks: 39.72 | Time: 0.062 | BnB nodes: 0
+n0010_m02_p025__001.inst -> Ticks: 201.77 | Time: 0.203 | BnB nodes: 58
+n0010_m02_p025__002.inst -> Ticks: 271.1 | Time: 0.265 | BnB nodes: 361
+n0010_m02_p025__003.inst -> Ticks: 159.31 | Time: 0.171 | BnB nodes: 254
+n0010_m02_p025__004.inst -> Ticks: 166.87 | Time: 0.187 | BnB nodes: 89
+n0010_m02_p050__000.inst -> Ticks: 18169.54 | Time: 13.375 | BnB nodes: 9309
+n0010_m02_p050__001.inst -> Ticks: 1770.41 | Time: 1.328 | BnB nodes: 1652
+n0010_m02_p050__002.inst -> Ticks: 922.66 | Time: 0.703 | BnB nodes: 993
+n0010_m02_p050__003.inst -> Ticks: 308.52 | Time: 0.328 | BnB nodes: 172
+n0010_m02_p050__004.inst -> Ticks: 211.74 | Time: 0.218 | BnB nodes: 51
+n0010_m02_p075__000.inst -> Ticks: 932.92 | Time: 0.703 | BnB nodes: 1063
+n0010_m02_p075__001.inst -> Ticks: 43984.92 | Time: 29.891 | BnB nodes: 15036
+n0010_m02_p075__002.inst -> Ticks: 4733.84 | Time: 3.515 | BnB nodes: 4162
+n0010_m02_p075__003.inst -> Ticks: 2263.68 | Time: 1.671 | BnB nodes: 1378
+n0010_m02_p075__004.inst -> Ticks: 14428.75 | Time: 9.812 | BnB nodes: 6731
+n0010_m02_p090__000.inst -> Ticks: 6527.32 | Time: 4.578 | BnB nodes: 6001
+n0010_m02_p090__001.inst -> Ticks: 14440.15 | Time: 9.843 | BnB nodes: 6498
+n0010_m02_p090__002.inst -> Ticks: 87661.23 | Time: 59.734 | BnB nodes: 34083 | Status: Feasible
+n0010_m02_p090__003.inst -> Ticks: 16320.5 | Time: 10.968 | BnB nodes: 5694
+n0010_m02_p090__004.inst -> Ticks: 82439.24 | Time: 59.968 | BnB nodes: 52613 | Status: Feasible
+n0010_m03_p025__000.inst -> Ticks: 892.52 | Time: 0.718 | BnB nodes: 679
+n0010_m03_p025__001.inst -> Ticks: 144.69 | Time: 0.14 | BnB nodes: 199
+n0010_m03_p025__002.inst -> Ticks: 2460.48 | Time: 1.828 | BnB nodes: 1571
+n0010_m03_p025__003.inst -> Ticks: 165.91 | Time: 0.171 | BnB nodes: 0
+n0010_m03_p025__004.inst -> Ticks: 4864.21 | Time: 3.64 | BnB nodes: 3455
+n0010_m03_p050__000.inst -> Ticks: 59164.1 | Time: 39.39 | BnB nodes: 17627
+n0010_m03_p050__001.inst -> Ticks: 90512.47 | Time: 58.656 | BnB nodes: 29270
+n0010_m03_p050__002.inst -> Ticks: 91988.0 | Time: 59.781 | BnB nodes: 21296 | Status: Feasible
+n0010_m03_p050__003.inst -> Ticks: 25737.93 | Time: 19.531 | BnB nodes: 18172
+n0010_m03_p050__004.inst -> Ticks: 84197.1 | Time: 59.875 | BnB nodes: 36947 | Status: Feasible
+n0010_m03_p075__000.inst -> Ticks: 84365.89 | Time: 59.953 | BnB nodes: 25468 | Status: Feasible
+n0010_m03_p075__001.inst -> Ticks: 85741.62 | Time: 59.922 | BnB nodes: 26081 | Status: Feasible
+n0010_m03_p075__002.inst -> Ticks: 82433.59 | Time: 59.843 | BnB nodes: 30700 | Status: Feasible
+n0010_m03_p075__003.inst -> Ticks: 89583.86 | Time: 59.906 | BnB nodes: 21477 | Status: Feasible
+n0010_m03_p075__004.inst -> Ticks: 85501.97 | Time: 59.937 | BnB nodes: 20366 | Status: Feasible
+n0010_m03_p090__000.inst -> Ticks: 84643.23 | Time: 59.875 | BnB nodes: 13292 | Status: Feasible
+n0010_m03_p090__001.inst -> Ticks: 86279.56 | Time: 59.875 | BnB nodes: 13835 | Status: Feasible
+n0010_m03_p090__002.inst -> Ticks: 90015.74 | Time: 59.781 | BnB nodes: 18497 | Status: Feasible
+n0010_m03_p090__003.inst -> Ticks: 86774.72 | Time: 59.703 | BnB nodes: 10916 | Status: Feasible
+n0010_m03_p090__004.inst -> Ticks: 91191.25 | Time: 59.968 | BnB nodes: 13486 | Status: Feasible
+n0010_m04_p025__000.inst -> Ticks: 2351.47 | Time: 1.75 | BnB nodes: 1238
+n0010_m04_p025__001.inst -> Ticks: 42547.25 | Time: 29.656 | BnB nodes: 21215
+n0010_m04_p025__002.inst -> Ticks: 49792.19 | Time: 37.921 | BnB nodes: 22725
+n0010_m04_p025__003.inst -> Ticks: 5182.56 | Time: 3.906 | BnB nodes: 2347
+n0010_m04_p025__004.inst -> Ticks: 86715.48 | Time: 59.781 | BnB nodes: 20011 | Status: Feasible
+n0010_m04_p050__000.inst -> Ticks: 87293.59 | Time: 59.718 | BnB nodes: 19546 | Status: Feasible
+n0010_m04_p050__001.inst -> Ticks: 53391.25 | Time: 37.14 | BnB nodes: 26728
+n0010_m04_p050__002.inst -> Ticks: 87709.4 | Time: 59.843 | BnB nodes: 24200 | Status: Feasible
+n0010_m04_p050__003.inst -> Ticks: 18284.39 | Time: 13.406 | BnB nodes: 7872
+n0010_m04_p050__004.inst -> Ticks: 88213.29 | Time: 59.906 | BnB nodes: 17731 | Status: Feasible
+n0010_m04_p075__000.inst -> Ticks: 33393.69 | Time: 22.156 | BnB nodes: 9163
+n0010_m04_p075__001.inst -> Ticks: 87370.31 | Time: 59.812 | BnB nodes: 7899 | Status: Feasible
+n0010_m04_p075__002.inst -> Ticks: 87356.17 | Time: 59.797 | BnB nodes: 12563 | Status: Feasible
+n0010_m04_p075__003.inst -> Ticks: 87184.42 | Time: 59.921 | BnB nodes: 11646 | Status: Feasible
+n0010_m04_p075__004.inst -> Ticks: 92196.92 | Time: 59.984 | BnB nodes: 11006 | Status: Feasible
+n0010_m04_p090__000.inst -> Ticks: 82382.42 | Time: 59.906 | BnB nodes: 13969 | Status: Feasible
+n0010_m04_p090__001.inst -> Ticks: 84515.44 | Time: 59.953 | BnB nodes: 14827 | Status: Feasible
+n0010_m04_p090__002.inst -> Ticks: 87591.43 | Time: 59.921 | BnB nodes: 6955 | Status: Feasible
+n0010_m04_p090__003.inst -> Ticks: 86139.24 | Time: 59.875 | BnB nodes: 11596 | Status: Feasible
+n0010_m04_p090__004.inst -> Ticks: 83917.18 | Time: 59.875 | BnB nodes: 8185 | Status: Feasible
+n0010_m05_p025__000.inst -> Ticks: 84199.28 | Time: 59.906 | BnB nodes: 35134 | Status: Feasible
+n0010_m05_p025__001.inst -> Ticks: 88516.29 | Time: 59.906 | BnB nodes: 20803 | Status: Feasible
+n0010_m05_p025__002.inst -> Ticks: 88287.7 | Time: 59.875 | BnB nodes: 24327 | Status: Feasible
+n0010_m05_p025__003.inst -> Ticks: 87804.39 | Time: 59.859 | BnB nodes: 25941 | Status: Feasible
+n0010_m05_p025__004.inst -> Ticks: 89804.63 | Time: 59.89 | BnB nodes: 24450 | Status: Feasible
+n0010_m05_p050__000.inst -> Ticks: 87423.84 | Time: 59.938 | BnB nodes: 17709 | Status: Feasible
+n0010_m05_p050__001.inst -> Ticks: 87312.22 | Time: 59.984 | BnB nodes: 21409 | Status: Feasible
+n0010_m05_p050__002.inst -> Ticks: 89183.17 | Time: 59.859 | BnB nodes: 11671 | Status: Feasible
+n0010_m05_p050__003.inst -> Ticks: 89401.48 | Time: 59.796 | BnB nodes: 19938 | Status: Feasible
+n0010_m05_p050__004.inst -> Ticks: 87224.79 | Time: 59.781 | BnB nodes: 14893 | Status: Feasible
+n0010_m05_p075__000.inst -> Ticks: 86240.11 | Time: 59.843 | BnB nodes: 11587 | Status: Feasible
+n0010_m05_p075__001.inst -> Ticks: 90151.73 | Time: 59.765 | BnB nodes: 11970 | Status: Feasible
+n0010_m05_p075__002.inst -> Ticks: 89062.14 | Time: 59.828 | BnB nodes: 10150 | Status: Feasible
+n0010_m05_p075__003.inst -> Ticks: 88847.77 | Time: 59.844 | BnB nodes: 8528 | Status: Feasible
+n0010_m05_p075__004.inst -> Ticks: 81186.6 | Time: 59.813 | BnB nodes: 9909 | Status: Feasible
+n0010_m05_p090__000.inst -> Ticks: 86023.89 | Time: 59.765 | BnB nodes: 2508 | Status: Feasible
+n0010_m05_p090__001.inst -> Ticks: 90912.65 | Time: 59.906 | BnB nodes: 4733 | Status: Feasible
+n0010_m05_p090__002.inst -> Ticks: 89589.22 | Time: 59.89 | BnB nodes: 7180 | Status: Feasible
+n0010_m05_p090__003.inst -> Ticks: 90491.34 | Time: 59.781 | BnB nodes: 7341 | Status: Feasible
+n0010_m05_p090__004.inst -> Ticks: 87555.27 | Time: 60.031 | BnB nodes: 3397 | Status: Feasible
+n0015_m01_p025__000.inst -> Ticks: 59.77 | Time: 0.062 | BnB nodes: 165
+n0015_m01_p025__001.inst -> Ticks: 42.47 | Time: 0.062 | BnB nodes: 144
+n0015_m01_p025__002.inst -> Ticks: 504.91 | Time: 0.484 | BnB nodes: 1171
+n0015_m01_p025__003.inst -> Ticks: 78.87 | Time: 0.094 | BnB nodes: 314
+n0015_m01_p025__004.inst -> Ticks: 18.34 | Time: 0.016 | BnB nodes: 47
+n0015_m01_p050__000.inst -> Ticks: 19.5 | Time: 0.031 | BnB nodes: 0
+n0015_m01_p050__001.inst -> Ticks: 1428.46 | Time: 1.203 | BnB nodes: 2861
+n0015_m01_p050__002.inst -> Ticks: 59.87 | Time: 0.046 | BnB nodes: 48
+n0015_m01_p050__003.inst -> Ticks: 49.45 | Time: 0.062 | BnB nodes: 0
+n0015_m01_p050__004.inst -> Ticks: 70.8 | Time: 0.078 | BnB nodes: 55
+n0015_m01_p075__000.inst -> Ticks: 64.69 | Time: 0.031 | BnB nodes: 0
+n0015_m01_p075__001.inst -> Ticks: 22.7 | Time: 0.015 | BnB nodes: 0
+n0015_m01_p075__002.inst -> Ticks: 18.87 | Time: 0.015 | BnB nodes: 0
+n0015_m01_p075__003.inst -> Ticks: 138.49 | Time: 0.171 | BnB nodes: 7
+n0015_m01_p075__004.inst -> Ticks: 29.76 | Time: 0.046 | BnB nodes: 0
+n0015_m01_p090__000.inst -> Ticks: 26.82 | Time: 0.046 | BnB nodes: 0
+n0015_m01_p090__001.inst -> Ticks: 18.48 | Time: 0.015 | BnB nodes: 0
+n0015_m01_p090__002.inst -> Ticks: 18.45 | Time: 0.031 | BnB nodes: 0
+n0015_m01_p090__003.inst -> Ticks: 43.99 | Time: 0.046 | BnB nodes: 18
+n0015_m01_p090__004.inst -> Ticks: 52.08 | Time: 0.031 | BnB nodes: 0
+n0015_m02_p025__000.inst -> Ticks: 9780.55 | Time: 6.671 | BnB nodes: 1443
+n0015_m02_p025__001.inst -> Ticks: 86061.47 | Time: 59.781 | BnB nodes: 15917 | Status: Feasible
+n0015_m02_p025__002.inst -> Ticks: 14462.23 | Time: 9.828 | BnB nodes: 1735
+n0015_m02_p025__003.inst -> Ticks: 4177.69 | Time: 2.906 | BnB nodes: 1073
+n0015_m02_p025__004.inst -> Ticks: 2988.06 | Time: 2.125 | BnB nodes: 1426
+n0015_m02_p050__000.inst -> Ticks: 53698.07 | Time: 34.641 | BnB nodes: 10943
+n0015_m02_p050__001.inst -> Ticks: 87056.85 | Time: 59.765 | BnB nodes: 37707 | Status: Feasible
+n0015_m02_p050__002.inst -> Ticks: 87044.41 | Time: 59.765 | BnB nodes: 13020 | Status: Feasible
+n0015_m02_p050__003.inst -> Ticks: 89064.0 | Time: 59.875 | BnB nodes: 20294 | Status: Feasible
+n0015_m02_p050__004.inst -> Ticks: 53782.45 | Time: 36.734 | BnB nodes: 14738
+n0015_m02_p075__000.inst -> Ticks: 85363.37 | Time: 59.89 | BnB nodes: 12493 | Status: Feasible
+n0015_m02_p075__001.inst -> Ticks: 94912.95 | Time: 59.906 | BnB nodes: 18876 | Status: Feasible
+n0015_m02_p075__002.inst -> Ticks: 88066.32 | Time: 59.875 | BnB nodes: 16488 | Status: Feasible
+n0015_m02_p075__003.inst -> Ticks: 88186.63 | Time: 59.891 | BnB nodes: 12088 | Status: Feasible
+n0015_m02_p075__004.inst -> Ticks: 89523.47 | Time: 59.766 | BnB nodes: 17010 | Status: Feasible
+n0015_m02_p090__000.inst -> Ticks: 85487.2 | Time: 59.781 | BnB nodes: 11870 | Status: Feasible
+n0015_m02_p090__001.inst -> Ticks: 77779.66 | Time: 59.765 | BnB nodes: 8578 | Status: Feasible
+n0015_m02_p090__002.inst -> Ticks: 80786.72 | Time: 59.875 | BnB nodes: 10933 | Status: Feasible
+n0015_m02_p090__003.inst -> Ticks: 85577.02 | Time: 59.765 | BnB nodes: 10639 | Status: Feasible
+n0015_m02_p090__004.inst -> Ticks: 84800.73 | Time: 59.937 | BnB nodes: 17550 | Status: Feasible
+n0015_m03_p025__000.inst -> Ticks: 69681.98 | Time: 52.687 | BnB nodes: 8272
+n0015_m03_p025__001.inst -> Ticks: 79298.3 | Time: 59.546 | BnB nodes: 9067 | Status: Feasible
+n0015_m03_p025__002.inst -> Ticks: 79735.89 | Time: 59.625 | BnB nodes: 6335 | Status: Feasible
+n0015_m03_p025__003.inst -> Ticks: 17415.99 | Time: 13.265 | BnB nodes: 2081
+n0015_m03_p025__004.inst -> Ticks: 85910.21 | Time: 59.859 | BnB nodes: 7198 | Status: Feasible
+n0015_m03_p050__000.inst -> Ticks: 79724.8 | Time: 59.89 | BnB nodes: 8603 | Status: Feasible
+n0015_m03_p050__001.inst -> Ticks: 84984.67 | Time: 59.61 | BnB nodes: 6617 | Status: Feasible
+n0015_m03_p050__002.inst -> Ticks: 79127.78 | Time: 59.468 | BnB nodes: 11331 | Status: Feasible
+n0015_m03_p050__003.inst -> Ticks: 73580.64 | Time: 59.25 | BnB nodes: 6602 | Status: Feasible
+n0015_m03_p050__004.inst -> Ticks: 80840.09 | Time: 59.703 | BnB nodes: 6038 | Status: Feasible
+n0015_m03_p075__000.inst -> Ticks: 73302.49 | Time: 59.187 | BnB nodes: 7255 | Status: Feasible
+n0015_m03_p075__001.inst -> Ticks: 80002.63 | Time: 59.609 | BnB nodes: 4957 | Status: Feasible
+n0015_m03_p075__002.inst -> Ticks: 84194.92 | Time: 59.625 | BnB nodes: 7964 | Status: Feasible
+n0015_m03_p075__003.inst -> Ticks: 83429.93 | Time: 59.515 | BnB nodes: 5686 | Status: Feasible
+n0015_m03_p075__004.inst -> Ticks: 83839.95 | Time: 59.421 | BnB nodes: 6990 | Status: Feasible
+n0015_m03_p090__000.inst -> Ticks: 82093.05 | Time: 59.703 | BnB nodes: 3999 | Status: Feasible
+n0015_m03_p090__001.inst -> Ticks: 92234.35 | Time: 59.812 | BnB nodes: 5689 | Status: Feasible
+n0015_m03_p090__002.inst -> Ticks: 80752.92 | Time: 59.64 | BnB nodes: 5159 | Status: Feasible
+n0015_m03_p090__003.inst -> Ticks: 93131.35 | Time: 59.843 | BnB nodes: 3521 | Status: Feasible
+n0015_m03_p090__004.inst -> Ticks: 91640.64 | Time: 59.86 | BnB nodes: 5383 | Status: Feasible
+n0015_m04_p025__000.inst -> Ticks: 82868.21 | Time: 59.578 | BnB nodes: 5565 | Status: Feasible
+n0015_m04_p025__001.inst -> Ticks: 80741.27 | Time: 59.859 | BnB nodes: 3392 | Status: Feasible
+n0015_m04_p025__002.inst -> Ticks: 88610.51 | Time: 59.735 | BnB nodes: 6121 | Status: Feasible
+n0015_m04_p025__003.inst -> Ticks: 84682.09 | Time: 59.703 | BnB nodes: 5264 | Status: Feasible
+n0015_m04_p025__004.inst -> Ticks: 925.15 | Time: 0.781 | BnB nodes: 79
+n0015_m04_p050__000.inst -> Ticks: 84842.12 | Time: 59.765 | BnB nodes: 4380 | Status: Feasible
+n0015_m04_p050__001.inst -> Ticks: 84996.22 | Time: 59.953 | BnB nodes: 2755 | Status: Feasible
+n0015_m04_p050__002.inst -> Ticks: 85307.41 | Time: 59.812 | BnB nodes: 6390 | Status: Feasible
+n0015_m04_p050__003.inst -> Ticks: 87645.99 | Time: 59.906 | BnB nodes: 5176 | Status: Feasible
+n0015_m04_p050__004.inst -> Ticks: 87958.56 | Time: 59.734 | BnB nodes: 5700 | Status: Feasible
+n0015_m04_p075__000.inst -> Ticks: 88781.3 | Time: 59.765 | BnB nodes: 4148 | Status: Feasible
+n0015_m04_p075__001.inst -> Ticks: 85365.98 | Time: 59.89 | BnB nodes: 2579 | Status: Feasible
+n0015_m04_p075__002.inst -> Ticks: 84412.28 | Time: 59.828 | BnB nodes: 2274 | Status: Feasible
+n0015_m04_p075__003.inst -> Ticks: 84064.3 | Time: 59.984 | BnB nodes: 1484 | Status: Feasible
+n0015_m04_p075__004.inst -> Ticks: 80610.89 | Time: 59.531 | BnB nodes: 4886 | Status: Feasible
+n0015_m04_p090__000.inst -> Ticks: 83153.74 | Time: 59.812 | BnB nodes: 1568 | Status: Feasible
+n0015_m04_p090__001.inst -> Ticks: 81299.91 | Time: 59.625 | BnB nodes: 1201 | Status: Feasible
+n0015_m04_p090__002.inst -> Ticks: 79458.35 | Time: 59.687 | BnB nodes: 2124 | Status: Feasible
+n0015_m04_p090__003.inst -> Ticks: 70784.85 | Time: 58.844 | BnB nodes: 3055 | Status: Feasible
+n0015_m04_p090__004.inst -> Ticks: 82588.39 | Time: 59.297 | BnB nodes: 1259 | Status: Feasible
+n0015_m05_p025__000.inst -> Ticks: 85322.37 | Time: 59.843 | BnB nodes: 4720 | Status: Feasible
+n0015_m05_p025__001.inst -> Ticks: 79211.33 | Time: 59.687 | BnB nodes: 3642 | Status: Feasible
+n0015_m05_p025__002.inst -> Ticks: 86767.13 | Time: 59.843 | BnB nodes: 6941 | Status: Feasible
+n0015_m05_p025__003.inst -> Ticks: 88882.69 | Time: 59.812 | BnB nodes: 3308 | Status: Feasible
+n0015_m05_p025__004.inst -> Ticks: 84662.39 | Time: 59.859 | BnB nodes: 3456 | Status: Feasible
+n0015_m05_p050__000.inst -> Ticks: 85390.06 | Time: 59.875 | BnB nodes: 4769 | Status: Feasible
+n0015_m05_p050__001.inst -> Ticks: 85387.47 | Time: 59.859 | BnB nodes: 3151 | Status: Feasible
+n0015_m05_p050__002.inst -> Ticks: 84075.76 | Time: 59.812 | BnB nodes: 1612 | Status: Feasible
+n0015_m05_p050__003.inst -> Ticks: 85034.75 | Time: 59.687 | BnB nodes: 2453 | Status: Feasible
+n0015_m05_p050__004.inst -> Ticks: 86303.53 | Time: 59.859 | BnB nodes: 1619 | Status: Feasible
+n0015_m05_p075__000.inst -> Ticks: 85470.39 | Time: 59.828 | BnB nodes: 1074 | Status: Feasible
+n0015_m05_p075__001.inst -> Ticks: 85738.06 | Time: 59.734 | BnB nodes: 666 | Status: Feasible
+n0015_m05_p075__002.inst -> Ticks: 84738.85 | Time: 59.89 | BnB nodes: 1215 | Status: Feasible
+n0015_m05_p075__003.inst -> Ticks: 88392.0 | Time: 59.609 | BnB nodes: 1936 | Status: Feasible
+n0015_m05_p075__004.inst -> Ticks: 89383.82 | Time: 59.859 | BnB nodes: 1683 | Status: Feasible
+n0015_m05_p090__000.inst -> Ticks: 83694.44 | Time: 59.687 | BnB nodes: 2291 | Status: Feasible
+n0015_m05_p090__001.inst -> Ticks: 84263.11 | Time: 59.813 | BnB nodes: 600 | Status: Feasible
+n0015_m05_p090__002.inst -> Ticks: 81684.6 | Time: 59.734 | BnB nodes: 1404 | Status: Feasible
+n0015_m05_p090__003.inst -> Ticks: 90051.72 | Time: 59.828 | BnB nodes: 2110 | Status: Feasible
+n0015_m05_p090__004.inst -> Ticks: 82412.19 | Time: 59.828 | BnB nodes: 612 | Status: Feasible
+n0020_m01_p025__000.inst -> Ticks: 5139.67 | Time: 3.843 | BnB nodes: 3529
+n0020_m01_p025__001.inst -> Ticks: 502.01 | Time: 0.406 | BnB nodes: 971
+n0020_m01_p025__002.inst -> Ticks: 723.24 | Time: 0.547 | BnB nodes: 1370
+n0020_m01_p025__003.inst -> Ticks: 467.5 | Time: 0.406 | BnB nodes: 764
+n0020_m01_p025__004.inst -> Ticks: 172.53 | Time: 0.156 | BnB nodes: 300
+n0020_m01_p050__000.inst -> Ticks: 3808.79 | Time: 2.796 | BnB nodes: 1870
+n0020_m01_p050__001.inst -> Ticks: 171.88 | Time: 0.188 | BnB nodes: 68
+n0020_m01_p050__002.inst -> Ticks: 27399.11 | Time: 18.671 | BnB nodes: 12690
+n0020_m01_p050__003.inst -> Ticks: 12406.85 | Time: 9.016 | BnB nodes: 6804
+n0020_m01_p050__004.inst -> Ticks: 11773.84 | Time: 8.718 | BnB nodes: 5243
+n0020_m01_p075__000.inst -> Ticks: 374.21 | Time: 0.39 | BnB nodes: 107
+n0020_m01_p075__001.inst -> Ticks: 682.47 | Time: 0.593 | BnB nodes: 330
+n0020_m01_p075__002.inst -> Ticks: 1211.99 | Time: 0.921 | BnB nodes: 788
+n0020_m01_p075__003.inst -> Ticks: 415.4 | Time: 0.375 | BnB nodes: 105
+n0020_m01_p075__004.inst -> Ticks: 2506.29 | Time: 1.703 | BnB nodes: 1366
+n0020_m01_p090__000.inst -> Ticks: 92.68 | Time: 0.078 | BnB nodes: 0
+n0020_m01_p090__001.inst -> Ticks: 46.07 | Time: 0.031 | BnB nodes: 0
+n0020_m01_p090__002.inst -> Ticks: 65.3 | Time: 0.078 | BnB nodes: 0
+n0020_m01_p090__003.inst -> Ticks: 113.81 | Time: 0.125 | BnB nodes: 0
+n0020_m01_p090__004.inst -> Ticks: 134.54 | Time: 0.125 | BnB nodes: 0
+n0020_m02_p025__000.inst -> Ticks: 23391.68 | Time: 15.359 | BnB nodes: 2142
+n0020_m02_p025__001.inst -> Ticks: 96487.08 | Time: 60.015 | BnB nodes: 6827 | Status: Feasible
+n0020_m02_p025__002.inst -> Ticks: 31358.15 | Time: 19.812 | BnB nodes: 1684
+n0020_m02_p025__003.inst -> Ticks: 15417.52 | Time: 10.563 | BnB nodes: 1306
+n0020_m02_p025__004.inst -> Ticks: 38615.18 | Time: 26.562 | BnB nodes: 1689
+n0020_m02_p050__000.inst -> Ticks: 96954.99 | Time: 59.906 | BnB nodes: 6070 | Status: Feasible
+n0020_m02_p050__001.inst -> Ticks: 85380.9 | Time: 59.765 | BnB nodes: 4964 | Status: Feasible
+n0020_m02_p050__002.inst -> Ticks: 88684.86 | Time: 59.734 | BnB nodes: 6257 | Status: Feasible
+n0020_m02_p050__003.inst -> Ticks: 87630.02 | Time: 59.734 | BnB nodes: 5177 | Status: Feasible
+n0020_m02_p050__004.inst -> Ticks: 87046.51 | Time: 59.812 | BnB nodes: 4712 | Status: Feasible
+n0020_m02_p075__000.inst -> Ticks: 96684.82 | Time: 59.828 | BnB nodes: 6560 | Status: Feasible
+n0020_m02_p075__001.inst -> Ticks: 99027.88 | Time: 59.906 | BnB nodes: 8850 | Status: Feasible
+n0020_m02_p075__002.inst -> Ticks: 95091.57 | Time: 59.828 | BnB nodes: 6896 | Status: Feasible
+n0020_m02_p075__003.inst -> Ticks: 98358.87 | Time: 59.75 | BnB nodes: 4737 | Status: Feasible
+n0020_m02_p075__004.inst -> Ticks: 93263.99 | Time: 59.828 | BnB nodes: 8052 | Status: Feasible
+n0020_m02_p090__000.inst -> Ticks: 89468.4 | Time: 59.922 | BnB nodes: 7854 | Status: Feasible
+n0020_m02_p090__001.inst -> Ticks: 91232.54 | Time: 59.781 | BnB nodes: 9803 | Status: Feasible
+n0020_m02_p090__002.inst -> Ticks: 90561.36 | Time: 59.859 | BnB nodes: 4896 | Status: Feasible
+n0020_m02_p090__003.inst -> Ticks: 84519.22 | Time: 60 | BnB nodes: 5167 | Status: Feasible
+n0020_m02_p090__004.inst -> Ticks: 87517.59 | Time: 59.844 | BnB nodes: 6877 | Status: Feasible
+n0020_m03_p025__000.inst -> Ticks: 89500.26 | Time: 59.89 | BnB nodes: 5578 | Status: Feasible
+n0020_m03_p025__001.inst -> Ticks: 89553.43 | Time: 59.86 | BnB nodes: 4247 | Status: Feasible
+n0020_m03_p025__002.inst -> Ticks: 89500.18 | Time: 59.625 | BnB nodes: 6426 | Status: Feasible
+n0020_m03_p025__003.inst -> Ticks: 87556.86 | Time: 59.813 | BnB nodes: 1750 | Status: Feasible
+n0020_m03_p025__004.inst -> Ticks: 87339.53 | Time: 59.937 | BnB nodes: 2040 | Status: Feasible
+n0020_m03_p050__000.inst -> Ticks: 87981.9 | Time: 59.625 | BnB nodes: 1250 | Status: Feasible
+n0020_m03_p050__001.inst -> Ticks: 86266.76 | Time: 59.75 | BnB nodes: 4900 | Status: Feasible
+n0020_m03_p050__002.inst -> Ticks: 92404.02 | Time: 59.86 | BnB nodes: 1833 | Status: Feasible
+n0020_m03_p050__003.inst -> Ticks: 87509.91 | Time: 59.859 | BnB nodes: 1063 | Status: Feasible
+n0020_m03_p050__004.inst -> Ticks: 86286.98 | Time: 59.671 | BnB nodes: 827 | Status: Feasible
+n0020_m03_p075__000.inst -> Ticks: 89937.16 | Time: 59.859 | BnB nodes: 773 | Status: Feasible
+n0020_m03_p075__001.inst -> Ticks: 82862.46 | Time: 59.562 | BnB nodes: 1028 | Status: Feasible
+n0020_m03_p075__002.inst -> Ticks: 88839.95 | Time: 59.843 | BnB nodes: 796 | Status: Feasible
+n0020_m03_p075__003.inst -> Ticks: 93432.7 | Time: 59.859 | BnB nodes: 1851 | Status: Feasible
+n0020_m03_p075__004.inst -> Ticks: 90249.19 | Time: 59.875 | BnB nodes: 634 | Status: Feasible
+n0020_m03_p090__000.inst -> Ticks: 89634.33 | Time: 59.921 | BnB nodes: 654 | Status: Feasible
+n0020_m03_p090__001.inst -> Ticks: 88979.07 | Time: 59.937 | BnB nodes: 848 | Status: Feasible
+n0020_m03_p090__002.inst -> Ticks: 87562.78 | Time: 59.828 | BnB nodes: 740 | Status: Feasible
+n0020_m03_p090__003.inst -> Ticks: 87974.05 | Time: 59.828 | BnB nodes: 685 | Status: Feasible
+n0020_m03_p090__004.inst -> Ticks: 87715.12 | Time: 59.859 | BnB nodes: 551 | Status: Feasible
+n0020_m04_p025__000.inst -> Ticks: 84197.13 | Time: 59.844 | BnB nodes: 2762 | Status: Feasible
+n0020_m04_p025__001.inst -> Ticks: 87688.42 | Time: 59.844 | BnB nodes: 1318 | Status: Feasible
+n0020_m04_p025__002.inst -> Ticks: 82522.33 | Time: 59.859 | BnB nodes: 1388 | Status: Feasible
+n0020_m04_p025__003.inst -> Ticks: 87394.92 | Time: 59.843 | BnB nodes: 1743 | Status: Feasible
+n0020_m04_p025__004.inst -> Ticks: 85496.43 | Time: 59.64 | BnB nodes: 2075 | Status: Feasible
+n0020_m04_p050__000.inst -> Ticks: 86760.98 | Time: 59.734 | BnB nodes: 1033 | Status: Feasible
+n0020_m04_p050__001.inst -> Ticks: 83559.28 | Time: 59.812 | BnB nodes: 629 | Status: Feasible
+n0020_m04_p050__002.inst -> Ticks: 82443.7 | Time: 59.968 | BnB nodes: 1005 | Status: Feasible
+n0020_m04_p050__003.inst -> Ticks: 84427.16 | Time: 59.718 | BnB nodes: 1123 | Status: Feasible
+n0020_m04_p050__004.inst -> Ticks: 82405.03 | Time: 59.734 | BnB nodes: 1052 | Status: Feasible
+n0020_m04_p075__000.inst -> Ticks: 81396.36 | Time: 59.718 | BnB nodes: 533 | Status: Feasible
+n0020_m04_p075__001.inst -> Ticks: 83457.84 | Time: 59.796 | BnB nodes: 513 | Status: Feasible
+n0020_m04_p075__002.inst -> Ticks: 86390.05 | Time: 59.921 | BnB nodes: 1061 | Status: Feasible
+n0020_m04_p075__003.inst -> Ticks: 83733.66 | Time: 59.859 | BnB nodes: 538 | Status: Feasible
+n0020_m04_p075__004.inst -> Ticks: 83172.02 | Time: 59.843 | BnB nodes: 631 | Status: Feasible
+n0020_m04_p090__000.inst -> Ticks: 82984.16 | Time: 60.031 | BnB nodes: 1016 | Status: Feasible
+n0020_m04_p090__001.inst -> Ticks: 85864.87 | Time: 59.828 | BnB nodes: 1011 | Status: Feasible
+n0020_m04_p090__002.inst -> Ticks: 83828.87 | Time: 59.922 | BnB nodes: 459 | Status: Feasible
+n0020_m04_p090__003.inst -> Ticks: 83365.61 | Time: 59.781 | BnB nodes: 552 | Status: Feasible
+n0020_m04_p090__004.inst -> Ticks: 78317.95 | Time: 59.75 | BnB nodes: 553 | Status: Feasible
+n0020_m05_p025__000.inst -> Ticks: 79862.0 | Time: 59.843 | BnB nodes: 676 | Status: Feasible
+n0020_m05_p025__001.inst -> Ticks: 85141.31 | Time: 59.984 | BnB nodes: 802 | Status: Feasible
+n0020_m05_p025__002.inst -> Ticks: 83880.08 | Time: 59.656 | BnB nodes: 555 | Status: Feasible
+n0020_m05_p025__003.inst -> Ticks: 87818.13 | Time: 59.796 | BnB nodes: 666 | Status: Feasible
+n0020_m05_p025__004.inst -> Ticks: 85864.19 | Time: 59.718 | BnB nodes: 637 | Status: Feasible
+n0020_m05_p050__000.inst -> Status: Unknown
+n0020_m05_p050__001.inst -> Ticks: 78953.89 | Time: 59.843 | BnB nodes: 475 | Status: Feasible
+n0020_m05_p050__002.inst -> Ticks: 78029.14 | Time: 59.656 | BnB nodes: 521 | Status: Feasible
+n0020_m05_p050__003.inst -> Status: Unknown
+n0020_m05_p050__004.inst -> Ticks: 86809.89 | Time: 59.843 | BnB nodes: 614 | Status: Feasible
+n0020_m05_p075__000.inst -> Status: Unknown
+n0020_m05_p075__001.inst -> Ticks: 79954.4 | Time: 59.609 | BnB nodes: 729 | Status: Feasible
+n0020_m05_p075__002.inst -> Ticks: 79318.33 | Time: 59.906 | BnB nodes: 976 | Status: Feasible
+n0020_m05_p075__003.inst -> Ticks: 79047.69 | Time: 59.562 | BnB nodes: 536 | Status: Feasible
+n0020_m05_p075__004.inst -> Ticks: 83538.77 | Time: 59.718 | BnB nodes: 462 | Status: Feasible
+n0020_m05_p090__000.inst -> Ticks: 77162.06 | Time: 59.328 | BnB nodes: 994 | Status: Feasible
+n0020_m05_p090__001.inst -> Ticks: 80696.44 | Time: 59.546 | BnB nodes: 557 | Status: Feasible
+n0020_m05_p090__002.inst -> Ticks: 83012.55 | Time: 59.546 | BnB nodes: 476 | Status: Feasible
+n0020_m05_p090__003.inst -> Ticks: 75787.14 | Time: 59.453 | BnB nodes: 512 | Status: Feasible
+n0020_m05_p090__004.inst -> Status: Unknown
+n0025_m01_p025__000.inst -> Ticks: 1685.54 | Time: 1.312 | BnB nodes: 1178
+n0025_m01_p025__001.inst -> Ticks: 335.96 | Time: 0.281 | BnB nodes: 520
+n0025_m01_p025__002.inst -> Ticks: 1872.71 | Time: 1.437 | BnB nodes: 1596
+n0025_m01_p025__003.inst -> Ticks: 1449.23 | Time: 1.171 | BnB nodes: 1223
+n0025_m01_p025__004.inst -> Ticks: 2035.08 | Time: 1.5 | BnB nodes: 1523
+n0025_m01_p050__000.inst -> Ticks: 32502.38 | Time: 21.406 | BnB nodes: 7536
+n0025_m01_p050__001.inst -> Ticks: 4464.46 | Time: 3.281 | BnB nodes: 1466
+n0025_m01_p050__002.inst -> Ticks: 1890.8 | Time: 1.328 | BnB nodes: 891
+n0025_m01_p050__003.inst -> Ticks: 5638.41 | Time: 4.015 | BnB nodes: 820
+n0025_m01_p050__004.inst -> Ticks: 6491.16 | Time: 4.75 | BnB nodes: 1826
+n0025_m01_p075__000.inst -> Ticks: 19828.85 | Time: 13.015 | BnB nodes: 5649
+n0025_m01_p075__001.inst -> Ticks: 1495.32 | Time: 1.203 | BnB nodes: 143
+n0025_m01_p075__002.inst -> Ticks: 799.95 | Time: 0.718 | BnB nodes: 101
+n0025_m01_p075__003.inst -> Ticks: 20637.41 | Time: 14.078 | BnB nodes: 3432
+n0025_m01_p075__004.inst -> Ticks: 22170.03 | Time: 14.5 | BnB nodes: 3587
+n0025_m01_p090__000.inst -> Ticks: 239.01 | Time: 0.218 | BnB nodes: 9
+n0025_m01_p090__001.inst -> Ticks: 221.83 | Time: 0.203 | BnB nodes: 0
+n0025_m01_p090__002.inst -> Ticks: 224.19 | Time: 0.203 | BnB nodes: 0
+n0025_m01_p090__003.inst -> Ticks: 172.86 | Time: 0.156 | BnB nodes: 0
+n0025_m01_p090__004.inst -> Ticks: 474.63 | Time: 0.453 | BnB nodes: 0
+n0025_m02_p025__000.inst -> Ticks: 82170.34 | Time: 54.468 | BnB nodes: 2945
+n0025_m02_p025__001.inst -> Ticks: 86439.41 | Time: 59.765 | BnB nodes: 3263 | Status: Feasible
+n0025_m02_p025__002.inst -> Ticks: 88077.78 | Time: 59.906 | BnB nodes: 3414 | Status: Feasible
+n0025_m02_p025__003.inst -> Ticks: 88606.45 | Time: 59.859 | BnB nodes: 3715 | Status: Feasible
+n0025_m02_p025__004.inst -> Ticks: 84320.62 | Time: 59.968 | BnB nodes: 1283 | Status: Feasible
+n0025_m02_p050__000.inst -> Ticks: 84391.93 | Time: 59.89 | BnB nodes: 1311 | Status: Feasible
+n0025_m02_p050__001.inst -> Ticks: 84478.57 | Time: 59.75 | BnB nodes: 1380 | Status: Feasible
+n0025_m02_p050__002.inst -> Ticks: 84643.95 | Time: 59.921 | BnB nodes: 1217 | Status: Feasible
+n0025_m02_p050__003.inst -> Ticks: 86946.83 | Time: 59.75 | BnB nodes: 1268 | Status: Feasible
+n0025_m02_p050__004.inst -> Ticks: 93000.31 | Time: 59.734 | BnB nodes: 1180 | Status: Feasible
+n0025_m02_p075__000.inst -> Ticks: 86673.71 | Time: 59.687 | BnB nodes: 2061 | Status: Feasible
+n0025_m02_p075__001.inst -> Ticks: 83608.16 | Time: 59.765 | BnB nodes: 1850 | Status: Feasible
+n0025_m02_p075__002.inst -> Ticks: 92967.29 | Time: 59.968 | BnB nodes: 1393 | Status: Feasible
+n0025_m02_p075__003.inst -> Ticks: 91202.47 | Time: 59.906 | BnB nodes: 2240 | Status: Feasible
+n0025_m02_p075__004.inst -> Ticks: 80394.81 | Time: 59.766 | BnB nodes: 1832 | Status: Feasible
+n0025_m02_p090__000.inst -> Ticks: 87628.18 | Time: 59.844 | BnB nodes: 2273 | Status: Feasible
+n0025_m02_p090__001.inst -> Ticks: 85631.34 | Time: 59.859 | BnB nodes: 549 | Status: Feasible
+n0025_m02_p090__002.inst -> Ticks: 84695.88 | Time: 59.781 | BnB nodes: 834 | Status: Feasible
+n0025_m02_p090__003.inst -> Ticks: 92403.7 | Time: 59.968 | BnB nodes: 789 | Status: Feasible
+n0025_m02_p090__004.inst -> Ticks: 84749.76 | Time: 59.89 | BnB nodes: 912 | Status: Feasible
+n0025_m03_p025__000.inst -> Ticks: 82474.99 | Time: 59.89 | BnB nodes: 1293 | Status: Feasible
+n0025_m03_p025__001.inst -> Ticks: 82870.25 | Time: 59.703 | BnB nodes: 847 | Status: Feasible
+n0025_m03_p025__002.inst -> Ticks: 81912.31 | Time: 59.64 | BnB nodes: 816 | Status: Feasible
+n0025_m03_p025__003.inst -> Ticks: 80941.08 | Time: 60.015 | BnB nodes: 525 | Status: Feasible
+n0025_m03_p025__004.inst -> Ticks: 84302.37 | Time: 59.765 | BnB nodes: 867 | Status: Feasible
+n0025_m03_p050__000.inst -> Ticks: 80903.45 | Time: 60 | BnB nodes: 590 | Status: Feasible
+n0025_m03_p050__001.inst -> Ticks: 82126.36 | Time: 59.859 | BnB nodes: 497 | Status: Feasible
+n0025_m03_p050__002.inst -> Ticks: 83882.85 | Time: 59.89 | BnB nodes: 563 | Status: Feasible
+n0025_m03_p050__003.inst -> Status: Unknown
+n0025_m03_p050__004.inst -> Ticks: 83033.36 | Time: 59.968 | BnB nodes: 473 | Status: Feasible
+n0025_m03_p075__000.inst -> Ticks: 78756.11 | Time: 59.906 | BnB nodes: 480 | Status: Feasible
+n0025_m03_p075__001.inst -> Ticks: 82442.15 | Time: 59.937 | BnB nodes: 500 | Status: Feasible
+n0025_m03_p075__002.inst -> Ticks: 87216.29 | Time: 59.719 | BnB nodes: 496 | Status: Feasible
+n0025_m03_p075__003.inst -> Ticks: 81165.21 | Time: 60.062 | BnB nodes: 990 | Status: Feasible
+n0025_m03_p075__004.inst -> Ticks: 83459.47 | Time: 59.859 | BnB nodes: 537 | Status: Feasible
+n0025_m03_p090__000.inst -> Ticks: 78828.26 | Time: 59.359 | BnB nodes: 509 | Status: Feasible
+n0025_m03_p090__001.inst -> Ticks: 73226.32 | Time: 59.359 | BnB nodes: 491 | Status: Feasible
+n0025_m03_p090__002.inst -> Ticks: 75693.05 | Time: 59.218 | BnB nodes: 501 | Status: Feasible
+n0025_m03_p090__003.inst -> Ticks: 78045.97 | Time: 59.515 | BnB nodes: 610 | Status: Feasible
+n0025_m03_p090__004.inst -> Ticks: 81204.2 | Time: 59.921 | BnB nodes: 505 | Status: Feasible
+n0025_m04_p025__000.inst -> Ticks: 81437.82 | Time: 59.718 | BnB nodes: 478 | Status: Feasible
+n0025_m04_p025__001.inst -> Ticks: 83362.79 | Time: 59.828 | BnB nodes: 505 | Status: Feasible
+n0025_m04_p025__002.inst -> Ticks: 76721.94 | Time: 59.906 | BnB nodes: 481 | Status: Feasible
+n0025_m04_p025__003.inst -> Ticks: 83669.93 | Time: 59.859 | BnB nodes: 982 | Status: Feasible
+n0025_m04_p025__004.inst -> Ticks: 78356.28 | Time: 59.891 | BnB nodes: 470 | Status: Feasible
+n0025_m04_p050__000.inst -> Ticks: 78171.78 | Time: 59.453 | BnB nodes: 471 | Status: Feasible
+n0025_m04_p050__001.inst -> Ticks: 79797.73 | Time: 59.921 | BnB nodes: 851 | Status: Feasible
+n0025_m04_p050__002.inst -> Ticks: 78898.71 | Time: 59.437 | BnB nodes: 450 | Status: Feasible
+n0025_m04_p050__003.inst -> Status: Unknown
+n0025_m04_p050__004.inst -> Ticks: 79148.54 | Time: 59.328 | BnB nodes: 514 | Status: Feasible
+n0025_m04_p075__000.inst -> Ticks: 73389.3 | Time: 59.781 | BnB nodes: 388 | Status: Feasible
+n0025_m04_p075__001.inst -> Ticks: 75759.29 | Time: 59.234 | BnB nodes: 277 | Status: Feasible
+n0025_m04_p075__002.inst -> Ticks: 81432.09 | Time: 59.484 | BnB nodes: 571 | Status: Feasible
+n0025_m04_p075__003.inst -> Ticks: 77208.82 | Time: 59.75 | BnB nodes: 467 | Status: Feasible
+n0025_m04_p075__004.inst -> Ticks: 77763.45 | Time: 59.5 | BnB nodes: 523 | Status: Feasible
+n0025_m04_p090__000.inst -> Ticks: 72406.46 | Time: 59.546 | BnB nodes: 597 | Status: Feasible
+n0025_m04_p090__001.inst -> Ticks: 71625.7 | Time: 59.89 | BnB nodes: 270 | Status: Feasible
+n0025_m04_p090__002.inst -> Ticks: 75377.43 | Time: 59.89 | BnB nodes: 413 | Status: Feasible
+n0025_m04_p090__003.inst -> Ticks: 73851.27 | Time: 59.656 | BnB nodes: 499 | Status: Feasible
+n0025_m04_p090__004.inst -> Status: Unknown
+n0025_m05_p025__000.inst -> Ticks: 77322.91 | Time: 59.718 | BnB nodes: 564 | Status: Feasible
+n0025_m05_p025__001.inst -> Ticks: 79213.79 | Time: 59.594 | BnB nodes: 489 | Status: Feasible
+n0025_m05_p025__002.inst -> Ticks: 76066.62 | Time: 59.843 | BnB nodes: 497 | Status: Feasible
+n0025_m05_p025__003.inst -> Ticks: 77962.5 | Time: 59.296 | BnB nodes: 485 | Status: Feasible
+n0025_m05_p025__004.inst -> Ticks: 76763.76 | Time: 59.234 | BnB nodes: 550 | Status: Feasible
+n0025_m05_p050__000.inst -> Status: Unknown
+n0025_m05_p050__001.inst -> Status: Unknown
+n0025_m05_p050__002.inst -> Status: Unknown
+n0025_m05_p050__003.inst -> Status: Unknown
+n0025_m05_p050__004.inst -> Ticks: 76366.0 | Time: 60.046 | BnB nodes: 352 | Status: Feasible
+n0025_m05_p075__000.inst -> Status: Unknown
+n0025_m05_p075__001.inst -> Ticks: 75210.89 | Time: 59.64 | BnB nodes: 616 | Status: Feasible
+n0025_m05_p075__002.inst -> Status: Unknown
+n0025_m05_p075__003.inst -> Status: Unknown
+n0025_m05_p075__004.inst -> Status: Unknown
+n0025_m05_p090__000.inst -> Status: Unknown
+n0025_m05_p090__001.inst -> Status: Unknown
+n0025_m05_p090__002.inst -> Status: Unknown
+n0025_m05_p090__003.inst -> Status: Unknown
+n0025_m05_p090__004.inst -> Status: Unknown
+n0030_m01_p025__000.inst -> Ticks: 4613.43 | Time: 3.375 | BnB nodes: 1472
+n0030_m01_p025__001.inst -> Ticks: 4202.42 | Time: 2.969 | BnB nodes: 1822
+n0030_m01_p025__002.inst -> Ticks: 1245.1 | Time: 0.859 | BnB nodes: 1192
+n0030_m01_p025__003.inst -> Ticks: 2569.99 | Time: 1.875 | BnB nodes: 618
+n0030_m01_p025__004.inst -> Ticks: 3387.02 | Time: 2.437 | BnB nodes: 1281
+n0030_m01_p050__000.inst -> Ticks: 4186.63 | Time: 2.937 | BnB nodes: 784
+n0030_m01_p050__001.inst -> Ticks: 8678.62 | Time: 6.031 | BnB nodes: 1842
+n0030_m01_p050__002.inst -> Ticks: 14033.58 | Time: 9.109 | BnB nodes: 3254
+n0030_m01_p050__003.inst -> Ticks: 6317.0 | Time: 4.406 | BnB nodes: 1141
+n0030_m01_p050__004.inst -> Ticks: 6891.11 | Time: 4.656 | BnB nodes: 1237
+n0030_m01_p075__000.inst -> Ticks: 47320.75 | Time: 30.219 | BnB nodes: 6899
+n0030_m01_p075__001.inst -> Ticks: 89909.57 | Time: 59.734 | BnB nodes: 10629 | Status: Feasible
+n0030_m01_p075__002.inst -> Ticks: 91799.32 | Time: 59.859 | BnB nodes: 13433 | Status: Feasible
+n0030_m01_p075__003.inst -> Ticks: 14040.46 | Time: 9.203 | BnB nodes: 1100
+n0030_m01_p075__004.inst -> Ticks: 96359.49 | Time: 59.906 | BnB nodes: 9077 | Status: Feasible
+n0030_m01_p090__000.inst -> Ticks: 16535.5 | Time: 10.5 | BnB nodes: 1994
+n0030_m01_p090__001.inst -> Ticks: 1085.58 | Time: 0.875 | BnB nodes: 3
+n0030_m01_p090__002.inst -> Ticks: 8961.29 | Time: 6.234 | BnB nodes: 1673
+n0030_m01_p090__003.inst -> Ticks: 1490.36 | Time: 1.203 | BnB nodes: 138
+n0030_m01_p090__004.inst -> Ticks: 2569.01 | Time: 1.812 | BnB nodes: 214
+n0030_m02_p025__000.inst -> Ticks: 91388.86 | Time: 59.625 | BnB nodes: 3694 | Status: Feasible
+n0030_m02_p025__001.inst -> Ticks: 93602.74 | Time: 59.656 | BnB nodes: 3285 | Status: Feasible
+n0030_m02_p025__002.inst -> Ticks: 84921.89 | Time: 59.875 | BnB nodes: 1280 | Status: Feasible
+n0030_m02_p025__003.inst -> Ticks: 84613.51 | Time: 59.546 | BnB nodes: 1139 | Status: Feasible
+n0030_m02_p025__004.inst -> Ticks: 90092.36 | Time: 59.859 | BnB nodes: 1361 | Status: Feasible
+n0030_m02_p050__000.inst -> Ticks: 82960.75 | Time: 59.937 | BnB nodes: 966 | Status: Feasible
+n0030_m02_p050__001.inst -> Ticks: 86752.08 | Time: 59.828 | BnB nodes: 711 | Status: Feasible
+n0030_m02_p050__002.inst -> Ticks: 82821.75 | Time: 59.781 | BnB nodes: 510 | Status: Feasible
+n0030_m02_p050__003.inst -> Ticks: 86982.17 | Time: 59.75 | BnB nodes: 884 | Status: Feasible
+n0030_m02_p050__004.inst -> Ticks: 81365.44 | Time: 59.843 | BnB nodes: 754 | Status: Feasible
+n0030_m02_p075__000.inst -> Ticks: 77409.7 | Time: 59.796 | BnB nodes: 521 | Status: Feasible
+n0030_m02_p075__001.inst -> Ticks: 78300.31 | Time: 59.843 | BnB nodes: 478 | Status: Feasible
+n0030_m02_p075__002.inst -> Ticks: 79947.14 | Time: 60.14 | BnB nodes: 303 | Status: Feasible
+n0030_m02_p075__003.inst -> Ticks: 85246.38 | Time: 59.75 | BnB nodes: 663 | Status: Feasible
+n0030_m02_p075__004.inst -> Ticks: 82801.63 | Time: 60 | BnB nodes: 617 | Status: Feasible
+n0030_m02_p090__000.inst -> Ticks: 76772.93 | Time: 59.734 | BnB nodes: 572 | Status: Feasible
+n0030_m02_p090__001.inst -> Ticks: 80049.53 | Time: 59.984 | BnB nodes: 416 | Status: Feasible
+n0030_m02_p090__002.inst -> Ticks: 77327.12 | Time: 59.89 | BnB nodes: 546 | Status: Feasible
+n0030_m02_p090__003.inst -> Ticks: 77979.93 | Time: 59.843 | BnB nodes: 522 | Status: Feasible
+n0030_m02_p090__004.inst -> Ticks: 79508.08 | Time: 59.828 | BnB nodes: 482 | Status: Feasible
+n0030_m03_p025__000.inst -> Ticks: 81080.7 | Time: 59.859 | BnB nodes: 522 | Status: Feasible
+n0030_m03_p025__001.inst -> Ticks: 76717.47 | Time: 59.203 | BnB nodes: 486 | Status: Feasible
+n0030_m03_p025__002.inst -> Ticks: 83224.66 | Time: 59.734 | BnB nodes: 572 | Status: Feasible
+n0030_m03_p025__003.inst -> Ticks: 80135.71 | Time: 59.406 | BnB nodes: 512 | Status: Feasible
+n0030_m03_p025__004.inst -> Ticks: 77243.42 | Time: 59.484 | BnB nodes: 471 | Status: Feasible
+n0030_m03_p050__000.inst -> Status: Unknown
+n0030_m03_p050__001.inst -> Status: Unknown
+n0030_m03_p050__002.inst -> Ticks: 75520.55 | Time: 59.546 | BnB nodes: 471 | Status: Feasible
+n0030_m03_p050__003.inst -> Status: Unknown
+n0030_m03_p050__004.inst -> Ticks: 72768.5 | Time: 59.703 | BnB nodes: 100 | Status: Feasible
+n0030_m03_p075__000.inst -> Ticks: 74545.64 | Time: 59.828 | BnB nodes: 100 | Status: Feasible
+n0030_m03_p075__001.inst -> Ticks: 76234.95 | Time: 59.656 | BnB nodes: 319 | Status: Feasible
+n0030_m03_p075__002.inst -> Status: Unknown
+n0030_m03_p075__003.inst -> Status: Unknown
+n0030_m03_p075__004.inst -> Status: Unknown
+n0030_m03_p090__000.inst -> Status: Unknown
+n0030_m03_p090__001.inst -> Ticks: 69315.41 | Time: 59.921 | BnB nodes: 400 | Status: Feasible
+n0030_m03_p090__002.inst -> Ticks: 73213.71 | Time: 59.687 | BnB nodes: 289 | Status: Feasible
+n0030_m03_p090__003.inst -> Status: Unknown
+n0030_m03_p090__004.inst -> Status: Unknown
+n0030_m04_p025__000.inst -> Status: Unknown
+n0030_m04_p025__001.inst -> Ticks: 79212.81 | Time: 59.328 | BnB nodes: 1018 | Status: Feasible
+n0030_m04_p025__002.inst -> Ticks: 75598.68 | Time: 59.969 | BnB nodes: 438 | Status: Feasible
+n0030_m04_p025__003.inst -> Status: Unknown
+n0030_m04_p025__004.inst -> Status: Unknown
+n0030_m04_p050__000.inst -> Status: Unknown
+n0030_m04_p050__001.inst -> Status: Unknown
+n0030_m04_p050__002.inst -> Status: Unknown
+n0030_m04_p050__003.inst -> Status: Unknown
+n0030_m04_p050__004.inst -> Status: Unknown
+n0030_m04_p075__000.inst -> Status: Unknown
+n0030_m04_p075__001.inst -> Status: Unknown
+n0030_m04_p075__002.inst -> Status: Unknown
+n0030_m04_p075__003.inst -> Status: Unknown
+n0030_m04_p075__004.inst -> Status: Unknown
+n0030_m04_p090__000.inst -> Status: Unknown
+n0030_m04_p090__001.inst -> Status: Unknown
+n0030_m04_p090__002.inst -> Status: Unknown
+n0030_m04_p090__003.inst -> Status: Unknown
+n0030_m04_p090__004.inst -> Status: Unknown
+n0030_m05_p025__000.inst -> Status: Unknown
+n0030_m05_p025__001.inst -> Ticks: 74159.92 | Time: 59.453 | BnB nodes: 326 | Status: Feasible
+n0030_m05_p025__002.inst -> Status: Unknown
+n0030_m05_p025__003.inst -> Status: Unknown
+n0030_m05_p025__004.inst -> Status: Unknown
+n0030_m05_p050__000.inst -> Status: Unknown
+n0030_m05_p050__001.inst -> Status: Unknown
+n0030_m05_p050__002.inst -> Status: Unknown
+n0030_m05_p050__003.inst -> Status: Unknown
+n0030_m05_p050__004.inst -> Status: Unknown
+n0030_m05_p075__000.inst -> Status: Unknown
+n0030_m05_p075__001.inst -> Status: Unknown
+n0030_m05_p075__002.inst -> Status: Unknown
+n0030_m05_p075__003.inst -> Status: Unknown
+n0030_m05_p075__004.inst -> Status: Unknown
+n0030_m05_p090__000.inst -> Status: Unknown
+n0030_m05_p090__001.inst -> Status: Unknown
+n0030_m05_p090__002.inst -> Status: Unknown
+n0030_m05_p090__003.inst -> Status: Unknown
+n0030_m05_p090__004.inst -> Status: Unknown
+n0035_m01_p025__000.inst -> Ticks: 221.54 | Time: 0.187 | BnB nodes: 54
+n0035_m01_p025__001.inst -> Ticks: 6005.99 | Time: 4.109 | BnB nodes: 1613
+n0035_m01_p025__002.inst -> Ticks: 5244.07 | Time: 3.484 | BnB nodes: 2634
+n0035_m01_p025__003.inst -> Ticks: 3187.23 | Time: 2.343 | BnB nodes: 842
+n0035_m01_p025__004.inst -> Ticks: 3171.72 | Time: 2.14 | BnB nodes: 1125
+n0035_m01_p050__000.inst -> Ticks: 6670.9 | Time: 4.562 | BnB nodes: 697
+n0035_m01_p050__001.inst -> Ticks: 92450.91 | Time: 59.656 | BnB nodes: 9804 | Status: Feasible
+n0035_m01_p050__002.inst -> Ticks: 25020.35 | Time: 15.704 | BnB nodes: 3180
+n0035_m01_p050__003.inst -> Ticks: 26644.37 | Time: 18.234 | BnB nodes: 3732
+n0035_m01_p050__004.inst -> Ticks: 25839.29 | Time: 16.296 | BnB nodes: 3224
+n0035_m01_p075__000.inst -> Ticks: 99289.17 | Time: 59.687 | BnB nodes: 2787 | Status: Feasible
+n0035_m01_p075__001.inst -> Ticks: 102307.68 | Time: 59.812 | BnB nodes: 7297 | Status: Feasible
+n0035_m01_p075__002.inst -> Ticks: 93270.1 | Time: 59.89 | BnB nodes: 3592 | Status: Feasible
+n0035_m01_p075__003.inst -> Ticks: 21951.46 | Time: 13.296 | BnB nodes: 1263
+n0035_m01_p075__004.inst -> Ticks: 101440.0 | Time: 59.906 | BnB nodes: 6427 | Status: Feasible
+n0035_m01_p090__000.inst -> Ticks: 34569.84 | Time: 22.109 | BnB nodes: 852
+n0035_m01_p090__001.inst -> Ticks: 48597.61 | Time: 30.265 | BnB nodes: 2796
+n0035_m01_p090__002.inst -> Ticks: 26753.73 | Time: 16.984 | BnB nodes: 2673
+n0035_m01_p090__003.inst -> Ticks: 20658.42 | Time: 13.296 | BnB nodes: 2673
+n0035_m01_p090__004.inst -> Ticks: 37175.05 | Time: 23.109 | BnB nodes: 1862
+n0035_m02_p025__000.inst -> Ticks: 83278.72 | Time: 59.75 | BnB nodes: 1308 | Status: Feasible
+n0035_m02_p025__001.inst -> Ticks: 82630.88 | Time: 59.843 | BnB nodes: 717 | Status: Feasible
+n0035_m02_p025__002.inst -> Ticks: 79128.14 | Time: 59.828 | BnB nodes: 612 | Status: Feasible
+n0035_m02_p025__003.inst -> Ticks: 85728.12 | Time: 59.765 | BnB nodes: 930 | Status: Feasible
+n0035_m02_p025__004.inst -> Ticks: 82790.12 | Time: 59.671 | BnB nodes: 835 | Status: Feasible
+n0035_m02_p050__000.inst -> Ticks: 79120.93 | Time: 59.968 | BnB nodes: 525 | Status: Feasible
+n0035_m02_p050__001.inst -> Ticks: 80037.32 | Time: 59.922 | BnB nodes: 621 | Status: Feasible
+n0035_m02_p050__002.inst -> Ticks: 77408.42 | Time: 59.375 | BnB nodes: 463 | Status: Feasible
+n0035_m02_p050__003.inst -> Ticks: 81899.61 | Time: 59.671 | BnB nodes: 507 | Status: Feasible
+n0035_m02_p050__004.inst -> Ticks: 85354.26 | Time: 59.031 | BnB nodes: 729 | Status: Feasible
+n0035_m02_p075__000.inst -> Ticks: 77422.87 | Time: 59.812 | BnB nodes: 300 | Status: Feasible
+n0035_m02_p075__001.inst -> Ticks: 78204.84 | Time: 59.859 | BnB nodes: 292 | Status: Feasible
+n0035_m02_p075__002.inst -> Ticks: 75818.31 | Time: 59.718 | BnB nodes: 382 | Status: Feasible
+n0035_m02_p075__003.inst -> Status: Unknown
+n0035_m02_p075__004.inst -> Status: Unknown
+n0035_m02_p090__000.inst -> Ticks: 77446.73 | Time: 59.64 | BnB nodes: 300 | Status: Feasible
+n0035_m02_p090__001.inst -> Ticks: 75253.97 | Time: 60.015 | BnB nodes: 425 | Status: Feasible
+n0035_m02_p090__002.inst -> Ticks: 74977.13 | Time: 59.562 | BnB nodes: 470 | Status: Feasible
+n0035_m02_p090__003.inst -> Ticks: 75022.75 | Time: 59.578 | BnB nodes: 444 | Status: Feasible
+n0035_m02_p090__004.inst -> Ticks: 76221.29 | Time: 59.765 | BnB nodes: 234 | Status: Feasible
+n0035_m03_p025__000.inst -> Ticks: 73721.47 | Time: 59.531 | BnB nodes: 286 | Status: Feasible
+n0035_m03_p025__001.inst -> Ticks: 81278.3 | Time: 59.531 | BnB nodes: 706 | Status: Feasible
+n0035_m03_p025__002.inst -> Ticks: 76650.6 | Time: 59.687 | BnB nodes: 520 | Status: Feasible
+n0035_m03_p025__003.inst -> Ticks: 77967.27 | Time: 59.921 | BnB nodes: 690 | Status: Feasible
+n0035_m03_p025__004.inst -> Ticks: 74669.44 | Time: 59.625 | BnB nodes: 142 | Status: Feasible
+n0035_m03_p050__000.inst -> Status: Unknown
+n0035_m03_p050__001.inst -> Status: Unknown
+n0035_m03_p050__002.inst -> Status: Unknown
+n0035_m03_p050__003.inst -> Status: Unknown
+n0035_m03_p050__004.inst -> Status: Unknown
+n0035_m03_p075__000.inst -> Status: Unknown
+n0035_m03_p075__001.inst -> Status: Unknown
+n0035_m03_p075__002.inst -> Status: Unknown
+n0035_m03_p075__003.inst -> Status: Unknown
+n0035_m03_p075__004.inst -> Status: Unknown
+n0035_m03_p090__000.inst -> Status: Unknown
+n0035_m03_p090__001.inst -> Status: Unknown
+n0035_m03_p090__002.inst -> Status: Unknown
+n0035_m03_p090__003.inst -> Status: Unknown
+n0035_m03_p090__004.inst -> Status: Unknown
+n0035_m04_p025__000.inst -> Status: Unknown
+n0035_m04_p025__001.inst -> Status: Unknown
+n0035_m04_p025__002.inst -> Status: Unknown
+n0035_m04_p025__003.inst -> Ticks: 75725.09 | Time: 59.468 | BnB nodes: 480 | Status: Feasible
+n0035_m04_p025__004.inst -> Ticks: 76024.31 | Time: 59.688 | BnB nodes: 360 | Status: Feasible
+n0035_m04_p050__000.inst -> Status: Unknown
+n0035_m04_p050__001.inst -> Status: Unknown
+n0035_m04_p050__002.inst -> Status: Unknown
+n0035_m04_p050__003.inst -> Status: Unknown
+n0035_m04_p050__004.inst -> Status: Unknown
+n0035_m04_p075__000.inst -> Status: Unknown
+n0035_m04_p075__001.inst -> Status: Unknown
+n0035_m04_p075__002.inst -> Status: Unknown
+n0035_m04_p075__003.inst -> Status: Unknown
+n0035_m04_p075__004.inst -> Status: Unknown
+n0035_m04_p090__000.inst -> Status: Unknown
+n0035_m04_p090__001.inst -> Status: Unknown
+n0035_m04_p090__002.inst -> Status: Unknown
+n0035_m04_p090__003.inst -> Status: Unknown
+n0035_m04_p090__004.inst -> Status: Unknown
+n0035_m05_p025__000.inst -> Status: Unknown
+n0035_m05_p025__001.inst -> Status: Unknown
+n0035_m05_p025__002.inst -> Status: Unknown
+n0035_m05_p025__003.inst -> Status: Unknown
+n0035_m05_p025__004.inst -> Status: Unknown
+n0035_m05_p050__000.inst -> Status: Unknown
+n0035_m05_p050__001.inst -> Status: Unknown
+n0035_m05_p050__002.inst -> Status: Unknown
+n0035_m05_p050__003.inst -> Status: Unknown
+n0035_m05_p050__004.inst -> Status: Unknown
+n0035_m05_p075__000.inst -> Status: Unknown
+n0035_m05_p075__001.inst -> Status: Unknown
+n0035_m05_p075__002.inst -> Status: Unknown
+n0035_m05_p075__003.inst -> Status: Unknown
+n0035_m05_p075__004.inst -> Status: Unknown
+n0035_m05_p090__000.inst -> Status: Unknown
+n0035_m05_p090__001.inst -> Status: Unknown
+n0035_m05_p090__002.inst -> Status: Unknown
+n0035_m05_p090__003.inst -> Status: Unknown
+n0035_m05_p090__004.inst -> Status: Unknown
+n0040_m01_p025__000.inst -> Ticks: 10184.26 | Time: 6.812 | BnB nodes: 1855
+n0040_m01_p025__001.inst -> Ticks: 5422.44 | Time: 3.687 | BnB nodes: 620
+n0040_m01_p025__002.inst -> Ticks: 371.22 | Time: 0.265 | BnB nodes: 50
+n0040_m01_p025__003.inst -> Ticks: 7218.66 | Time: 4.718 | BnB nodes: 1423
+n0040_m01_p025__004.inst -> Ticks: 11596.42 | Time: 7.484 | BnB nodes: 4698
+n0040_m01_p050__000.inst -> Ticks: 89452.08 | Time: 59.812 | BnB nodes: 7098 | Status: Feasible
+n0040_m01_p050__001.inst -> Ticks: 2919.38 | Time: 2.015 | BnB nodes: 314
+n0040_m01_p050__002.inst -> Ticks: 81956.04 | Time: 54.562 | BnB nodes: 8574
+n0040_m01_p050__003.inst -> Ticks: 12458.11 | Time: 8.281 | BnB nodes: 864
+n0040_m01_p050__004.inst -> Ticks: 90814.96 | Time: 59.781 | BnB nodes: 9672 | Status: Feasible
+n0040_m01_p075__000.inst -> Ticks: 94923.09 | Time: 59.906 | BnB nodes: 2766 | Status: Feasible
+n0040_m01_p075__001.inst -> Ticks: 97693.63 | Time: 59.828 | BnB nodes: 2490 | Status: Feasible
+n0040_m01_p075__002.inst -> Ticks: 93597.27 | Time: 59.781 | BnB nodes: 1451 | Status: Feasible
+n0040_m01_p075__003.inst -> Ticks: 100590.53 | Time: 59.765 | BnB nodes: 3792 | Status: Feasible
+n0040_m01_p075__004.inst -> Ticks: 94518.05 | Time: 59.75 | BnB nodes: 2000 | Status: Feasible
+n0040_m01_p090__000.inst -> Ticks: 93558.36 | Time: 59.718 | BnB nodes: 3255 | Status: Feasible
+n0040_m01_p090__001.inst -> Ticks: 51349.94 | Time: 31.812 | BnB nodes: 1451
+n0040_m01_p090__002.inst -> Ticks: 40938.56 | Time: 26.921 | BnB nodes: 1945
+n0040_m01_p090__003.inst -> Ticks: 28378.31 | Time: 18.281 | BnB nodes: 621
+n0040_m01_p090__004.inst -> Ticks: 61851.36 | Time: 39.593 | BnB nodes: 2449
+n0040_m02_p025__000.inst -> Ticks: 78987.49 | Time: 59.5 | BnB nodes: 533 | Status: Feasible
+n0040_m02_p025__001.inst -> Ticks: 78776.06 | Time: 60.031 | BnB nodes: 485 | Status: Feasible
+n0040_m02_p025__002.inst -> Ticks: 79936.63 | Time: 59.625 | BnB nodes: 534 | Status: Feasible
+n0040_m02_p025__003.inst -> Ticks: 78452.79 | Time: 59.578 | BnB nodes: 482 | Status: Feasible
+n0040_m02_p025__004.inst -> Ticks: 77288.66 | Time: 59.484 | BnB nodes: 543 | Status: Feasible
+n0040_m02_p050__000.inst -> Status: Unknown
+n0040_m02_p050__001.inst -> Ticks: 78460.83 | Time: 59.765 | BnB nodes: 499 | Status: Feasible
+n0040_m02_p050__002.inst -> Ticks: 77677.69 | Time: 59.64 | BnB nodes: 327 | Status: Feasible
+n0040_m02_p050__003.inst -> Ticks: 67865.32 | Time: 59.781 | BnB nodes: 3 | Status: Feasible
+n0040_m02_p050__004.inst -> Ticks: 79098.06 | Time: 59.531 | BnB nodes: 405 | Status: Feasible
+n0040_m02_p075__000.inst -> Status: Unknown
+n0040_m02_p075__001.inst -> Status: Unknown
+n0040_m02_p075__002.inst -> Status: Unknown
+n0040_m02_p075__003.inst -> Status: Unknown
+n0040_m02_p075__004.inst -> Status: Unknown
+n0040_m02_p090__000.inst -> Status: Unknown
+n0040_m02_p090__001.inst -> Ticks: 72735.31 | Time: 60.14 | BnB nodes: 30 | Status: Feasible
+n0040_m02_p090__002.inst -> Status: Unknown
+n0040_m02_p090__003.inst -> Status: Unknown
+n0040_m02_p090__004.inst -> Status: Unknown
+n0040_m03_p025__000.inst -> Status: Unknown
+n0040_m03_p025__001.inst -> Ticks: 72353.26 | Time: 59.89 | BnB nodes: 2 | Status: Feasible
+n0040_m03_p025__002.inst -> Ticks: 77314.84 | Time: 59.625 | BnB nodes: 262 | Status: Feasible
+n0040_m03_p025__003.inst -> Status: Unknown
+n0040_m03_p025__004.inst -> Ticks: 71180.35 | Time: 59.578 | BnB nodes: 40 | Status: Feasible
+n0040_m03_p050__000.inst -> Status: Unknown
+n0040_m03_p050__001.inst -> Status: Unknown
+n0040_m03_p050__002.inst -> Status: Unknown
+n0040_m03_p050__003.inst -> Status: Unknown
+n0040_m03_p050__004.inst -> Status: Unknown
+n0040_m03_p075__000.inst -> Status: Unknown
+n0040_m03_p075__001.inst -> Status: Unknown
+n0040_m03_p075__002.inst -> Status: Unknown
+n0040_m03_p075__003.inst -> Status: Unknown
+n0040_m03_p075__004.inst -> Status: Unknown
+n0040_m03_p090__000.inst -> Status: Unknown
+n0040_m03_p090__001.inst -> Status: Unknown
+n0040_m03_p090__002.inst -> Status: Unknown
+n0040_m03_p090__003.inst -> Status: Unknown
+n0040_m03_p090__004.inst -> Status: Unknown
+n0040_m04_p025__000.inst -> Status: Unknown
+n0040_m04_p025__001.inst -> Status: Unknown
+n0040_m04_p025__002.inst -> Status: Unknown
+n0040_m04_p025__003.inst -> Status: Unknown
+n0040_m04_p025__004.inst -> Status: Unknown
+n0040_m04_p050__000.inst -> Status: Unknown
+n0040_m04_p050__001.inst -> Status: Unknown
+n0040_m04_p050__002.inst -> Status: Unknown
+n0040_m04_p050__003.inst -> Status: Unknown
+n0040_m04_p050__004.inst -> Status: Unknown
+n0040_m04_p075__000.inst -> Status: Unknown
+n0040_m04_p075__001.inst -> Status: Unknown
+n0040_m04_p075__002.inst -> Status: Unknown
+n0040_m04_p075__003.inst -> Status: Unknown
+n0040_m04_p075__004.inst -> Status: Unknown
+n0040_m04_p090__000.inst -> Status: Unknown
+n0040_m04_p090__001.inst -> Status: Unknown
+n0040_m04_p090__002.inst -> Status: Unknown
+n0040_m04_p090__003.inst -> Status: Unknown
+n0040_m04_p090__004.inst -> Status: Unknown
+n0040_m05_p025__000.inst -> Status: Unknown
+n0040_m05_p025__001.inst -> Status: Unknown
+n0040_m05_p025__002.inst -> Status: Unknown
+n0040_m05_p025__003.inst -> Status: Unknown
+n0040_m05_p025__004.inst -> Status: Unknown
+n0040_m05_p050__000.inst -> Status: Unknown
+n0040_m05_p050__001.inst -> Status: Unknown
+n0040_m05_p050__002.inst -> Status: Unknown
+n0040_m05_p050__003.inst -> Status: Unknown
+n0040_m05_p050__004.inst -> Status: Unknown
+n0040_m05_p075__000.inst -> Status: Unknown
+n0040_m05_p075__001.inst -> Status: Unknown
+n0040_m05_p075__002.inst -> Status: Unknown
+n0040_m05_p075__003.inst -> Status: Unknown
+n0040_m05_p075__004.inst -> Status: Unknown
+n0040_m05_p090__000.inst -> Status: Unknown
+n0040_m05_p090__001.inst -> Status: Unknown
+n0040_m05_p090__002.inst -> Status: Unknown
+n0040_m05_p090__003.inst -> Status: Unknown
+n0040_m05_p090__004.inst -> Status: Unknown
+n0045_m01_p025__000.inst -> Ticks: 15963.79 | Time: 10.296 | BnB nodes: 3526
+n0045_m01_p025__001.inst -> Ticks: 14371.57 | Time: 9.609 | BnB nodes: 3093
+n0045_m01_p025__002.inst -> Ticks: 7178.0 | Time: 5.031 | BnB nodes: 1175
+n0045_m01_p025__003.inst -> Ticks: 11362.78 | Time: 7.656 | BnB nodes: 1554
+n0045_m01_p025__004.inst -> Ticks: 18512.4 | Time: 12.234 | BnB nodes: 5676
+n0045_m01_p050__000.inst -> Ticks: 97025.72 | Time: 59.812 | BnB nodes: 14937 | Status: Feasible
+n0045_m01_p050__001.inst -> Ticks: 90441.89 | Time: 59.718 | BnB nodes: 6141 | Status: Feasible
+n0045_m01_p050__002.inst -> Ticks: 94230.66 | Time: 59.875 | BnB nodes: 2805 | Status: Feasible
+n0045_m01_p050__003.inst -> Ticks: 65835.23 | Time: 42.906 | BnB nodes: 4585
+n0045_m01_p050__004.inst -> Ticks: 82425.17 | Time: 59.25 | BnB nodes: 16864 | Status: Feasible
+n0045_m01_p075__000.inst -> Ticks: 78108.99 | Time: 59.593 | BnB nodes: 1304 | Status: Feasible
+n0045_m01_p075__001.inst -> Ticks: 81595.49 | Time: 59.671 | BnB nodes: 1414 | Status: Feasible
+n0045_m01_p075__002.inst -> Ticks: 82388.96 | Time: 59.531 | BnB nodes: 1123 | Status: Feasible
+n0045_m01_p075__003.inst -> Ticks: 76794.3 | Time: 59.5 | BnB nodes: 724 | Status: Feasible
+n0045_m01_p075__004.inst -> Ticks: 74819.39 | Time: 59.515 | BnB nodes: 1365 | Status: Feasible
+n0045_m01_p090__000.inst -> Ticks: 82934.35 | Time: 59.625 | BnB nodes: 749 | Status: Feasible
+n0045_m01_p090__001.inst -> Ticks: 84475.73 | Time: 59.593 | BnB nodes: 614 | Status: Feasible
+n0045_m01_p090__002.inst -> Ticks: 83493.27 | Time: 59.656 | BnB nodes: 496 | Status: Feasible
+n0045_m01_p090__003.inst -> Ticks: 86320.73 | Time: 59.796 | BnB nodes: 1322 | Status: Feasible
+n0045_m01_p090__004.inst -> Ticks: 55690.52 | Time: 40.078 | BnB nodes: 562
+n0045_m02_p025__000.inst -> Ticks: 73209.81 | Time: 59.078 | BnB nodes: 511 | Status: Feasible
+n0045_m02_p025__001.inst -> Ticks: 69391.2 | Time: 59.828 | BnB nodes: 495 | Status: Feasible
+n0045_m02_p025__002.inst -> Ticks: 75009.12 | Time: 59.203 | BnB nodes: 510 | Status: Feasible
+n0045_m02_p025__003.inst -> Ticks: 72546.52 | Time: 59.531 | BnB nodes: 502 | Status: Feasible
+n0045_m02_p025__004.inst -> Ticks: 71842.72 | Time: 59.454 | BnB nodes: 546 | Status: Feasible
+n0045_m02_p050__000.inst -> Status: Unknown
+n0045_m02_p050__001.inst -> Status: Unknown
+n0045_m02_p050__002.inst -> Status: Unknown
+n0045_m02_p050__003.inst -> Status: Unknown
+n0045_m02_p050__004.inst -> Ticks: 42793.68 | Time: 56.188 | BnB nodes: 1 | Status: Feasible
+n0045_m02_p075__000.inst -> Status: Unknown
+n0045_m02_p075__001.inst -> Status: Unknown
+n0045_m02_p075__002.inst -> Status: Unknown
+n0045_m02_p075__003.inst -> Status: Unknown
+n0045_m02_p075__004.inst -> Status: Unknown
+n0045_m02_p090__000.inst -> Status: Unknown
+n0045_m02_p090__001.inst -> Status: Unknown
+n0045_m02_p090__002.inst -> Ticks: 69776.53 | Time: 60.125 | BnB nodes: 0 | Status: Feasible
+n0045_m02_p090__003.inst -> Status: Unknown
+n0045_m02_p090__004.inst -> Status: Unknown
+n0045_m03_p025__000.inst -> Status: Unknown
+n0045_m03_p025__001.inst -> Status: Unknown
+n0045_m03_p025__002.inst -> Status: Unknown
+n0045_m03_p025__003.inst -> Status: Unknown
+n0045_m03_p025__004.inst -> Status: Unknown
+n0045_m03_p050__000.inst -> Status: Unknown
+n0045_m03_p050__001.inst -> Status: Unknown
+n0045_m03_p050__002.inst -> Status: Unknown
+n0045_m03_p050__003.inst -> Status: Unknown
+n0045_m03_p050__004.inst -> Status: Unknown
+n0045_m03_p075__000.inst -> Status: Unknown
+n0045_m03_p075__001.inst -> Status: Unknown
+n0045_m03_p075__002.inst -> Status: Unknown
+n0045_m03_p075__003.inst -> Status: Unknown
+n0045_m03_p075__004.inst -> Status: Unknown
+n0045_m03_p090__000.inst -> Status: Unknown
+n0045_m03_p090__001.inst -> Status: Unknown
+n0045_m03_p090__002.inst -> Status: Unknown
+n0045_m03_p090__003.inst -> Status: Unknown
+n0045_m03_p090__004.inst -> Status: Unknown
+n0045_m04_p025__000.inst -> Status: Unknown
+n0045_m04_p025__001.inst -> Status: Unknown
+n0045_m04_p025__002.inst -> Status: Unknown
+n0045_m04_p025__003.inst -> Status: Unknown
+n0045_m04_p025__004.inst -> Status: Unknown
+n0045_m04_p050__000.inst -> Status: Unknown
+n0045_m04_p050__001.inst -> Status: Unknown
+n0045_m04_p050__002.inst -> Status: Unknown
+n0045_m04_p050__003.inst -> Status: Unknown
+n0045_m04_p050__004.inst -> Status: Unknown
+n0045_m04_p075__000.inst -> Status: Unknown
+n0045_m04_p075__001.inst -> Status: Unknown
+n0045_m04_p075__002.inst -> Status: Unknown
+n0045_m04_p075__003.inst -> Status: Unknown
+n0045_m04_p075__004.inst -> Status: Unknown
+n0045_m04_p090__000.inst -> Status: Unknown
+n0045_m04_p090__001.inst -> Status: Unknown
+n0045_m04_p090__002.inst -> Status: Unknown
+n0045_m04_p090__003.inst -> Status: Unknown
+n0045_m04_p090__004.inst -> Status: Unknown
+n0045_m05_p025__000.inst -> Status: Unknown
+n0045_m05_p025__001.inst -> Status: Unknown
+n0045_m05_p025__002.inst -> Status: Unknown
+n0045_m05_p025__003.inst -> Status: Unknown
+n0045_m05_p025__004.inst -> Status: Unknown
+n0045_m05_p050__000.inst -> Status: Unknown
+n0045_m05_p050__001.inst -> Status: Unknown
+n0045_m05_p050__002.inst -> Status: Unknown
+n0045_m05_p050__003.inst -> Status: Unknown
+n0045_m05_p050__004.inst -> Status: Unknown
+n0045_m05_p075__000.inst -> Status: Unknown
+n0045_m05_p075__001.inst -> Status: Unknown
+n0045_m05_p075__002.inst -> Status: Unknown
+n0045_m05_p075__003.inst -> Status: Unknown
+n0045_m05_p075__004.inst -> Status: Unknown
+n0045_m05_p090__000.inst -> Status: Unknown
+n0045_m05_p090__001.inst -> Status: Unknown
+n0045_m05_p090__002.inst -> Status: Unknown
+n0045_m05_p090__003.inst -> Status: Unknown
+n0045_m05_p090__004.inst -> Status: Unknown
+n0050_m01_p025__000.inst -> Ticks: 58253.74 | Time: 38.468 | BnB nodes: 8336
+n0050_m01_p025__001.inst -> Ticks: 2308.06 | Time: 1.562 | BnB nodes: 586
+n0050_m01_p025__002.inst -> Ticks: 62541.2 | Time: 40.5 | BnB nodes: 8306
+n0050_m01_p025__003.inst -> Ticks: 6122.96 | Time: 4.296 | BnB nodes: 1101
+n0050_m01_p025__004.inst -> Ticks: 7603.56 | Time: 4.875 | BnB nodes: 1379
+n0050_m01_p050__000.inst -> Ticks: 93646.24 | Time: 59.671 | BnB nodes: 6087 | Status: Feasible
+n0050_m01_p050__001.inst -> Ticks: 51932.05 | Time: 34.921 | BnB nodes: 2239
+n0050_m01_p050__002.inst -> Ticks: 46547.84 | Time: 31.078 | BnB nodes: 4152
+n0050_m01_p050__003.inst -> Ticks: 93213.29 | Time: 59.625 | BnB nodes: 3559 | Status: Feasible
+n0050_m01_p050__004.inst -> Ticks: 92902.05 | Time: 59.562 | BnB nodes: 7408 | Status: Feasible
+n0050_m01_p075__000.inst -> Ticks: 89211.14 | Time: 59.796 | BnB nodes: 744 | Status: Feasible
+n0050_m01_p075__001.inst -> Ticks: 91809.89 | Time: 59.765 | BnB nodes: 684 | Status: Feasible
+n0050_m01_p075__002.inst -> Ticks: 90292.27 | Time: 59.656 | BnB nodes: 2027 | Status: Feasible
+n0050_m01_p075__003.inst -> Ticks: 91410.89 | Time: 59.765 | BnB nodes: 1133 | Status: Feasible
+n0050_m01_p075__004.inst -> Ticks: 87925.9 | Time: 59.656 | BnB nodes: 1173 | Status: Feasible
+n0050_m01_p090__000.inst -> Ticks: 87498.64 | Time: 59.906 | BnB nodes: 640 | Status: Feasible
+n0050_m01_p090__001.inst -> Ticks: 95625.85 | Time: 59.89 | BnB nodes: 1100 | Status: Feasible
+n0050_m01_p090__002.inst -> Ticks: 94880.06 | Time: 59.656 | BnB nodes: 491 | Status: Feasible
+n0050_m01_p090__003.inst -> Ticks: 95475.6 | Time: 59.875 | BnB nodes: 562 | Status: Feasible
+n0050_m01_p090__004.inst -> Ticks: 96285.8 | Time: 59.609 | BnB nodes: 534 | Status: Feasible
+n0050_m02_p025__000.inst -> Ticks: 68606.9 | Time: 59.906 | BnB nodes: 49 | Status: Feasible
+n0050_m02_p025__001.inst -> Ticks: 78880.76 | Time: 60.14 | BnB nodes: 316 | Status: Feasible
+n0050_m02_p025__002.inst -> Ticks: 80112.76 | Time: 59.546 | BnB nodes: 490 | Status: Feasible
+n0050_m02_p025__003.inst -> Ticks: 83359.86 | Time: 59.515 | BnB nodes: 557 | Status: Feasible
+n0050_m02_p025__004.inst -> Ticks: 83940.89 | Time: 59.578 | BnB nodes: 610 | Status: Feasible
+n0050_m02_p050__000.inst -> Status: Unknown
+n0050_m02_p050__001.inst -> Status: Unknown
+n0050_m02_p050__002.inst -> Status: Unknown
+n0050_m02_p050__003.inst -> Ticks: 72471.92 | Time: 60.015 | BnB nodes: 1 | Status: Feasible
+n0050_m02_p050__004.inst -> Status: Unknown
+n0050_m02_p075__000.inst -> Status: Unknown
+n0050_m02_p075__001.inst -> Status: Unknown
+n0050_m02_p075__002.inst -> Status: Unknown
+n0050_m02_p075__003.inst -> Status: Unknown
+n0050_m02_p075__004.inst -> Status: Unknown
+n0050_m02_p090__000.inst -> Status: Unknown
+n0050_m02_p090__001.inst -> Status: Unknown
+n0050_m02_p090__002.inst -> Status: Unknown
+n0050_m02_p090__003.inst -> Status: Unknown
+n0050_m02_p090__004.inst -> Status: Unknown
+n0050_m03_p025__000.inst -> Status: Unknown
+n0050_m03_p025__001.inst -> Ticks: 75936.18 | Time: 60.047 | BnB nodes: 65 | Status: Feasible
+n0050_m03_p025__002.inst -> Status: Unknown
+n0050_m03_p025__003.inst -> Status: Unknown
+n0050_m03_p025__004.inst -> Status: Unknown
+n0050_m03_p050__000.inst -> Status: Unknown
+n0050_m03_p050__001.inst -> Status: Unknown
+n0050_m03_p050__002.inst -> Status: Unknown
+n0050_m03_p050__003.inst -> Status: Unknown
+n0050_m03_p050__004.inst -> Status: Unknown
+n0050_m03_p075__000.inst -> Status: Unknown
+n0050_m03_p075__001.inst -> Status: Unknown
+n0050_m03_p075__002.inst -> Status: Unknown
+n0050_m03_p075__003.inst -> Status: Unknown
+n0050_m03_p075__004.inst -> Status: Unknown
+n0050_m03_p090__000.inst -> Status: Unknown
+n0050_m03_p090__001.inst -> Status: Unknown
+n0050_m03_p090__002.inst -> Status: Unknown
+n0050_m03_p090__003.inst -> Status: Unknown
+n0050_m03_p090__004.inst -> Status: Unknown
+n0050_m04_p025__000.inst -> Status: Unknown
+n0050_m04_p025__001.inst -> Status: Unknown
+n0050_m04_p025__002.inst -> Status: Unknown
+n0050_m04_p025__003.inst -> Status: Unknown
+n0050_m04_p025__004.inst -> Status: Unknown
+n0050_m04_p050__000.inst -> Status: Unknown
+n0050_m04_p050__001.inst -> Status: Unknown
+n0050_m04_p050__002.inst -> Status: Unknown
+n0050_m04_p050__003.inst -> Status: Unknown
+n0050_m04_p050__004.inst -> Status: Unknown
+n0050_m04_p075__000.inst -> Status: Unknown
+n0050_m04_p075__001.inst -> Status: Unknown
+n0050_m04_p075__002.inst -> Status: Unknown
+n0050_m04_p075__003.inst -> Status: Unknown
+n0050_m04_p075__004.inst -> Status: Unknown
+n0050_m04_p090__000.inst -> Status: Unknown
+n0050_m04_p090__001.inst -> Status: Unknown
+n0050_m04_p090__002.inst -> Status: Unknown
+n0050_m04_p090__003.inst -> Status: Unknown
+n0050_m04_p090__004.inst -> Status: Unknown
+n0050_m05_p025__000.inst -> Status: Unknown
+n0050_m05_p025__001.inst -> Status: Unknown
+n0050_m05_p025__002.inst -> Status: Unknown
+n0050_m05_p025__003.inst -> Status: Unknown
+n0050_m05_p025__004.inst -> Status: Unknown
+n0050_m05_p050__000.inst -> Status: Unknown
+n0050_m05_p050__001.inst -> Status: Unknown
+n0050_m05_p050__002.inst -> Status: Unknown
+n0050_m05_p050__003.inst -> Status: Unknown
+n0050_m05_p050__004.inst -> Status: Unknown
+n0050_m05_p075__000.inst -> Status: Unknown
+n0050_m05_p075__001.inst -> Status: Unknown
+n0050_m05_p075__002.inst -> Status: Unknown
+n0050_m05_p075__003.inst -> Status: Unknown
+n0050_m05_p075__004.inst -> Status: Unknown
+n0050_m05_p090__000.inst -> Status: Unknown
+n0050_m05_p090__001.inst -> Status: Unknown
+n0050_m05_p090__002.inst -> Status: Unknown
+n0050_m05_p090__003.inst -> Status: Unknown
+n0050_m05_p090__004.inst -> Status: Unknown
+n0100_m01_p025__000.inst -> Ticks: 102041.5 | Time: 55.687 | BnB nodes: 4832 | Status: Feasible
+n0100_m01_p025__001.inst -> Ticks: 98968.41 | Time: 56.593 | BnB nodes: 2281 | Status: Feasible
+n0100_m01_p025__002.inst -> Ticks: 95311.46 | Time: 52.922 | BnB nodes: 3656
+n0100_m01_p025__003.inst -> Ticks: 106790.36 | Time: 55.515 | BnB nodes: 8612 | Status: Feasible
+n0100_m01_p025__004.inst -> Ticks: 104155.95 | Time: 56 | BnB nodes: 6297 | Status: Feasible
+n0100_m01_p050__000.inst -> Ticks: 72146.38 | Time: 59.531 | BnB nodes: 0 | Status: Feasible
+n0100_m01_p050__001.inst -> Ticks: 75836.09 | Time: 59.781 | BnB nodes: 56 | Status: Feasible
+n0100_m01_p050__002.inst -> Ticks: 68821.4 | Time: 59.593 | BnB nodes: 0 | Status: Feasible
+n0100_m01_p050__003.inst -> Ticks: 72454.38 | Time: 59.515 | BnB nodes: 3 | Status: Feasible
+n0100_m01_p050__004.inst -> Ticks: 76144.82 | Time: 59.203 | BnB nodes: 800 | Status: Feasible
+n0100_m01_p075__000.inst -> Status: Unknown
+n0100_m01_p075__001.inst -> Status: Unknown
+n0100_m01_p075__002.inst -> Status: Unknown
+n0100_m01_p075__003.inst -> Status: Unknown
+n0100_m01_p075__004.inst -> Status: Unknown
+n0100_m01_p090__000.inst -> Status: Unknown
+n0100_m01_p090__001.inst -> Status: Unknown
+n0100_m01_p090__002.inst -> Status: Unknown
+n0100_m01_p090__003.inst -> Status: Unknown
+n0100_m01_p090__004.inst -> Status: Unknown
+n0100_m02_p025__000.inst -> Status: Unknown
+n0100_m02_p025__001.inst -> Status: Unknown
+n0100_m02_p025__002.inst -> Status: Unknown
+n0100_m02_p025__003.inst -> Status: Unknown
+n0100_m02_p025__004.inst -> Status: Unknown
+n0100_m02_p050__000.inst -> Status: Unknown
+n0100_m02_p050__001.inst -> Status: Unknown
+n0100_m02_p050__002.inst -> Status: Unknown
+n0100_m02_p050__003.inst -> Status: Unknown
+n0100_m02_p050__004.inst -> Status: Unknown
+n0100_m02_p075__000.inst -> Status: Unknown
+n0100_m02_p075__001.inst -> Status: Unknown
+n0100_m02_p075__002.inst -> Status: Unknown
+n0100_m02_p075__003.inst -> Status: Unknown
+n0100_m02_p075__004.inst -> Status: Unknown
+n0100_m02_p090__000.inst -> Status: Unknown
+n0100_m02_p090__001.inst -> Status: Unknown
+n0100_m02_p090__002.inst -> Status: Unknown
+n0100_m02_p090__003.inst -> Status: Unknown
+n0100_m02_p090__004.inst -> Status: Unknown
+n0100_m03_p025__000.inst -> Status: Unknown
+n0100_m03_p025__001.inst -> Status: Unknown
+n0100_m03_p025__002.inst -> Status: Unknown
+n0100_m03_p025__003.inst -> Status: Unknown
+n0100_m03_p025__004.inst -> Status: Unknown
+n0100_m03_p050__000.inst -> Status: Unknown
+n0100_m03_p050__001.inst -> Status: Unknown
+n0100_m03_p050__002.inst -> Status: Unknown
+n0100_m03_p050__003.inst -> Status: Unknown
+n0100_m03_p050__004.inst -> Status: Unknown
+n0100_m03_p075__000.inst -> Status: Unknown
+n0100_m03_p075__001.inst -> Status: Unknown
+n0100_m03_p075__002.inst -> Status: Unknown
+n0100_m03_p075__003.inst -> Status: Unknown
+n0100_m03_p075__004.inst -> Status: Unknown
+n0100_m03_p090__000.inst -> Status: Unknown
+n0100_m03_p090__001.inst -> Status: Unknown
+n0100_m03_p090__002.inst -> Status: Unknown
+n0100_m03_p090__003.inst -> Status: Unknown
+n0100_m03_p090__004.inst -> Status: Unknown
+n0100_m04_p025__000.inst -> Status: Unknown
+n0100_m04_p025__001.inst -> Status: Unknown
+n0100_m04_p025__002.inst -> Status: Unknown
+n0100_m04_p025__003.inst -> Status: Unknown
+n0100_m04_p025__004.inst -> Status: Unknown
+n0100_m04_p050__000.inst -> Status: Unknown
+n0100_m04_p050__001.inst -> Status: Unknown
+n0100_m04_p050__002.inst -> Status: Unknown
+n0100_m04_p050__003.inst -> Status: Unknown
+n0100_m04_p050__004.inst -> Status: Unknown
+n0100_m04_p075__000.inst -> Status: Unknown
+n0100_m04_p075__001.inst -> Status: Unknown
+n0100_m04_p075__002.inst -> Status: Unknown
+n0100_m04_p075__003.inst -> Status: Unknown
+n0100_m04_p075__004.inst -> Status: Unknown
+n0100_m04_p090__000.inst -> Status: Unknown
+n0100_m04_p090__001.inst -> Status: Unknown
+n0100_m04_p090__002.inst -> Status: Unknown
+n0100_m04_p090__003.inst -> Status: Unknown
+n0100_m04_p090__004.inst -> Status: Unknown
+n0100_m05_p025__000.inst -> Status: Unknown
+n0100_m05_p025__001.inst -> Status: Unknown
+n0100_m05_p025__002.inst -> Status: Unknown
+n0100_m05_p025__003.inst -> Status: Unknown
+n0100_m05_p025__004.inst -> Status: Unknown
+n0100_m05_p050__000.inst -> Status: Unknown
+n0100_m05_p050__001.inst -> Status: Unknown
+n0100_m05_p050__002.inst -> Status: Unknown
+n0100_m05_p050__003.inst -> Status: Unknown
+n0100_m05_p050__004.inst -> Status: Unknown
+n0100_m05_p075__000.inst -> Status: Unknown
+n0100_m05_p075__001.inst -> Status: Unknown
+n0100_m05_p075__002.inst -> Status: Unknown
+n0100_m05_p075__003.inst -> Status: Unknown
+n0100_m05_p075__004.inst -> Status: Unknown
+n0100_m05_p090__000.inst -> Status: Unknown
+n0100_m05_p090__001.inst -> Status: Unknown
+n0100_m05_p090__002.inst -> Status: Unknown
+n0100_m05_p090__003.inst -> Status: Unknown
+n0100_m05_p090__004.inst -> Status: Unknown

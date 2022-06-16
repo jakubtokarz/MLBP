@@ -102,9 +102,7 @@ void Instance<MLBP>::read_instance(std::ifstream& file)
 
 int Instance<MLBP>::objective(const Solution<MLBP>& sol) const
 {
-	int obj = 0;
-	// TODO
-	return obj;
+	return sol.total_bin_cost;
 }
 
 std::ostream& operator<<(std::ostream& os, const Instance<MLBP> &inst)
@@ -175,10 +173,18 @@ Instance<MLBPCC>::Instance(const std::string& input_file) : Instance<MLBP>()
 
 std::ostream& operator<<(std::ostream& os, const Instance<MLBPCC> &inst)
 {
-	os << "m=" << inst.m << ", n=" << inst.n << "\n";
+	os << "m=" << inst.m << ", n=" << inst.n << "\n\tconflict:\n";
+	for (int j = 0; j < inst.conflict.size(); j++) {
+		os << "\t\t" << j << " -> ";
+		for (int q = 0; q < inst.conflict[j].size(); q++) {
+			if (inst.conflict[j][q] == 1) {
+				os << q << " ";
+			}
+		}
+		os << '\n';
+	}
 	return os;
 }
-
 
 
 
@@ -241,7 +247,7 @@ Instance<MLBPTW>::Instance(const std::string& input_file) : Instance<MLBP>()
 int Instance<MLBPTW>::objective(const Solution<MLBPTW>& sol) const
 {
 	int obj = 0;
-	// TODO
+	// TOD
 	return obj;
 }
 
@@ -280,7 +286,7 @@ Instance<MLBPFC>::Instance(const std::string& input_file) : Instance<MLBP>()
 int Instance<MLBPFC>::objective(const Solution<MLBPFC>& sol) const
 {
 	int obj = 0;
-	// TODO
+	// TOD
 	return obj;
 }
 
