@@ -156,7 +156,7 @@ void NF_MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instan
 	}
 	MIP_OUT(TRACE) << "added " << num << " constraints to enforce LP x-y relaxation" << std::endl;
 
-	// Every connection between i and j should be active/inactive for both x and f
+	// Every connection between i and j should be active/inactive for both x -> f
 	num = 0;
 	for (int k = 1; k <= inst.m; k++) {
 		for (int i = 0; i < inst.n[k - 1]; i++) {
@@ -167,6 +167,18 @@ void NF_MLBPFormulation::addConstraints(IloEnv env, IloModel model, const Instan
 		}
 	}
 	MIP_OUT(TRACE) << "added " << num << " constraints to enforce LP x-f relaxation" << std::endl;
+
+	// Every connection between i and j should be also active/inactive for f -> x
+	num = 0;
+	for (int k = 1; k <= inst.m; k++) {
+		for (int i = 0; i < inst.n[k - 1]; i++) {
+			for (int j = 0; j < inst.n[k]; j++) {
+				model.add(x[k][i][j] <= f[k][i][j]);
+				num++;
+			}
+		}
+	}
+	MIP_OUT(TRACE) << "added " << num << " constraints to enforce LP f-x relaxation" << std::endl;
 
 	//----------------------------------------------------------------------
 	// Symmetry breaking constraints
